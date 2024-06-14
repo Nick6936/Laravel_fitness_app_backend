@@ -38,7 +38,7 @@ Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics
 // Route::delete('/everydays/{user_id}',[EverydayController::class,'destroy']);
 // Route::post('/everydays/{user_id}',[EverydayController::class,'saveToAnalytics']);
 Route::apiResource('/analytics', AnalyticController::class);
-// Route::get('/analytics',[AnalyticController::class,'index']);
+ Route::get('/analytics',[AnalyticController::class,'index']);
 // Route::post('/analytics',[AnalyticController::class,'store']);
 // Route::get('/analytics/{user_id}',[AnalyticController::class,'show']);
 // Route::delete('/analytics/{user_id}',[AnalyticController::class,'destroy']);
