@@ -1,0 +1,47 @@
+[
+    {
+        "name": "White Truffles(100gm)",
+        "description": "White truffles are a type of rare and highly sought-after edible fungus known for their unique aroma and flavor.",
+        "calories": 31,
+        "carbohydrate": 2,
+        "protein": 4,
+        "fat": 0.5,
+        "sodium": 0
+    },
+    {
+        "name": "Matsutake Mushrooms(100gm)",
+        "description": "Matsutake mushrooms are a prized variety of mushrooms known for their distinctive spicy-aromatic odor and dense texture.",
+        "calories": 28,
+        "carbohydrate": 5.1,
+        "protein": 1.9,
+        "fat": 0.5,
+        "sodium": 5
+    },
+    {
+        "name": "Densuke Watermelon(100gm)",
+        "description": "Densuke Watermelons are a rare type of black watermelon from Japan known for their sweetness and high price.",
+        "calories": 60,
+        "carbohydrate": 15.6,
+        "protein": 1,
+        "fat": 0.4,
+        "sodium": 2
+    },
+    {
+        "name": "Bluefin Tuna(100gm)",
+        "description": "Bluefin Tuna is a species of tuna known for its high-fat content and is often used in high-quality sushi and sashimi.",
+        "calories": 144,
+        "carbohydrate": 0,
+        "protein": 23,
+        "fat": 5,
+        "sodium": 39
+    },
+    {
+        "name": "Caviar(100gm)",
+        "description": "Caviar is a luxury delicacy consisting of salt-cured roe (fish eggs) from sturgeon or other fish. It is known for its unique, rich flavor and is often served as a garnish or spread.",
+        "calories": 264,
+        "carbohydrate": 4,
+        "protein": 25,
+        "fat": 18,
+        "sodium": 15.00
+    }
+]
