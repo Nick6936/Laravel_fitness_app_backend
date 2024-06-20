@@ -68,7 +68,15 @@ class EverydayController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($user_id)
+
+     public function destroy(Everyday $everyday)
+    {
+        return response()->json([
+            'message'=>'Meal Deleted',
+            'Meal'=> $everyday->delete()
+        ], 200);
+    }
+    public function destroyAll($user_id)
     {
         $deletedRows = Everyday::where('user_id', $user_id)->delete();
 

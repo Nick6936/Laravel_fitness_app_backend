@@ -15,43 +15,43 @@
     "carbohydrate": "34",
     "protein": "14",
     "fat": "4.2",
-    "sodium": "4.31"
+    "sodium": "431"
   },
   {
-    "name": "Cauliflower(500gm)" ,
+    "name": "Cauliflower(287.5gm)" ,
     "description": "Cauliflower referred ta as 'kauli'in Nepali is poppular and versitle commonly used vegetable.",
-    "calories": "132",
-    "carbohydrate": "24",
-    "protein": "11",  
-    "fat": "2.6",
-    "sodium": "86"
+    "calories": "66",
+    "carbohydrate": "12",
+    "protein": "5.5",  
+    "fat": "1.3",
+    "sodium": "43"
   },
   {
-    "name": "Potato(500gm)",
+    "name": "Potato(86gm)",
     "description": "Potato referred to as 'alu'' in Nepali is a highly valued and widely consumed vegetable. ",
-    "calories": "479",
-    "carbohydrate": "110",
-    "protein": "12.8",
-    "fat": "0.6",
-    "sodium": "5.0"
+    "calories": "80.5",
+    "carbohydrate": "18.5",
+    "protein": "2.2",
+    "fat": "0.1",
+    "sodium": "8.5"
   },
   {
-    "name": "cabbage(500gm)",
+    "name": "cabbage(150gm)",
     "description": "Cabbage is appreciated for its nutritional benefits, providing vitamins, minerals, and fiber.",
-    "calories": "100",
-    "carbohydrate": "24.4",
-    "protein": "5.6",
-    "fat": "0.2",
-    "sodium": "35"
+    "calories": "34",
+    "carbohydrate": "8.2",
+    "protein": "1.9",
+    "fat": "0.1",
+    "sodium": "12"
   },
   {
-    "name": "Peas(160gm)",
+    "name": "Peas(80gm)",
     "description": "peas referred to as 'kerau' in Nepali are a popular and nutritious vegetable.",
-    "calories": "134",
-    "carbohydrate": "25",
-    "protein": "8.6",
-    "fat": "0.4",
-    "sodium": "4.8"
+    "calories": "67",
+    "carbohydrate": "12.5",
+    "protein": "4.3",
+    "fat": "0.2",
+    "sodium": "2.4"
   },
   {
     "name": "Green Bean(125gm)",
@@ -72,76 +72,255 @@
     "sodium": "2.9"
   },
   {
-    "name": "Ladies finger(320g)",
+    "name": "Ladies finger(80g)",
     "description": "Ladies Finger is a staple in the Nepali diet, appreciated for its versatility in cooking and its role in adding diversity to daily meals.",
-    "calories": "72",
-    "carbohydrate": "14.4",
-    "protein": "6",
-    "fat": "0.7",
-    "sodium": "19.2"
-  },
-  {
-    "name": "Bitter Gourd(248g)",
-    "description": "Bitter Gourd referred to as 'tite karela' in Nepali is a valued vegetable known for its distinct bitter flavor and numerous health benefits.",
-    "calories": "48",
-    "carbohydrate": "10.8",
-    "protein": "2",
-    "fat": "0.4",
-    "sodium": "14.8"
-  },
-  {
-    "name": "Chickpea(492g)",
-    "description": "Chickpeas referred to as'chana' in Nepali  are valued for their high nutritional content, including protein, fiber, vitamins, and minerals.",
-    "calories": "807",
-    "carbohydrate": "135",
-    "protein": "45",
-    "fat": "12.6",
-    "sodium": "33"
-  },
-  {
-    "name": "Tomato(492g)",
-    "description": "Tomato are an essential ingredient in various dishes, including curries, chutneys, salads, and soups.",
-    "calories": "88",
-    "carbohydrate": "19.2",
-    "protein": "4.4",
-    "fat": "1",
-    "sodium": "24.8"
-  },
-  {
-    "name": "Egg(500g)",
-    "description": "Egg play a crucial role in the diet of many Nepalese, providing a vital source of nutrition",
-    "calories": "720",
+    "calories": "18",
     "carbohydrate": "3.6",
-    "protein": "63",
-    "fat": "48",
-    "sodium": "710"
+    "protein": "1.5",
+    "fat": "0.2",
+    "sodium": "4.8"
   },
   {
-    "name": "Chicken(510g)",
+    "name": "Bitter Gourd(62gm)",
+    "description": "Bitter Gourd referred to as 'tite karela' in Nepali is a valued vegetable known for its distinct bitter flavor and numerous health benefits.",
+    "calories": "12",
+    "carbohydrate": "2.7",
+    "protein": "0.5",
+    "fat": "0.1",
+    "sodium": "3.7"
+  },
+  {
+    "name": "Chickpea(82g)",
+    "description": "Chickpeas referred to as'chana' in Nepali  are valued for their high nutritional content, including protein, fiber, vitamins, and minerals.",
+    "calories": "134.5",
+    "carbohydrate": "22.5",
+    "protein": "7.5",
+    "fat": "2.1",
+    "sodium": "5.5"
+  },
+  {
+    "name": "Tomato(123g)",
+    "description": "Tomato are an essential ingredient in various dishes, including curries, chutneys, salads, and soups.",
+    "calories": "22",
+    "carbohydrate": "4.8",
+    "protein": "1.1",
+    "fat": "0.3",
+    "sodium": "6.2"
+  },
+  {
+    "name": "Boiled Egg(1 piece)",
+    "description": "Egg play a crucial role in the diet of many Nepalese, providing a vital source of nutrition",
+    "calories": "78",
+    "carbohydrate": "0.6",
+    "protein": "6",
+    "fat": "5",
+    "sodium": "62"
+  },
+  {
+    "name": "Chicken(113g)",
     "description": "Chicken is valued for its lean protein content and versatility in cooking, allowing for a wide range of flavors and textures.",
-    "calories": "1122",
-    "carbohydrate": "0.2",
-    "protein": "120",
-    "fat": "66",
-    "sodium": "360"
+    "calories": "249",
+    "carbohydrate": "0.1",
+    "protein": "26.7",
+    "fat": "14.7",
+    "sodium": "80"
   },
   {
-    "name": "Mutton(510g)",
+    "name": "Mutton(113g)",
     "description": "Mutton is valued for its nutritional content, including protein and essential vitamin.",
-    "calories": "1500",
+    "calories": "333",
     "carbohydrate": "0",
-    "protein": "126",
-    "fat": "108",
-    "sodium": "366"
+    "protein": "28",
+    "fat": "24",
+    "sodium": "81.3"
   },
   {
-    "name": "Pork(510g)",
+    "name": "Pork(113g)",
     "description": " Pork is appreciated for its rich flavor and versatility in cooking.",
-    "calories": "1212",
+    "calories": "269",
     "carbohydrate": "0",
-    "protein": "132",
-    "fat": "72",
-    "sodium": "288"
+    "protein": "29",
+    "fat": "16",
+    "sodium": "64"
+  },
+  {
+    "name": "Apple(91g)",
+    "description": "Apple are known for their crisp texture, sweet-tart flavor, and nutritional benefits, including being a good source of fiber, vitamins, and antioxidants",
+    "calories": "47.5",
+    "carbohydrate": "12.5",
+    "protein": "0.2",
+    "fat": "0.2",
+    "sodium": "0.9"
+  } ,
+  {
+    "name": "Banana(1 peice)",
+    "description": "Banana are a rich source of potassium, vitamins, and fiber, making them a healthy snack choice.",
+    "calories": "52.5",
+    "carbohydrate": "13.5",
+    "protein": "0.7",
+    "fat": "0.2",
+    "sodium": "0.6"
+  },
+  {
+    "name": "Fried Egg(1 piece)",
+    "description": "Fried eggs are appreciated for their protein content and are a satisfying and nutritious addition to any meal.",
+    "calories": "90",
+    "carbohydrate": "0.4",
+    "protein": "6.3",
+    "fat": "6.8",
+    "sodium": "95"
+  },
+  {
+    "name": "Veg Chow Mein(1 plate)",
+    "description": "Chow Mein is a popular dish in Nepali society, known for its flavorful combination of stir-fried noodles and mixed vegetables.",
+    "calories": "200",
+    "carbohydrate": "12.08",
+    "protein": "22.77",
+    "fat": "16",
+    "sodium": "895"
+  },
+  {
+    "name": "Chicken Chowmein(1 plate)",
+    "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood",
+    "calories": "295",
+    "carbohydrate": "22",
+    "protein": "18",
+    "fat": "15",
+    "sodium": "565"
+  } ,
+  {
+    "name": "Pork Chowmein(1 plate)",
+    "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood",
+    "calories": "310",
+    "carbohydrate": "21",
+    "protein": "19",
+    "fat": "19",
+    "sodium": "657"
+  },
+  {
+    "name": "Buffalo Meat (87g)",
+    "description": "Buffalo meat is also valued for its nutritional benefits, providing essential vitamins, minerals, and protein.",
+    "calories": "207",
+    "carbohydrate": "0",
+    "protein": "21",
+    "fat": "13",
+    "sodium": "64"
+  },
+  {
+    "name": "buff chowmein(1 plate)",
+    "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood",
+    "calories": "225",
+    "carbohydrate": "26",
+    "protein": "9",
+    "fat": "7.5",
+    "sodium": "456"
+  },
+  {
+    "name": "Chicken Momo(1 plate)",
+    "description": "Momo is a cherished and iconic dish consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
+    "calories": "465",
+    "carbohydrate": "55",
+    "protein": "27.2",
+    "fat": "16",
+    "sodium": "84"
+  },
+  {
+    "name": "Veg momo",
+    "description": "Momo is a cherished and iconic dish  consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
+    "calories": "427",
+    "carbohydrate": "50",
+    "protein": "23",
+    "fat": "15",
+    "sodium": "75"
+  },
+  {
+    "name": "Buff Momo(1 plate)",
+    "description": "Momo is a cherished and iconic dish consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
+    "calories": "425",
+    "carbohydrate": "45",
+    "protein": "20",
+    "fat": "16",
+    "sodium": "65"
+  },
+  {
+    "name": "Chicken Pizza(medium)",
+    "description": "Pizza typically features a round, flatbread base topped with tomato sauce, cheese, and a variety of toppings, which can include vegetables, meats, and herbs.",
+    "calories": "1530",
+    "carbohydrate": "180",
+    "protein": "85",
+    "fat": "55",
+    "sodium": "32.35"
+  },
+  {
+    "name": "Mushrrom Pizza(medium)",
+    "description": "Pizza typically features a round, flatbread base topped with tomato sauce, cheese, and a variety of toppings, which can include vegetables, meats, and herbs.",
+    "calories": "1480",
+    "carbohydrate": "184",
+    "protein": "64",
+    "fat": "53",
+    "sodium": "32"
+  },
+  {
+    "name": "Boiled Egg(1 piece)",
+    "description": "Boiled egg are valued for their high protein content, essential vitamins, and minerals",
+    "calories": "78",
+    "carbohydrate": "0.6",
+    "protein": "6.3",
+    "fat": "5.3",
+    "sodium": "62"
+  },
+  {
+    "name":"Cow Milk(1 cup)",
+    "description": null,
+    "calories":"150",
+    "carbohydrate":"12",
+    "protein":"8",
+    "fat":"8",
+    "sodium":"107"
+  },
+  {
+    "name":"Buffalo Milk(1 cup)",
+    "description": "Bhasisi ko dudh",
+    "calories":"237",
+    "carbohydrate":"12",
+    "protein":"9",
+    "fat":"17",
+    "sodium":"120"
+  },
+  {
+    "name":"Mango Juice(200ml)",
+    "description": null,
+    "calories":"130",
+    "carbohydrate":"32",
+    "protein":"0.2",
+    "fat":"0",
+    "sodium":"56"
+  },
+  {
+    "name":"Orange Juice (200ml)",
+    "description": null,
+    "calories":"112",
+    "carbohydrate":"26",
+    "protein":"1.7",
+    "fat":"0.5",
+    "sodium":"2.5"
+  },
+  {
+    "name":"Apple Juice(200ml)",
+    "description": null,
+    "calories":"114",
+    "carbohydrate":"28",
+    "protein":"0.3",
+    "fat":"0.3",
+    "sodium":"9.9"
+  },
+  {
+    "name":"Pineapple Juice(200ml)",
+    "description": null,
+    "calories":"131",
+    "carbohydrate":"30",
+    "protein":"0.7",
+    "fat":"0.2",
+    "sodium":"4"
   }
-  
 ]

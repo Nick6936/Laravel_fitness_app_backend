@@ -47,7 +47,8 @@ class CustomController extends Controller
      */
     public function show($user_id)
     {
-        $customs = Custom::whereIn('user_id', [$user_id, 0])->get();
+        $customs = Custom::where('user_id', $user_id)->get();
+        //$customs = Custom::whereIn('user_id', [$user_id, 0])->get();
         
         return response()->json([
             'message'=>'Requested Meals',
