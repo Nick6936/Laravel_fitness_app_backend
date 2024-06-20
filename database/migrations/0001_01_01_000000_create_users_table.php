@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('password');
             $table->string('sex');
+            $table->decimal('weight', 6, 2);
             $table->string('ethnicity');
             $table->string('bodyType');
             $table->string('bodyGoal');
