@@ -6,7 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MealController;
 use App\Http\Controllers\CustomController;
 use App\Http\Controllers\EverydayController;
-use App\Http\Controllers\VolunteerController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnalyticController;
 
 
@@ -25,13 +25,14 @@ Route::middleware(['auth:api'])->group(function(){
     Route::post('me', [AuthController::class,'me']);
     Route::post('refresh', [AuthController::class,'refresh']);
     Route::post('logout', [AuthController::class,'logout']);
+    Route::post('update', [AuthController::class,'update']);
 });
 
 
 
 
 
-Route::apiResource('/volunteers', VolunteerController::class);
+Route::apiResource('/users', UserController::class);
 // Route::get('/volunteers',[VolunteerController::class,'index']);
 // Route::post('/volunteers',[VolunteerController::class,'store']);
 // Route::put('/volunteers/{volunteer}',[VolunteerController::class,'update']);

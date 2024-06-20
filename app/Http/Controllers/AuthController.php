@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRegisterRequest;
-
+use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
@@ -72,4 +72,35 @@ class AuthController extends Controller
             'expires_in' => auth('api')->factory()->getTTL() * 60
         ]);
     }
+
+    public function update(Request $request)
+    {
+        $user = auth('api')->user();
+
+        $validatedData = $request->validate([
+            'name' => 'string|max:255',
+            'age' => 'integer|min:0|max:100',
+            'email' => 'email|unique:users,email,' . $user->id,
+            'phone' => 'string',
+            'password' => 'string|min:5',
+            'sex' => 'string',
+            'weight' => 'string',
+            'ethnicity' => 'string',
+            'bodyType' => 'string',
+            'bodyGoal' => 'string',
+            'bloodPressure' => 'string',
+            'bloodSugar' => 'string',
+            'isPremium' => 'boolean',
+        ]);
+
+        $user->update(array_merge($user->only([
+            'name', 'age', 'email', 'phone', 'sex', 'weight', 'ethnicity', 'bodyType', 'bodyGoal', 'bloodPressure', 'bloodSugar', 'isPremium'
+        ]), $validatedData, [
+            'password' => isset($validatedData['password']) ? bcrypt($validatedData['password']) : $user->password,
+        ]));
+
+        return response()->json(['message' => 'User updated successfully', 'user' => $user]);
+    }
+
+    
 }
