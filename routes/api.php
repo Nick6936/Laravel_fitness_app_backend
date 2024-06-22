@@ -13,6 +13,7 @@ use App\Http\Controllers\AnalyticController;
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('auth:sanctum');
+//JW token is used insted of sanctum for authentication
 
 Route::group(['prefix' => 'auth'], function ($router) {
     Route::post('login', [AuthController::class,'login']);
@@ -23,21 +24,19 @@ Route::group(['prefix' => 'auth'], function ($router) {
 
 Route::middleware(['auth:api'])->group(function(){
     Route::post('me', [AuthController::class,'me']);
+    Route::post('update', [AuthController::class,'update']);
     Route::post('refresh', [AuthController::class,'refresh']);
     Route::post('logout', [AuthController::class,'logout']);
-    Route::post('update', [AuthController::class,'update']);
     Route::post('delete', [AuthController::class,'deleteAccount']);
 });
 
 
 
 
-
+//this route is only useful for fetching user data nothing else
 Route::apiResource('/users', UserController::class);
-// Route::get('/volunteers',[VolunteerController::class,'index']);
-// Route::post('/volunteers',[VolunteerController::class,'store']);
-// Route::put('/volunteers/{volunteer}',[VolunteerController::class,'update']);
-// Route::delete('/volunteers/{volunteer}',[VolunteerController::class,'destroy']);
+// Route::get('/users',[UserController::class,'index']);
+
 Route::apiResource('/meals', MealController::class);
 // Route::get('/meals',[MealController::class,'index']);
 // Route::post('/meals',[MealController::class,'store']);
