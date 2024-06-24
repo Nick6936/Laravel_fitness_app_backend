@@ -53,8 +53,10 @@ Route::apiResource('/customs', CustomController::class);
 
 
 Route::apiResource('/everydays', EverydayController::class);
+//created two method for simillar things but, saveAnalyticsAndClearMeals will do it for all the users and saveToAnalytics will do it for specific user. 
+//saveAnalyticsAndClearMeals was made to be auto executed whereas saveToAnalytics is triggered manually, or from front end iykyk
 Route::post('/everydays/magic', [EverydayController::class, 'saveAnalyticsAndClearMeals']);//will gather all the user_id and perform operation for all of them, no need to pass any parameter
-//Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics']);
+Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics']);//will save the sum of data for provided user to analytics and delete the user specific meals in everyday table
 // Route::get('/everydays/{everydayid}',[EverydayController::class,'destroy']);//for deleting specific meal in everyday table
 //Route::delete('/everydays/destroy/{user_id}', [EverydayController::class, 'destroyAll']);//for deleting all the user specific meals in everyday table
 // Route::get('/everydays',[EverydayController::class,'index']);
