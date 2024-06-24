@@ -15,8 +15,8 @@ class UserController extends Controller
         $users = User::get();
 
         return response()->json([
-            'message'=>'List of Users',
-            'Users'=> $users
+            'message' => 'List of Users',
+            'Users' => $users
         ], 200);
     }
 
@@ -51,4 +51,14 @@ class UserController extends Controller
     {
         //
     }
-}
+
+    public function getAllUserIds()
+    {
+        $userIds = User::all()->pluck('user_id');
+
+        return response()->json([
+            'message' => 'List of User IDs',
+            'userIds' => $userIds
+        ], 200);
+    }
+}  
