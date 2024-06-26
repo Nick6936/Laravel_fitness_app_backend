@@ -61,7 +61,9 @@ class AuthController extends Controller
     public function refresh()
     {
         return $this->respondWithToken(auth('api')->refresh());
+        
     }
+    
 
     
     protected function respondWithToken($token)
@@ -101,6 +103,16 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'User updated successfully', 'user' => $user]);
     }
+
+    public function deleteAccount()
+    {
+        $user = auth('api')->user();
+        $user->delete();
+
+        return response()->json(['message' => 'User deleted successfully']);
+    }
+
+
 
     
 }

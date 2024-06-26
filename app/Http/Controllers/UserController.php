@@ -15,8 +15,8 @@ class UserController extends Controller
         $users = User::get();
 
         return response()->json([
-            'message'=>'List of Users',
-            'Users'=> $users
+            'message' => 'List of Users',
+            'Users' => $users
         ], 200);
     }
 
@@ -41,25 +41,7 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $user->name = $request->name ?? $user->name;
-        $user->age = $request->age ?? $user->age ;
-        $user->email = $request->email ?? $user->email;
-        $user->phone = $request->phone ?? $user->phone;
-        $user->password = $request->password ?? $user->password;
-        $user->sex = $request->sex ?? $user->sex;
-        $user->ethnicity = $request->ethnicity ?? $user->ethnicity;
-        $user->weight = $request->weight ?? $user->weight;
-        $user->bodyType = $request->bodyType ?? $user->bodyType;
-        $user->bodyGoal = $request->bodyGoal ?? $user->bodyGoal;
-        $user->bloodPressure = $request->bloodPressure ?? $user->bloodPressure;
-        $user->bloodSugar = $request->bloodSugar ?? $user->bloodSugar;
-        $user->isPremium = $request->isPremium?? 0;
-        $user->save();
-
-        return response()->json([
-            'message' => 'User Updated',
-            'User' => $user
-        ], 200);
+        //
     }
 
     /**
@@ -67,9 +49,16 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
+        //
+    }
+
+    public function getAllUserIds()
+    {
+        $userIds = User::all()->pluck('user_id');
+
         return response()->json([
-            'message'=>'User Deleted',
-            'User'=> $user->delete()
+            'message' => 'List of User IDs',
+            'userIds' => $userIds
         ], 200);
     }
-}
+}  

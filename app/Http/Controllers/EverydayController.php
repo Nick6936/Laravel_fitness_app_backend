@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Everyday;
+use App\Models\User;
 use App\Models\Analytic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -76,45 +77,85 @@ class EverydayController extends Controller
             'Meal'=> $everyday->delete()
         ], 200);
     }
-    public function destroyAll($user_id)
+
+    //code to destroy all user specific data from everyday table. phased out as saveAnalyticsAndClearMeals() will do it for you
+    // public function destroyAll($user_id)
+    // {
+    //     $deletedRows = Everyday::where('user_id', $user_id)->delete();
+
+    //     return response()->json([
+    //         'message' => 'Deleted all Daily Meals for user_id: ' . $user_id,
+    //         'Deleted Meals' => $deletedRows
+    //     ], 200);
+    // }
+
+    public function saveAnalyticsAndClearMeals()
     {
-        $deletedRows = Everyday::where('user_id', $user_id)->delete();
+        // Get all user IDs
+        $userIds = User::pluck('user_id');
+
+        // Iterate through each user ID
+        foreach ($userIds as $userId) {
+            // Calculate totals for the user's daily meals
+            $totals = Everyday::where('user_id', $userId)
+                ->select(DB::raw('
+                    SUM(calories) as total_calories,
+                    SUM(carbohydrate) as total_carbohydrate,
+                    SUM(protein) as total_protein,
+                    SUM(fat) as total_fat,
+                    SUM(sodium) as total_sodium
+                '))
+                ->first();
+
+            // Create a new record in the analytics table
+            Analytic::create([
+                'user_id' => $userId,
+                'calories' => $totals->total_calories ?? 0,
+                'carbohydrate' => $totals->total_carbohydrate ?? 0,
+                'protein' => $totals->total_protein ?? 0,
+                'fat' => $totals->total_fat ?? 0,
+                'sodium' => $totals->total_sodium ?? 0
+            ]);
+
+            // Delete all daily meals for the current user
+            Everyday::where('user_id', $userId)->delete();
+        }
 
         return response()->json([
-            'message' => 'Deleted all Daily Meals for user_id: ' . $user_id,
-            'Deleted Meals' => $deletedRows
+            'message' => 'Analytics created and daily meals cleared for all users.'
         ], 200);
     }
+    
+    //code to calculate sum of everyday table and send the data to analytics. phased out as saveAnalyticsAndClearMeals() will do it for you
+    // public function saveToAnalytics($user_id)
+    // {
+    //     // Calculate the sums
+    //     $totals = Everyday::where('user_id', $user_id)
+    //         ->select(DB::raw('
+    //             SUM(calories) as total_calories,
+    //             SUM(carbohydrate) as total_carbohydrate,
+    //             SUM(protein) as total_protein,
+    //             SUM(fat) as total_fat,
+    //             SUM(sodium) as total_sodium
+    //         '))
+    //         ->first();
 
-    public function saveToAnalytics($user_id)
-    {
-        // Calculate the sums
-        $totals = Everyday::where('user_id', $user_id)
-            ->select(DB::raw('
-                SUM(calories) as total_calories,
-                SUM(carbohydrate) as total_carbohydrate,
-                SUM(protein) as total_protein,
-                SUM(fat) as total_fat,
-                SUM(sodium) as total_sodium
-            '))
-            ->first();
-
-        // Create or update the record in the analytics table
-        $analytic = Analytic::create(
+    //     // Create or update the record in the analytics table
+    //     $analytic = Analytic::create(
             
-            [
-                'user_id' => $user_id,
-                'calories' => $totals->total_calories,
-                'carbohydrate' => $totals->total_carbohydrate,
-                'protein' => $totals->total_protein,
-                'fat' => $totals->total_fat,
-                'sodium' => $totals->total_sodium
-            ]
-        );
+    //         [
+    //             'user_id' => $user_id,
+    //             'calories' => $totals->total_calories,
+    //             'carbohydrate' => $totals->total_carbohydrate,
+    //             'protein' => $totals->total_protein,
+    //             'fat' => $totals->total_fat,
+    //             'sodium' => $totals->total_sodium
+    //         ]
+    //     );
 
-        return response()->json([
-            'message' => 'Nutrient summary saved to analytics successfully',
-            'analytic' => $analytic
-        ], 200);
-    }
+    //     return response()->json([
+    //         'message' => 'Nutrient summary saved to analytics successfully',
+    //         'analytic' => $analytic
+    //     ], 200);
+    // }
 }
