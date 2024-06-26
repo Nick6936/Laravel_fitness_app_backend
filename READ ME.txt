@@ -88,6 +88,8 @@ This is for our daily meals table,
 - Route::get('/everydays',[EverydayController::class,'index']);
  Route::post('/everydays',[EverydayController::class,'store']); these method are normal get and post method
 
+ -Route::get('/everydays/water/{user_id}',[EverydayController::class,'getWater']); this method will fetch total water cousumed today(user specific)
+
 
 
  Route::apiResource('/analytics', AnalyticController::class);
