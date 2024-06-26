@@ -16,6 +16,6 @@ class Analytic extends Model
         'protein',
         'fat',
         'sodium',
-        //'water'
+        'volume'
     ];
 }

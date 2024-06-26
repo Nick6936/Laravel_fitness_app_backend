@@ -1,0 +1,113 @@
+
+
+Route::group(['prefix' => 'auth'], function ($router) {
+    Route::post('login', [AuthController::class,'login']);
+    Route::post('register', [AuthController::class,'register']);
+    
+});
+
+This route is used for authentication only. as the prefix is set as 'auth', use http://127.0.0.1:8000/api/auth/... for using this api.
+For login, enter 'Accept' as the header key and set its value to application/json or something, there will be a predefined option
+and in form value, enter email and password
+
+For signup enter all the details, name, age, email phno....
+
+
+Route::middleware(['auth:api'])->group(function(){
+    Route::post('me', [AuthController::class,'me']);
+    Route::post('update', [AuthController::class,'update']);
+    Route::post('refresh', [AuthController::class,'refresh']);
+    Route::post('logout', [AuthController::class,'logout']);
+    Route::post('delete', [AuthController::class,'deleteAccount']);
+    Route::post('userid', [AuthController::class,'getAllUserIds']);
+});
+
+-this route is for authenticated users, the getAllUserIds is used just for testing,unwanted
+-for using other routes, enter 'Accept' as the header key and set its value to application/json or something, and in the auth option, 
+-set the key as Bearer token and paste the token provided during login or signup
+
+
+Route::apiResource('/users', UserController::class);
+-This can only be used to show all the users, nothing else
+
+
+
+Route::apiResource('/meals', MealController::class);
+// Route::get('/meals',[MealController::class,'index']);
+// Route::post('/meals',[MealController::class,'store']);
+// Route::get('/meals/{meal}',[MealController::class,'show']);
+// Route::put('/meals/{meal}',[MealController::class,'update']);
+
+
+-This is for our original library. use http://127.0.0.1:8000/api/meals to view all the meals or just use get method
+-no need to use other method as food library will be constant
+
+
+
+oute::apiResource('/customs', CustomController::class);
+// Route::get('/customs',[CustomController::class,'index']);
+// Route::post('/customs',[CustomController::class,'store']);
+// Route::get('/customs/{user_id }',[CustomController::class,'show']);
+// Route::put('/customs/{custom}',[CustomController::class,'update']);
+// Route::delete('/customs/{custom}',[CustomController::class,'destroy']);
+
+-This is for our premium library, Route::get('/customs',[CustomController::class,'index']); is a get method to see all the custom meals(for all users)
+
+-Route::get('/customs/{user_id }',[CustomController::class,'show']);, here pass user id to show user specific data only
+
+-other method will require food id which will be added by user
+
+
+
+Route::apiResource('/everydays', EverydayController::class);
+//created two method for simillar things but, saveAnalyticsAndClearMeals will do it for all the users and saveToAnalytics will do it for specific user. 
+//saveAnalyticsAndClearMeals was made to be auto executed whereas saveToAnalytics is triggered manually, or from front end iykyk
+Route::post('/everydays/magic', [EverydayController::class, 'saveAnalyticsAndClearMeals']);//will gather all the user_id and perform operation for all of them, no need to pass any parameter
+Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics']);//will save the sum of data for provided user to analytics and delete the user specific meals in everyday table
+// Route::get('/everydays/{everydayid}',[EverydayController::class,'destroy']);//for deleting specific meal in everyday table
+//Route::delete('/everydays/destroy/{user_id}', [EverydayController::class, 'destroyAll']);//for deleting all the user specific meals in everyday table
+// Route::get('/everydays',[EverydayController::class,'index']);
+// Route::post('/everydays',[EverydayController::class,'store']);
+// Route::get('/everydays/{user_id}',[EverydayController::class,'show']);
+
+
+This is for our daily meals table,
+-Route::post('/everydays/magic', [EverydayController::class, 'saveAnalyticsAndClearMeals']); this is an automated method 
+ which will gather all the user_id of registered users, perform sum of macro nutients for each user and save it to analytics
+ 
+ -Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics']); this is a manual method which can be triggered from front end,
+  just pass user id and it will perform all the sum of macro nutients for each user and save it to analytics(user specific)
+
+-Route::get('/everydays/{everydayid}',[EverydayController::class,'destroy']); this for deleting specific meal in everyday table, will use food id
+
+-Route::delete('/everydays/destroy/{user_id}', [EverydayController::class, 'destroyAll']); this is for deleting all the meals in everyday table 
+ specific for user_id, dont think it will be used as other automated mathod will do it, but just keeping it here
+
+ -Route::get('/everydays/{user_id}',[EverydayController::class,'show']); this method will show all the eaveryday meals specific to user, pass user_id
+
+- Route::get('/everydays',[EverydayController::class,'index']);
+ Route::post('/everydays',[EverydayController::class,'store']); these method are normal get and post method
+
+
+
+ Route::apiResource('/analytics', AnalyticController::class);
+Route::get('/analytics', [AnalyticController::class, 'index']);
+// Route::post('/analytics',[AnalyticController::class,'store']);
+// Route::get('/analytics/{user_id}',[AnalyticController::class,'show']);
+// Route::delete('/analytics/{user_id}',[AnalyticController::class,'destroy']);
+
+This is for analytics table;
+
+-Route::get('/analytics/{user_id}',[AnalyticController::class,'show']); call this method to get user specific data, pass user_id
+
+
+Note:
+
+Route::put'/customs/{custom}', yesto xa vaney customs kai id pass garni ho,
+Route::get'/analytics/{user_id}', yesto xa vaney user_id pass garni ho
+
+
+
+
+
+ 

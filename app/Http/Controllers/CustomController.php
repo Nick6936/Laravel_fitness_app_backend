@@ -34,6 +34,7 @@ class CustomController extends Controller
         $custom->protein = $request->protein;
         $custom->fat = $request->fat;
         $custom->sodium = $request->sodium;
+        $custom->volume = $request->volume ?? 0;
         $custom->save();
 
         return response()->json([
@@ -69,6 +70,7 @@ class CustomController extends Controller
         $custom->protein = $request->protein ?? $custom->protein;
         $custom->fat = $request->fat ?? $custom->fat;
         $custom->sodium = $request->sodium?? $custom->sodium;
+        $custom->volume = $request->volume?? $custom->volume;
         $custom->save();
 
         return response()->json([

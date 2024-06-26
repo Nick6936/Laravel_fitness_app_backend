@@ -19,6 +19,7 @@ return new class extends Migration
             $table->decimal('protein', 6, 2);
             $table->decimal('fat', 6, 2);
             $table->decimal('sodium', 6, 2);
+            $table->decimal('volume', 7, 2)->default(0);
             $table->timestamps();
         });
     }

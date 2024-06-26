@@ -37,6 +37,7 @@ class EverydayController extends Controller
         $everyday->protein = $request->protein;
         $everyday->fat = $request->fat;
         $everyday->sodium = $request->sodium;
+        $everyday->volume = $request->volume;
         $everyday->save();
 
         return response()->json([
@@ -104,6 +105,7 @@ class EverydayController extends Controller
                     SUM(protein) as total_protein,
                     SUM(fat) as total_fat,
                     SUM(sodium) as total_sodium
+                    SUM(volume) as total_volume
                 '))
                 ->first();
 
@@ -114,7 +116,8 @@ class EverydayController extends Controller
                 'carbohydrate' => $totals->total_carbohydrate ?? 0,
                 'protein' => $totals->total_protein ?? 0,
                 'fat' => $totals->total_fat ?? 0,
-                'sodium' => $totals->total_sodium ?? 0
+                'sodium' => $totals->total_sodium ?? 0,
+                'volume' => $totals->total_volume ?? 0
             ]);
 
             // Delete all daily meals for the current user
@@ -127,35 +130,52 @@ class EverydayController extends Controller
     }
     
     //code to calculate sum of everyday table and send the data to analytics. phased out as saveAnalyticsAndClearMeals() will do it for you
-    // public function saveToAnalytics($user_id)
-    // {
-    //     // Calculate the sums
-    //     $totals = Everyday::where('user_id', $user_id)
-    //         ->select(DB::raw('
-    //             SUM(calories) as total_calories,
-    //             SUM(carbohydrate) as total_carbohydrate,
-    //             SUM(protein) as total_protein,
-    //             SUM(fat) as total_fat,
-    //             SUM(sodium) as total_sodium
-    //         '))
-    //         ->first();
+    public function saveToAnalytics($user_id)
+    {
+        // Calculate the sums
+        $totals = Everyday::where('user_id', $user_id)
+            ->select(DB::raw('
+                SUM(calories) as total_calories,
+                SUM(carbohydrate) as total_carbohydrate,
+                SUM(protein) as total_protein,
+                SUM(fat) as total_fat,
+                SUM(sodium) as total_sodium,
+                SUM(volume) as total_volume
+            '))
+            ->first();
 
-    //     // Create or update the record in the analytics table
-    //     $analytic = Analytic::create(
+        // Create or update the record in the analytics table
+        $analytic = Analytic::create(
             
-    //         [
-    //             'user_id' => $user_id,
-    //             'calories' => $totals->total_calories,
-    //             'carbohydrate' => $totals->total_carbohydrate,
-    //             'protein' => $totals->total_protein,
-    //             'fat' => $totals->total_fat,
-    //             'sodium' => $totals->total_sodium
-    //         ]
-    //     );
+            [
+                'user_id' => $user_id,
+                'calories' => $totals->total_calories,
+                'carbohydrate' => $totals->total_carbohydrate,
+                'protein' => $totals->total_protein,
+                'fat' => $totals->total_fat,
+                'sodium' => $totals->total_sodium,
+                'volume' => $totals->total_volume ?? 0
+            ]
+        );
 
-    //     return response()->json([
-    //         'message' => 'Nutrient summary saved to analytics successfully',
-    //         'analytic' => $analytic
-    //     ], 200);
-    // }
+        return response()->json([
+            'message' => 'Nutrient summary saved to analytics successfully',
+            'analytic' => $analytic
+        ], 200);
+    }
+
+    public function getWater($user_id)
+{
+    // Calculate the sum of the volume column for the specified user, this is for water
+    $totalVolume = Everyday::where('user_id', $user_id)
+        ->sum('volume');
+
+    // Return the total volume in the response
+    return response()->json([
+        'message' => 'Today\'s Water Intake',
+        'Water Intake Volume' => $totalVolume.'ml'
+    ], 200);
+}
+
+    
 }
