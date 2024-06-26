@@ -164,18 +164,39 @@ class EverydayController extends Controller
         ], 200);
     }
 
-    public function getWater($user_id)
-{
-    // Calculate the sum of the volume column for the specified user, this is for water
-    $totalVolume = Everyday::where('user_id', $user_id)
-        ->sum('volume');
+    public function getUserTotals($user_id)
+    {
+        // Calculate the sum of all specified columns for the specified user
+        $totals = Everyday::where('user_id', $user_id)
+            ->select(DB::raw('
+                SUM(calories) as total_calories,
+                SUM(carbohydrate) as total_carbohydrate,
+                SUM(protein) as total_protein,
+                SUM(fat) as total_fat,
+                SUM(sodium) as total_sodium,
+                SUM(volume) as total_volume
+            '))
+            ->first();
 
-    // Return the total volume in the response
-    return response()->json([
-        'message' => 'Today\'s Water Intake',
-        'Water Intake Volume' => $totalVolume.'ml'
-    ], 200);
-}
+        return [
+            'Total Calories' => $totals->total_calories ?? 0,
+            'Total Carbohydrate' => $totals->total_carbohydrate ?? 0,
+            'Total Protein' => $totals->total_protein ?? 0,
+            'Total Fat' => $totals->total_fat ?? 0,
+            'Total Sodium' => $totals->total_sodium ?? 0,
+            'Total Volume' => $totals->total_volume ?? 0 . 'ml'
+        ];
+    }
+
+    public function getHome($user_id)
+    {
+        $totals = $this->getUserTotals($user_id);
+
+        return response()->json([
+            'message' => 'Today\'s Nutrient Intake',
+            'data' => $totals
+        ], 200);
+    }
 
     
 }
