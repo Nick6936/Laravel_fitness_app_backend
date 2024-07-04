@@ -78,16 +78,16 @@ class EverydayController extends Controller
         ], 200);
     }
 
-    //code to destroy all user specific data from everyday table. phased out as saveAnalyticsAndClearMeals() will do it for you
-    // public function destroyAll($user_id)
-    // {
-    //     $deletedRows = Everyday::where('user_id', $user_id)->delete();
+   // code to destroy all user specific data from everyday table. phased out as saveAnalyticsAndClearMeals() will do it for you
+    public function destroyAll($user_id)
+    {
+        $deletedRows = Everyday::where('user_id', $user_id)->delete();
 
-    //     return response()->json([
-    //         'message' => 'Deleted all Daily Meals for user_id: ' . $user_id,
-    //         'Deleted Meals' => $deletedRows
-    //     ], 200);
-    // }
+        return response()->json([
+            'message' => 'Deleted all Daily Meals for user_id: ' . $user_id,
+            'Deleted Meals' => $deletedRows
+        ], 200);
+    }
 
     public function saveAnalyticsAndClearMeals()
     {
