@@ -159,6 +159,9 @@ class EverydayController extends Controller
             ]
         );
 
+        // Delete all daily meals for the specified user
+        Everyday::where('user_id', $user_id)->delete();
+
         return response()->json([
             'message' => 'Nutrient summary saved to analytics successfully',
             'analytic' => $analytic
