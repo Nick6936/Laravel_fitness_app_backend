@@ -15,18 +15,19 @@ class AuthController extends Controller
 
         $user = User::create([
             'name' => $validatedData['name'],
-            'age' => $validatedData['age'],
+            'age' => $validatedData['age'] ?? null,
             'email' => $validatedData['email'],
-            'phone' => $validatedData['phone'],
-            'password' => bcrypt($validatedData['password']),
-            'sex' => $validatedData['sex'],
-            'weight' => $validatedData['weight'],
-            'ethnicity' => $validatedData['ethnicity'],
-            'bodyType' => $validatedData['bodyType'],
-            'bodyGoal' => $validatedData['bodyGoal'],
-            'bloodPressure' => $validatedData['bloodPressure'],
-            'bloodSugar' => $validatedData['bloodSugar'],
-            'isPremium' => $validatedData['isPremium'] ?? 0, // Default to 0 if not provided
+            'phone' => $validatedData['phone'] ?? null,
+            'password' => isset($validatedData['password']) ? bcrypt($validatedData['password']) : bcrypt('defaultPassword'),
+            'sex' => $validatedData['sex'] ?? null,
+            'weight' => $validatedData['weight'] ?? null,
+            'ethnicity' => $validatedData['ethnicity'] ?? null,
+            'bodyType' => $validatedData['bodyType'] ?? null,
+            'bodyGoal' => $validatedData['bodyGoal'] ?? null,
+            'bloodPressure' => $validatedData['bloodPressure'] ?? null,
+            'bloodSugar' => $validatedData['bloodSugar'] ?? null,
+            'isGoogle' => $validatedData['isGoogle'] ?? 0,
+            'isPremium' => $validatedData['isPremium'] ?? 0,
         ]);
         $token = auth('api')->login($user);
         return $this->respondWithToken($token);
@@ -37,7 +38,7 @@ class AuthController extends Controller
         $credentials = request(['email', 'password']);
 
         if (! $token = auth('api')->attempt($credentials)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+            return response()->json(['error' => 'Incorrect Credentials'], 401);
         }
 
         return $this->respondWithToken($token);
@@ -46,7 +47,14 @@ class AuthController extends Controller
     
     public function me()
     {
-        return response()->json(auth('api')->user());
+        $user = auth('api')->user();
+        $everydayController = new EverydayController();
+        $totals = $everydayController->getUserTotals($user->user_id);
+
+        return response()->json([
+            'user' => $user,
+            'totals' => $totals
+        ]);
     }
 
     
@@ -80,23 +88,24 @@ class AuthController extends Controller
         $user = auth('api')->user();
 
         $validatedData = $request->validate([
-            'name' => 'string|max:255',
-            'age' => 'integer|min:0|max:100',
-            'email' => 'email|unique:users,email,' . $user->id,
-            'phone' => 'string',
-            'password' => 'string|min:5',
-            'sex' => 'string',
-            'weight' => 'string',
-            'ethnicity' => 'string',
-            'bodyType' => 'string',
-            'bodyGoal' => 'string',
-            'bloodPressure' => 'string',
-            'bloodSugar' => 'string',
-            'isPremium' => 'boolean',
+            'name' => 'nullable|string|max:255',
+            'age' => 'nullable|integer|min:0|max:100',
+            'email' => 'nullable|email|unique:users,email,' . $user->id,
+            'phone' => 'nullable|string',
+            'password' => 'nullable|string|min:5',
+            'sex' => 'nullable|string',
+            'weight' => 'nullable|string',
+            'ethnicity' => 'nullable|string',
+            'bodyType' => 'nullable|string',
+            'bodyGoal' => 'nullable|string',
+            'bloodPressure' => 'nullable|string',
+            'bloodSugar' => 'nullable|string',
+            'isGoogle' => 'nullable|boolean',
+            'isPremium' => 'nullable|boolean'
         ]);
 
         $user->update(array_merge($user->only([
-            'name', 'age', 'email', 'phone', 'sex', 'weight', 'ethnicity', 'bodyType', 'bodyGoal', 'bloodPressure', 'bloodSugar', 'isPremium'
+            'name', 'age', 'email', 'phone', 'sex', 'weight', 'ethnicity', 'bodyType', 'bodyGoal', 'bloodPressure', 'bloodSugar', 'isGoogle','isPremium'
         ]), $validatedData, [
             'password' => isset($validatedData['password']) ? bcrypt($validatedData['password']) : $user->password,
         ]));

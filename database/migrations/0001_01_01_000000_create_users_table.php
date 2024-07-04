@@ -13,18 +13,19 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('user_id');
-            $table->string('name');
-            $table->integer('age');
+            $table->string('name')->nullable();
+            $table->integer('age')->nullable();
             $table->string('email')->unique();
-            $table->string('phone');
-            $table->string('password');
-            $table->string('sex');
-            $table->decimal('weight', 6, 2);
-            $table->string('ethnicity');
-            $table->string('bodyType');
-            $table->string('bodyGoal');
-            $table->string('bloodPressure');
-            $table->string('bloodSugar');
+            $table->string('phone')->nullable();
+            $table->string('password')->nullable();
+            $table->string('sex')->nullable();
+            $table->decimal('weight', 6, 2)->nullable();
+            $table->string('ethnicity')->nullable();
+            $table->string('bodyType')->nullable();
+            $table->string('bodyGoal')->nullable();
+            $table->string('bloodPressure')->nullable();
+            $table->string('bloodSugar')->nullable();
+            $table->boolean('isGoogle')->default(0);
             $table->boolean('isPremium')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
