@@ -62,20 +62,28 @@ class CustomController extends Controller
      */
     public function update(Request $request, Custom $custom)
     {
-        $custom->user_id = $request->user_id ?? $custom->user_id;
-        $custom->name = $request->name ?? $custom->name;
-        $custom->description = $request->description ?? $custom->description;
-        $custom->calories = $request->calories ?? $custom->calories;
-        $custom->carbohydrate = $request->carbohydrate ?? $custom->carbohydrate;
-        $custom->protein = $request->protein ?? $custom->protein;
-        $custom->fat = $request->fat ?? $custom->fat;
-        $custom->sodium = $request->sodium?? $custom->sodium;
-        $custom->volume = $request->volume?? $custom->volume;
-        $custom->save();
+        // Validate the incoming request
+        $validatedData = $request->validate([
+            'user_id' => 'sometimes|integer',
+            'name' => 'sometimes|string|max:255',
+            'description' => 'sometimes|string|max:255',
+            'calories' => 'sometimes|numeric',
+            'carbohydrate' => 'sometimes|numeric',
+            'protein' => 'sometimes|numeric',
+            'fat' => 'sometimes|numeric',
+            'sodium' => 'sometimes|numeric',
+            'volume' => 'sometimes|numeric',
+        ]);
+
+       // Fill the custom model with validated data, only updating provided fields
+       $custom->fill($validatedData);
+        
+       // Save the changes to the database
+       $custom->save();
 
         return response()->json([
-            'message'=>'Meal Updated',
-            'Meal'=> $custom
+            'message' => 'Meal Updated',
+            'Meal' => $custom
         ], 200);
     }
 
@@ -86,7 +94,9 @@ class CustomController extends Controller
     {
         return response()->json([
             'message'=>'Meal Deleted',
-            'meal'=> $custom->delete()
+            'Delete Sucess?'=> $custom->delete(),
+            'Deleted Meal'=> $custom
+            
         ], 200);
     }
 }

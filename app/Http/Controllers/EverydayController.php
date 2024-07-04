@@ -37,7 +37,7 @@ class EverydayController extends Controller
         $everyday->protein = $request->protein;
         $everyday->fat = $request->fat;
         $everyday->sodium = $request->sodium;
-        $everyday->volume = $request->volume;
+        $everyday->volume = $request->volume ?? 0;
         $everyday->save();
 
         return response()->json([
@@ -75,7 +75,8 @@ class EverydayController extends Controller
     {
         return response()->json([
             'message'=>'Meal Deleted',
-            'Meal'=> $everyday->delete()
+            'Delete Success?'=>$everyday->delete(),
+            'Deleted Meal'=> $everyday,
         ], 200);
     }
 

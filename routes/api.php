@@ -58,15 +58,15 @@ Route::apiResource('/everydays', EverydayController::class);
 Route::post('/everydays/magic', [EverydayController::class, 'saveAnalyticsAndClearMeals']);//will gather all the user_id and perform operation for all of them, no need to pass any parameter
 Route::post('/everydays/{user_id}', [EverydayController::class, 'saveToAnalytics']);//will save the sum of data for provided user to analytics and delete the user specific meals in everyday table
 Route::get('/everydays/home/{user_id}',[EverydayController::class,'getHome']);
-// Route::delete('/everydays/{everydayid}',[EverydayController::class,'destroy']);//for deleting specific meal in everyday table
 Route::delete('/ everydays/destroy/{user_id}', [EverydayController::class, 'destroyAll']);//for deleting all the user specific meals in everyday table
 // Route::get('/everydays',[EverydayController::class,'index']);
 // Route::post('/everydays',[EverydayController::class,'store']);
 // Route::get('/everydays/{user_id}',[EverydayController::class,'show']);
+// Route::delete('/everydays/{everydayid}',[EverydayController::class,'destroy']);//for deleting specific meal in everyday table
 
 
 Route::apiResource('/analytics', AnalyticController::class);
-Route::get('/analytics', [AnalyticController::class, 'index']);
+//Route::get('/analytics', [AnalyticController::class, 'index']);
 // Route::post('/analytics',[AnalyticController::class,'store']);
 // Route::get('/analytics/{user_id}',[AnalyticController::class,'show']);
 // Route::delete('/analytics/{user_id}',[AnalyticController::class,'destroy']);
