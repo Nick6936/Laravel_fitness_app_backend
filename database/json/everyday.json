@@ -1,0 +1,49 @@
+[
+    {
+        "user_id": 1,
+        "name": "White Truffles(100gm)",
+        "calories": 31,
+        "carbohydrate": 2,
+        "protein": 4,
+        "fat": 0.5,
+        "sodium": 0
+    },
+    {
+        "user_id": 1,
+        "name": "Matsutake Mushrooms(100gm)",
+        "calories": 28,
+        "carbohydrate": 5.1,
+        "protein": 1.9,
+        "fat": 0.5,
+        "sodium": 5
+    },
+    {
+        "user_id": 1,
+        "name": "Densuke Watermelon(100gm)",
+        "calories": 60,
+        "carbohydrate": 15.6,
+        "protein": 1,
+        "fat": 0.4,
+        "sodium": 2,
+        "volume":92
+    },
+    {
+        "user_id": 1,
+        "name": "Bluefin Tuna(100gm)",
+        "calories": 144,
+        "carbohydrate": 0,
+        "protein": 23,
+        "fat": 5,
+        "sodium": 39
+    },
+    {
+        "user_id": 1,
+        "name": "Caviar(100gm)",
+        "calories": 264,
+        "carbohydrate": 4,
+        "protein": 25,
+        "fat": 18,
+        "sodium": 15.00
+    }
+    
+]

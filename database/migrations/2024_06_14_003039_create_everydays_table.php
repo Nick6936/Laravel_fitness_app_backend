@@ -21,7 +21,7 @@ return new class extends Migration
             $table->decimal('fat', 5, 2);
             $table->decimal('sodium', 5, 2);
             $table->decimal('volume', 7, 2)->default(0);
-            $table->timestamps();
+           
         });
     }
 

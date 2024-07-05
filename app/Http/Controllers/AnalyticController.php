@@ -33,6 +33,7 @@ class AnalyticController extends Controller
         $analytic->fat = $request->fat;
         $analytic->sodium = $request->sodium;
         $analytic->volume = $request->volume;
+        $analytic->steps = $request->steps;
         $analytic->save();
 
         return response()->json([
