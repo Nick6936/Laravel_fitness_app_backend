@@ -19,4 +19,9 @@ class Analytic extends Model
         'volume',
         'steps'
     ];
+
+    protected $dates = [
+        'created_at',
+        'updated_at'
+    ];
 }
