@@ -91,44 +91,46 @@ class EverydayController extends Controller
     //     ], 200);
     // }
 
-    public function saveAnalyticsAndClearMeals()
-    {
-        // Get all user IDs
-        $userIds = User::pluck('user_id');
 
-        // Iterate through each user ID
-        foreach ($userIds as $userId) {
-            // Calculate totals for the user's daily meals
-            $totals = Everyday::where('user_id', $userId)
-                ->select(DB::raw('
-                    SUM(calories) as total_calories,
-                    SUM(carbohydrate) as total_carbohydrate,
-                    SUM(protein) as total_protein,
-                    SUM(fat) as total_fat,
-                    SUM(sodium) as total_sodium
-                    SUM(volume) as total_volume
-                '))
-                ->first();
+    // automated refresh method(doesnt work now)
+    // public function saveAnalyticsAndClearMeals()
+    // {
+    //     // Get all user IDs
+    //     $userIds = User::pluck('user_id');
 
-            // Create a new record in the analytics table
-            Analytic::create([
-                'user_id' => $userId,
-                'calories' => $totals->total_calories ?? 0,
-                'carbohydrate' => $totals->total_carbohydrate ?? 0,
-                'protein' => $totals->total_protein ?? 0,
-                'fat' => $totals->total_fat ?? 0,
-                'sodium' => $totals->total_sodium ?? 0,
-                'volume' => $totals->total_volume ?? 0
-            ]);
+    //     // Iterate through each user ID
+    //     foreach ($userIds as $userId) {
+    //         // Calculate totals for the user's daily meals
+    //         $totals = Everyday::where('user_id', $userId)
+    //             ->select(DB::raw('
+    //                 SUM(calories) as total_calories,
+    //                 SUM(carbohydrate) as total_carbohydrate,
+    //                 SUM(protein) as total_protein,
+    //                 SUM(fat) as total_fat,
+    //                 SUM(sodium) as total_sodium
+    //                 SUM(volume) as total_volume
+    //             '))
+    //             ->first();
 
-            // Delete all daily meals for the current user
-            Everyday::where('user_id', $userId)->delete();
-        }
+    //         // Create a new record in the analytics table
+    //         Analytic::create([
+    //             'user_id' => $userId,
+    //             'calories' => $totals->total_calories ?? 0,
+    //             'carbohydrate' => $totals->total_carbohydrate ?? 0,
+    //             'protein' => $totals->total_protein ?? 0,
+    //             'fat' => $totals->total_fat ?? 0,
+    //             'sodium' => $totals->total_sodium ?? 0,
+    //             'volume' => $totals->total_volume ?? 0
+    //         ]);
 
-        return response()->json([
-            'message' => 'Analytics created and daily meals cleared for all users.'
-        ], 200);
-    }
+    //         // Delete all daily meals for the current user
+    //         Everyday::where('user_id', $userId)->delete();
+    //     }
+
+    //     return response()->json([
+    //         'message' => 'Analytics created and daily meals cleared for all users.'
+    //     ], 200);
+    // }
     
     //code to calculate sum of everyday table and send the data to analytics. phased out as saveAnalyticsAndClearMeals() will do it for you
     public function saveToAnalytics($user_id, Request $request)
