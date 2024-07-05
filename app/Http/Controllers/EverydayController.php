@@ -131,7 +131,7 @@ class EverydayController extends Controller
     }
     
     //code to calculate sum of everyday table and send the data to analytics. phased out as saveAnalyticsAndClearMeals() will do it for you
-    public function saveToAnalytics($user_id)
+    public function saveToAnalytics($user_id, Request $request)
     {
         // Calculate the sums
         $totals = Everyday::where('user_id', $user_id)
@@ -155,7 +155,8 @@ class EverydayController extends Controller
                 'protein' => $totals->total_protein,
                 'fat' => $totals->total_fat,
                 'sodium' => $totals->total_sodium,
-                'volume' => $totals->total_volume ?? 0
+                'volume' => $totals->total_volume ?? 0,
+                'steps' =>$request->steps ?? 0,
             ]
         );
 
@@ -163,7 +164,7 @@ class EverydayController extends Controller
         Everyday::where('user_id', $user_id)->delete();
 
         return response()->json([
-            'message' => 'Nutrient summary saved to analytics successfully',
+            'message' => 'Nutrient summary and Step Count saved to analytics successfully',
             'analytic' => $analytic
         ], 200);
     }
@@ -188,7 +189,7 @@ class EverydayController extends Controller
             'Total Protein' => $totals->total_protein ?? 0,
             'Total Fat' => $totals->total_fat ?? 0,
             'Total Sodium' => $totals->total_sodium ?? 0,
-            'Total Volume' => $totals->total_volume ?? 0 . 'ml'
+            'Total Volume' => $totals->total_volume ?? 0 
         ];
     }
 
