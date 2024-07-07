@@ -18,7 +18,8 @@ class Custom extends Model
         'protein',
         'fat',
         'sodium',
-        'volume'
+        'volume',
+        'photo_name'
     ];
     
 }

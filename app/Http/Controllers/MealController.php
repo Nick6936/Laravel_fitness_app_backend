@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Meal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 class MealController extends Controller
 {
@@ -25,22 +27,52 @@ class MealController extends Controller
      */
     public function store(Request $request)
     {
-        $meal = new Meal;
-        $meal->user_id = $request->user_id ?? 0;
-        $meal->name = $request->name;
-        $meal->description = $request->description ?? NULL;
-        $meal->calories = $request->calories;
-        $meal->carbohydrate = $request->carbohydrate;
-        $meal->protein = $request->protein;
-        $meal->fat = $request->fat;
-        $meal->sodium = $request->sodium;
-        $meal->volume = $request->volume ?? 0;
-        $meal->save();
+        try {
+            $validatedData = $request->validate([
+                'user_id' => 'nullable|integer',
+                'name' => 'required|string|max:255',
+                'description' => 'nullable|string',
+                'calories' => 'required|numeric',
+                'carbohydrate' => 'required|numeric',
+                'protein' => 'required|numeric',
+                'fat' => 'required|numeric',
+                'sodium' => 'required|numeric',
+                'volume' => 'nullable|numeric',
+                'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
+            ]);
 
-        return response()->json([
-            'message'=>'New Meal Added',
-            'meal'=> $meal
-        ], 200);
+            $photoName = null;
+            if ($request->hasFile('photo')) {
+                $photoPath = $request->file('photo')->store('public/meal-photos');
+                $photoName = basename($photoPath);
+            }
+
+            $meal = Meal::create([
+                'user_id' => $validatedData['user_id'] ?? 0,
+                'name' => $validatedData['name'],
+                'description' => $validatedData['description'] ?? null,
+                'calories' => $validatedData['calories'],
+                'carbohydrate' => $validatedData['carbohydrate'],
+                'protein' => $validatedData['protein'],
+                'fat' => $validatedData['fat'],
+                'sodium' => $validatedData['sodium'],
+                'volume' => $validatedData['volume'] ?? 0,
+                'photo_name' => $photoName
+            ]);
+
+            return response()->json([
+                'message' => 'New Meal Added',
+                'meal' => $meal
+            ], 201);
+
+        } catch (\Exception $e) {
+            Log::error('Error adding meal: ' . $e->getMessage());
+
+            return response()->json([
+                'error' => 'Failed to add new meal',
+                'message' => $e->getMessage()
+            ], 500);
+        }
     }
 
     /**
@@ -59,16 +91,45 @@ class MealController extends Controller
      */
     public function update(Request $request, Meal $meal)
     {
-        $meal->user_id = $request->user_id ?? $meal->user_id;
-        $meal->name = $request->name ?? $meal->name;
-        $meal->description = $request->description?? NULL ?? $meal->name;
-        $meal->calories = $request->calories ?? $meal->calories;
-        $meal->carbohydrate = $request->carbohydrate ?? $meal->carbohydrate;
-        $meal->protein = $request->protein ?? $meal->protein;
-        $meal->fat = $request->fat ?? $meal->fat;
-        $meal->sodium = $request->sodium?? $meal->sodium;
-        $meal->volume = $request->volume?? $meal->volume;
-        $meal->save();
+        try {
+            $validatedData = $request->validate([
+                'user_id' => 'nullable|integer',
+                'name' => 'nullable|string|max:255',
+                'description' => 'nullable|string',
+                'calories' => 'nullable|numeric',
+                'carbohydrate' => 'nullable|numeric',
+                'protein' => 'nullable|numeric',
+                'fat' => 'nullable|numeric',
+                'sodium' => 'nullable|numeric',
+                'volume' => 'nullable|numeric',
+                'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
+            ]);
+
+            $meal->update($validatedData);
+
+            if ($request->hasFile('photo')) {
+                if ($meal->photo_name) {
+                    Storage::delete('public/meal-photos/' . $meal->photo_name);
+                }
+
+                $photoPath = $request->file('photo')->store('public/meal-photos');
+                $meal->photo_name = basename($photoPath);
+                $meal->save();
+            }
+
+            return response()->json([
+                'message' => 'Meal updated successfully',
+                'meal' => $meal
+            ], 200);
+
+        } catch (\Exception $e) {
+            Log::error('Error updating meal: ' . $e->getMessage());
+
+            return response()->json([
+                'error' => 'Failed to update meal',
+                'message' => $e->getMessage()
+            ], 500);
+        }
     }
 
     /**
@@ -76,6 +137,24 @@ class MealController extends Controller
      */
     public function destroy(Meal $meal)
     {
-        //
+        try {
+            if ($meal->photo_name) {
+                Storage::delete('public/meal-photos/' . $meal->photo_name);
+            }
+
+            $meal->delete();
+
+            return response()->json([
+                'message' => 'Meal deleted successfully'
+            ], 200);
+
+        } catch (\Exception $e) {
+            Log::error('Error deleting meal: ' . $e->getMessage());
+
+            return response()->json([
+                'error' => 'Failed to delete meal',
+                'message' => $e->getMessage()
+            ], 500);
+        }
     }
 }
