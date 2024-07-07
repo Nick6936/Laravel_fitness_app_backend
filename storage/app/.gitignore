@@ -1,3 +1,6 @@
-*
-!public/
-!.gitignore
+# Ignore everything in the storage/app/ directory
+/public
+
+# Except these folders and files
+!/seeder_photos/
+!/seeder_photos/**   # Include all files and subdirectories inside seeder_photos

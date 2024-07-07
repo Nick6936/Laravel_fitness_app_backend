@@ -40,7 +40,7 @@ class MealSeeder extends Seeder
             // Check if photo attribute is set and not empty
             if (isset($mealData->photo) && !empty($mealData->photo)) {
                 // Define the path to the seeder_photos folder
-                $photoPath = base_path('storage/app/public/seeder_photos/' . $mealData->photo);
+                $photoPath = base_path('storage/app/seeder_photos/' . $mealData->photo);
 
                 // Check if the photo file exists
                 if (File::exists($photoPath)) {
