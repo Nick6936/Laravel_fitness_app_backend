@@ -6,7 +6,8 @@
     "carbohydrate": "89",
     "protein": "8.5",
     "fat": "0.9",
-    "sodium": "3.2"
+    "sodium": "3.2",
+     "photo": "rice_bowl.png"
   },
   {
     "name": "Dal(1 Bowl)",
@@ -15,7 +16,8 @@
     "carbohydrate": "34",
     "protein": "14",
     "fat": "4.2",
-    "sodium": "431"
+    "sodium": "431",
+    "photo": "daal_bowl.png"
   },
   {
     "name": "Cauliflower(287.5gm)" ,
