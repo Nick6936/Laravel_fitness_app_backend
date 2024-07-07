@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 
 class UserSeeder extends Seeder
 {
@@ -15,9 +16,9 @@ class UserSeeder extends Seeder
     {
         // File path to the photo in your seeder_photos directory
         $photoPath = 'seeder_photos/Yujan_Bhattarai.jpg';
-        
-        // Check if the photo file exists
-        if (Storage::disk('public')->exists($photoPath)) {
+
+        // Check if the photo file exists in the 'local' disk
+        if (Storage::disk('local')->exists($photoPath)) {
             // Create the user with photo
             $user = User::create([
                 'name' => 'Yuzan Bhattarai',
@@ -37,10 +38,12 @@ class UserSeeder extends Seeder
 
             // Move the photo to user's photo storage location
             Storage::disk('public')->copy($photoPath, 'user-photos/' . basename($photoPath));
+
+            $this->command->info('User seeded successfully with photo.');
         } else {
             // Handle the case where the photo file does not exist
             $this->command->warn("Photo file '$photoPath' not found. User seeded without photo.");
-            
+
             // Create the user without photo
             $user = User::create([
                 'name' => 'Yuzan Bhattarai',
@@ -56,8 +59,8 @@ class UserSeeder extends Seeder
                 'bloodPressure' => '120/80',
                 'bloodSugar' => '100',
             ]);
-        }
 
-        $this->command->info('User seeded successfully.');
+            $this->command->info('User seeded successfully without photo.');
+        }
     }
 }
