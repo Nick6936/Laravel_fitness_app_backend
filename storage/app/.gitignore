@@ -1,6 +1,6 @@
-# Ignore everything in the storage/app/ directory
-/public
+# Ignore the entire public folder and its contents
+/public/
 
-# Except these folders and files
+# Allow the seeder_photos folder and its contents
 !/seeder_photos/
 !/seeder_photos/**   # Include all files and subdirectories inside seeder_photos
