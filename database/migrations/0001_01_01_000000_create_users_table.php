@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('bloodSugar')->nullable();
             $table->boolean('isGoogle')->default(0);
             $table->boolean('isPremium')->default(0);
+            $table->string('photo_name')->nullable();
             $table->rememberToken();
             
         });

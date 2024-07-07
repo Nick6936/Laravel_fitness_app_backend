@@ -36,6 +36,7 @@ class UserRegisterRequest extends FormRequest
             'bloodSugar' => 'nullable|sometimes|string',
             'isGoogle' => 'nullable|sometimes|boolean',
             'isPremium' => 'nullable|sometimes|boolean',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
         ];
     }
 }

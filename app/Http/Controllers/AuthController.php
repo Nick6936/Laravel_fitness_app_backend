@@ -7,11 +7,22 @@ use App\Models\User;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRegisterRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
-    public function register(UserRegisterRequest $request){
-        $validatedData = $request->validated();// gets data from UserRegisterRequest in App\Http\Requests\UserRegisterRequest
+    public function register(UserRegisterRequest $request)
+{
+    try {
+        $validatedData = $request->validated();
+
+        // Handle photo upload
+        $photoName = null;
+        if ($request->hasFile('photo')) {
+            $photoPath = $request->file('photo')->store('public/user-photos');
+            $photoName = basename($photoPath);
+        }
 
         $user = User::create([
             'name' => $validatedData['name'],
@@ -28,10 +39,23 @@ class AuthController extends Controller
             'bloodSugar' => $validatedData['bloodSugar'] ?? null,
             'isGoogle' => $validatedData['isGoogle'] ?? 0,
             'isPremium' => $validatedData['isPremium'] ?? 0,
+            'photo_name' => $photoName,
         ]);
+
         $token = auth('api')->login($user);
         return $this->respondWithToken($token);
+
+    } catch (\Exception $e) {
+        // Log the exception for debugging if needed
+        Log::error('Error registering user: ' . $e->getMessage());
+
+        return response()->json([
+            'error' => 'Failed to register user',
+            'message' => $e->getMessage()
+        ], 500);
     }
+}
+
     
     public function login()
     {
@@ -101,7 +125,8 @@ class AuthController extends Controller
             'bloodPressure' => 'nullable|string',
             'bloodSugar' => 'nullable|string',
             'isGoogle' => 'nullable|boolean',
-            'isPremium' => 'nullable|boolean'
+            'isPremium' => 'nullable|boolean',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
         ]);
 
         $user->update(array_merge($user->only([
@@ -110,12 +135,31 @@ class AuthController extends Controller
             'password' => isset($validatedData['password']) ? bcrypt($validatedData['password']) : $user->password,
         ]));
 
+        // Handle photo update
+    if ($request->hasFile('photo')) {
+        // Delete old photo if exists
+        if ($user->photo_name) {
+            Storage::delete('public/user-photos/' . $user->photo_name);
+        }
+
+        // Store new photo
+        $photoPath = $request->file('photo')->store('public/user-photos');
+        $user->photo_name = basename($photoPath);
+        $user->save();
+    }
+
         return response()->json(['message' => 'User updated successfully', 'user' => $user]);
     }
 
     public function deleteAccount()
     {
         $user = auth('api')->user();
+
+        // Delete user's photo from storage if it exists
+    if ($user->photo_name) {
+        Storage::delete('public/user-photos/' . $user->photo_name);
+    }
+
         $user->delete();
 
         return response()->json(['message' => 'User deleted successfully']);
