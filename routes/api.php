@@ -47,7 +47,7 @@ Route::apiResource('/meals', MealController::class);
 Route::apiResource('/customs', CustomController::class);
 // Route::get('/customs',[CustomController::class,'index']);
 // Route::post('/customs',[CustomController::class,'store']);
-// Route::get('/customs/{u }',[CustomController::class,'show']);
+// Route::get('/customs/{user_id }',[CustomController::class,'show']);
 // Route::put('/customs/{custom}',[CustomController::class,'update']);
 // Route::delete('/customs/{custom}',[CustomController::class,'destroy']);
 

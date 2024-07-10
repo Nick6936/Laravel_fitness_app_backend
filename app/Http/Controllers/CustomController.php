@@ -12,7 +12,7 @@ class CustomController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $customs = Custom::get();
 
@@ -78,16 +78,27 @@ class CustomController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($user_id)
+    public function show(Request $request, $user_id)
     {
-        $customs = Custom::where('user_id', $user_id)->get();
-        //$customs = Custom::whereIn('user_id', [$user_id, 0])->get();
-        
+        $searchKey = $request->query('searchKey');
+
+        if ($searchKey) {
+            // Perform search logic based on name
+            $customs = Custom::where('user_id', $user_id)
+                             ->where('name', 'LIKE', "{$searchKey}%")
+                             ->orderBy('name')
+                             ->get();
+        } else {
+            $customs = Custom::where('user_id', $user_id)->get();
+        }
+
         return response()->json([
-            'message'=>'Requested Meals',
-            'Meals'=> $customs
+            'message' => 'Requested Meals',
+            'Meals' => $customs
         ], 200);
     }
+
+
 
     /**
      * Update the specified resource in storage.
