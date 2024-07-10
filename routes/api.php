@@ -40,7 +40,7 @@ Route::apiResource('/users', UserController::class);
 // Route::get('/users',[UserController::class,'index']);
 
 Route::apiResource('/meals', MealController::class);
-// Route::get('/meals',[MealController::class,'index']);
+ Route::get('/meals/{search_key}',[MealController::class,'index']);
 // Route::post('/meals',[MealController::class,'store']);
 // Route::get('/meals/{meal}',[MealController::class,'show']);
 // Route::put('/meals/{meal}',[MealController::class,'update']);
