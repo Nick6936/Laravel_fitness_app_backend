@@ -6,7 +6,8 @@
     "carbohydrate": "89",
     "protein": "8.5",
     "fat": "0.9",
-    "sodium": "3.2"
+    "sodium": "3.2",
+    "photo": "rice_bowl.png"
   },
   {
     "name": "Dal(1 Bowl)",
@@ -15,14 +16,15 @@
     "carbohydrate": "34",
     "protein": "14",
     "fat": "4.2",
-    "sodium": "431"
+    "sodium": "431",
+    "photo": "daal_bowl.png"
   },
   {
-    "name": "Cauliflower(287.5gm)" ,
+    "name": "Cauliflower(287.5gm)",
     "description": "Cauliflower referred ta as 'kauli'in Nepali is poppular and versitle commonly used vegetable.",
     "calories": "66",
     "carbohydrate": "12",
-    "protein": "5.5",  
+    "protein": "5.5",
     "fat": "1.3",
     "sodium": "43"
   },
@@ -151,7 +153,7 @@
     "protein": "0.2",
     "fat": "0.2",
     "sodium": "0.9"
-  } ,
+  },
   {
     "name": "Banana(1 peice)",
     "description": "Banana are a rich source of potassium, vitamins, and fiber, making them a healthy snack choice.",
@@ -187,7 +189,7 @@
     "protein": "18",
     "fat": "15",
     "sodium": "565"
-  } ,
+  },
   {
     "name": "Pork Chowmein(1 plate)",
     "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood",
@@ -270,57 +272,309 @@
     "sodium": "62"
   },
   {
-    "name":"Cow Milk(1 cup)",
+    "name": "Cow Milk(1 cup)",
     "description": null,
-    "calories":"150",
-    "carbohydrate":"12",
-    "protein":"8",
-    "fat":"8",
-    "sodium":"107"
+    "calories": "150",
+    "carbohydrate": "12",
+    "protein": "8",
+    "fat": "8",
+    "sodium": "107"
   },
   {
-    "name":"Buffalo Milk(1 cup)",
+    "name": "Buffalo Milk(1 cup)",
     "description": "Bhasisi ko dudh",
-    "calories":"237",
-    "carbohydrate":"12",
-    "protein":"9",
-    "fat":"17",
-    "sodium":"120"
+    "calories": "237",
+    "carbohydrate": "12",
+    "protein": "9",
+    "fat": "17",
+    "sodium": "120"
   },
   {
-    "name":"Mango Juice(200ml)",
+    "name": "Mango Juice(200ml)",
     "description": null,
-    "calories":"130",
-    "carbohydrate":"32",
-    "protein":"0.2",
-    "fat":"0",
-    "sodium":"56"
+    "calories": "130",
+    "carbohydrate": "32",
+    "protein": "0.2",
+    "fat": "0",
+    "sodium": "56"
   },
   {
-    "name":"Orange Juice (200ml)",
+    "name": "Orange Juice (200ml)",
     "description": null,
-    "calories":"112",
-    "carbohydrate":"26",
-    "protein":"1.7",
-    "fat":"0.5",
-    "sodium":"2.5"
+    "calories": "112",
+    "carbohydrate": "26",
+    "protein": "1.7",
+    "fat": "0.5",
+    "sodium": "2.5"
   },
   {
-    "name":"Apple Juice(200ml)",
+    "name": "Apple Juice(200ml)",
     "description": null,
-    "calories":"114",
-    "carbohydrate":"28",
-    "protein":"0.3",
-    "fat":"0.3",
-    "sodium":"9.9"
+    "calories": "114",
+    "carbohydrate": "28",
+    "protein": "0.3",
+    "fat": "0.3",
+    "sodium": "9.9"
   },
   {
-    "name":"Pineapple Juice(200ml)",
+    "name": "Pineapple Juice(200ml)",
     "description": null,
-    "calories":"131",
-    "carbohydrate":"30",
-    "protein":"0.7",
-    "fat":"0.2",
-    "sodium":"4"
+    "calories": "131",
+    "carbohydrate": "30",
+    "protein": "0.7",
+    "fat": "0.2",
+    "sodium": "4"
+  },
+  {
+    "name": "Sel Roti(1 piece)",
+    "description": "A traditional homemade, sweet, ring-shaped rice bread/doughnut prepared during the festivals of Dashain and Tihar.",
+    "calories": "150",
+    "carbohydrate": "28",
+    "protein": "3",
+    "fat": "4",
+    "sodium": "50"
+  },
+  {
+    "name": "Thukpa(1 bowl)",
+    "description": "A noodle soup that originated in Tibet and is popular in Nepal, often made with meat, vegetables, and a flavorful broth.",
+    "calories": "300",
+    "carbohydrate": "50",
+    "protein": "15",
+    "fat": "5",
+    "sodium": "700"
+  },
+  {
+    "name": "Gundruk(100gm)",
+    "description": "Fermented leafy green vegetable, often used as a side dish or in soups and curries.",
+    "calories": "50",
+    "carbohydrate": "8",
+    "protein": "3",
+    "fat": "1",
+    "sodium": "600"
+  },
+  {
+    "name": "Sukuti(50gm)",
+    "description": "Dried meat, typically buffalo, which is marinated with spices and then sun-dried, often served as a snack or with beaten rice.",
+    "calories": "150",
+    "carbohydrate": "5",
+    "protein": "25",
+    "fat": "2",
+    "sodium": "400"
+  },
+  {
+    "name": "Yomari(1 piece)",
+    "description": "A traditional Newari dessert made from rice flour dough shaped like a fish, filled with sweetened sesame seeds or molasses.",
+    "calories": "180",
+    "carbohydrate": "35",
+    "protein": "3",
+    "fat": "3",
+    "sodium": "50"
+  },
+  {
+    "name": "Kwati(1 bowl)",
+    "description": "A mixed bean soup, traditionally consumed during the festival of Janai Purnima, made with a variety of beans and flavored with spices.",
+    "calories": "250",
+    "carbohydrate": "40",
+    "protein": "12",
+    "fat": "5",
+    "sodium": "500"
+  },
+  {
+    "name": "Bara(1 piece)",
+    "description": "A traditional Newari snack made from lentil batter, often fried and served with chutney or curry.",
+    "calories": "150",
+    "carbohydrate": "25",
+    "protein": "7",
+    "fat": "4",
+    "sodium": "200"
+  },
+  {
+    "name": "Chatamari(1 piece)",
+    "description": "Often referred to as Nepali pizza, this is a traditional Newari dish made from rice flour batter and topped with meat, vegetables, and spices.",
+    "calories": "250",
+    "carbohydrate": "40",
+    "protein": "10",
+    "fat": "8",
+    "sodium": "500"
+  },
+  {
+    "name": "Juju Dhau(100gm)",
+    "description": "Known as the 'king of curds,' this is a rich and creamy yogurt made in the town of Bhaktapur.",
+    "calories": "200",
+    "carbohydrate": "20",
+    "protein": "8",
+    "fat": "10",
+    "sodium": "100 "
+  },
+  {
+    "name": "Kheer(1 bowl-200g)",
+    "description": "A rice pudding made with milk, sugar, and cardamom, often garnished with nuts and raisins.",
+    "calories": "250",
+    "carbohydrate": "45",
+    "protein": "7",
+    "fat": "6",
+    "sodium": "150"
+  },
+  {
+    "name": "Bhatmas Sandeko(150g)",
+    "description": "A spicy and tangy salad made from roasted soybeans mixed with onions, tomatoes, and spices.",
+    "calories": "200",
+    "carbohydrate": "15",
+    "protein": "15",
+    "fat": "10",
+    "sodium": "500"
+  },
+  {
+    "name": "Chutney(1 tablespoon-20g)",
+    "description": "A spicy and tangy condiment made from a variety of ingredients such as tomatoes, cilantro, and spices.",
+    "calories": "20",
+    "carbohydrate": "4",
+    "protein": "0",
+    "fat": "0",
+    "sodium": "100"
+  },
+  {
+    "name": "Dahi Chiura(1 bowl-250g)",
+    "description": "A simple and traditional dish made of beaten rice mixed with yogurt, often eaten during festivals.",
+    "calories": "300",
+    "carbohydrate": "55",
+    "protein": "10",
+    "fat": "5",
+    "sodium": "150"
+  },
+  {
+    "name": "Buff Chhoila(150g)",
+    "description": "A traditional Newari dish made of spiced grilled buffalo meat, often served with beaten rice.",
+    "calories": "250",
+    "carbohydrate": "10",
+    "protein": "30",
+    "fat": "10",
+    "sodium": "700"
+  },
+  {
+    "name": "Tongba(200ml)",
+    "description": "A traditional alcoholic beverage made from fermented millet, typically consumed hot.",
+    "calories": "150",
+    "carbohydrate": "20",
+    "protein": "2",
+    "fat": "0",
+    "sodium": "10"
+  },
+  {
+    "name": "Dhido(250g)",
+    "description": "A traditional Nepali porridge made from buckwheat or millet flour, usually served with gundruk, achar, and curd.",
+    "calories": "200",
+    "carbohydrate": "40",
+    "protein": "5",
+    "fat": "2",
+    "sodium": "50"
+  },
+  {
+    "name": "Chiura(100g)",
+    "description": "Beaten rice, often eaten as a snack or with curd and curry.",
+    "calories": "360",
+    "carbohydrate": "80",
+    "protein": "8",
+    "fat": "1",
+    "sodium": "10"
+  },
+  {
+    "name": "Bitter Gourd(93g)",
+    "description": "A bitter vegetable used in curries and stir-fries, known for its medicinal properties.",
+    "calories": "20",
+    "carbohydrate": "4",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "6"
+  },
+  {
+    "name": "Radish(100g)",
+    "description": "Used in salads, pickles, and curries.",
+    "calories": "16",
+    "carbohydrate": "3",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "39"
+  },
+  {
+    "name": "Pumpkin(116g)",
+    "description": "Used in various dishes including curries and soups.",
+    "calories": "30",
+    "carbohydrate": "8",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "1"
+  },
+  {
+    "name": "Okra(Bhindi)-100g",
+    "description": "A mucilaginous vegetable used in soups, stews, and stir-fries.",
+    "calories": "33",
+    "carbohydrate": "7",
+    "protein": "2",
+    "fat": "0",
+    "sodium": "7"
+  },
+  {
+    "name": "Bottle Gound(116g)",
+    "description": "A versatile vegetable used in curries and stews.",
+    "calories": "16",
+    "carbohydrate": "4",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "2"
+  },
+  {
+    "name": "Rayo ko Saag(56g)",
+    "description": "A leafy green vegetable commonly used in Nepali cuisine.",
+    "calories": "15",
+    "carbohydrate": "3",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "18"
+  },
+  {
+    "name": "Karkalo Ko Gava(100g)",
+    "description": "The stems of the taro plant, used in various traditional dishes.",
+    "calories": "40",
+    "carbohydrate": "9",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "3"
+  },
+  {
+    "name": "Cucumber(200g)",
+    "description": "A refreshing vegetable often used in salads and pickles.",
+    "calories": "30",
+    "carbohydrate": "6",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "2"
+  },
+  {
+    "name": "Bamboo Shoots(Tama)-100g",
+    "description": "Fermented bamboo shoots used in curries and pickles.",
+    "calories": "40",
+    "carbohydrate": "8",
+    "protein": "2",
+    "fat": "0",
+    "sodium": "600"
+  },
+  {
+    "name": "Sponge Gourd(Ghiraula)-100g",
+    "description": "A soft, sponge-like vegetable used in curries and soups.",
+    "calories": "20",
+    "carbohydrate": "4",
+    "protein": "1",
+    "fat": "0",
+    "sodium": "5"
+  },
+  {
+    "name": "Samosa(1 piece)",
+    "description": "Deep-fried pastry filled with spiced potatoes, peas, and sometimes meat.",
+    "calories": "250",
+    "carbohydrate": "30",
+    "protein": "5",
+    "fat": "12",
+    "sodium": "300"
   }
 ]

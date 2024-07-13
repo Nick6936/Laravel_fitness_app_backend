@@ -16,7 +16,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
 
             MealSeeder::class,
-            CustomSeeder::class
+            CustomSeeder::class,
+            UserSeeder::class,
+            EverydaySeeder::class,
+            AnalyticSeeder::class,
         ]);
     }
 }

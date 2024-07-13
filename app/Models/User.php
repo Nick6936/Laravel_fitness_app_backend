@@ -19,6 +19,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array<int, string>
      */
     protected $primaryKey = 'user_id';
+    public $timestamps = false;
     protected $fillable = [
         'name',
         'age',
@@ -33,6 +34,8 @@ class User extends Authenticatable implements JWTSubject
         'bloodPressure',
         'bloodSugar',
         'isPremium',
+        'isGoogle',
+        'photo_name'
         
         
          

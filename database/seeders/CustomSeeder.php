@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\custom;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class CustomSeeder extends Seeder
 {
@@ -14,19 +15,54 @@ class CustomSeeder extends Seeder
      */
     public function run(): void
     {
-        $json = File::get(path:'database/json/premiumlibrary.json');
-        $customs = collect(json_decode($json));
-        $customs->each(function($custom){
+        $jsonFilePath = database_path('json/premiumlibrary.json');
+
+        // Check if the JSON file exists
+        if (!File::exists($jsonFilePath)) {
+            return;
+        }
+
+        // Read the JSON file content
+        $json = File::get($jsonFilePath);
+
+        // Decode the JSON content into an array of objects
+        $customs = json_decode($json);
+
+        // Check if decoding the JSON content was successful
+        if (!$customs) {
+            return;
+        }
+
+        // Iterate over each meal data
+        foreach ($customs as $customData) {
+            $photoName = null;
+
+            // Check if photo attribute is set and not empty
+            if (isset($customData->photo) && !empty($customData->photo)) {
+                // Define the path to the seeder_photos folder
+                $photoPath = base_path('storage/app/seeder_photos/' . $customData->photo);
+
+                // Check if the photo file exists
+                if (File::exists($photoPath)) {
+                    // Get the base name of the photo file
+                    $photoName = basename($photoPath);
+
+                    // Store photo in public storage under 'custom-photos' directory
+                    Storage::disk('public')->putFileAs('custom-photos', new \Illuminate\Http\File($photoPath), $photoName);
+                }
+            }
+
+            // Create the custom record
             custom::create([
-            'name' => $custom->name,
-            'user_id' => $custom->user_id ?? 0,
-            'description' => $custom->description ?? null,
-            'calories' => $custom->calories,
-            'carbohydrate' => $custom->carbohydrate,
-            'protein' => $custom->protein,
-            'fat' => $custom->fat,
-            'sodium' => $custom->sodium,
-         ]);
-        });
+                'name' => $customData->name,
+                'description' => $customData->description ?? null,
+                'calories' => $customData->calories,
+                'carbohydrate' => $customData->carbohydrate,
+                'protein' => $customData->protein,
+                'fat' => $customData->fat,
+                'sodium' => $customData->sodium,
+                'photo_name' => $photoName // Ensure this matches your database column name
+            ]);
+        }
     }
 }
