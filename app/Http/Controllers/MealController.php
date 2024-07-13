@@ -34,6 +34,7 @@ class MealController extends Controller
         $meal->protein = $request->protein;
         $meal->fat = $request->fat;
         $meal->sodium = $request->sodium;
+        $meal->volume = $request->volume ?? 0;
         $meal->save();
 
         return response()->json([
@@ -66,6 +67,7 @@ class MealController extends Controller
         $meal->protein = $request->protein ?? $meal->protein;
         $meal->fat = $request->fat ?? $meal->fat;
         $meal->sodium = $request->sodium?? $meal->sodium;
+        $meal->volume = $request->volume?? $meal->volume;
         $meal->save();
     }
 

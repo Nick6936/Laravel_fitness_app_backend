@@ -15,8 +15,8 @@ class AnalyticController extends Controller
         $analytics = Analytic::get();
 
         return response()->json([
-            'message'=>'Your Recorded Data',
-            'Datas'=> $analytics
+            'message' => 'Your Recorded Data',
+            'Datas' => $analytics
         ], 200);
     }
 
@@ -32,11 +32,12 @@ class AnalyticController extends Controller
         $analytic->protein = $request->protein;
         $analytic->fat = $request->fat;
         $analytic->sodium = $request->sodium;
+        $analytic->volume = $request->volume;
         $analytic->save();
 
         return response()->json([
-            'message'=>'New Data Added',
-            'Data'=> $analytic
+            'message' => 'New Data Added',
+            'Data' => $analytic
         ], 200);
     }
 
@@ -46,10 +47,10 @@ class AnalyticController extends Controller
     public function show($user_id)
     {
         $analytics = Analytic::where('user_id', $user_id)->get();
-        
+
         return response()->json([
-            'message'=>'Your Accumulated Records',
-            'Records'=> $analytics
+            'message' => 'Your Accumulated Records',
+            'Records' => $analytics
         ], 200);
     }
 

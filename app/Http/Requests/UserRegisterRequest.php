@@ -22,19 +22,20 @@ class UserRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|max:255',
-            'age' => 'required|integer|min:0|max:100',
+            'name' => 'string|max:255',
+            'age' => 'nullable|sometimes|integer|min:0|max:100',
             'email' => 'required|email|unique:users,email',
-            'phone' => 'required',
-            'password' => 'required|string|min:5',
-            'sex' => 'required',
-            'weight' => 'required',
-            'ethnicity' => 'required',
-            'bodyType' => 'required',
-            'bodyGoal' => 'required',
-            'bloodPressure' => 'required',
-            'bloodSugar' => 'required',
-            'isPremium' => 'sometimes|boolean',
+            'phone' => 'nullable|sometimes|string',
+            'password' => 'nullable|sometimes|string|min:5',
+            'sex' => 'nullable|sometimes|string',
+            'weight' => 'nullable|sometimes|string',
+            'ethnicity' => 'nullable|sometimes|string',
+            'bodyType' => 'nullable|sometimes|string',
+            'bodyGoal' => 'nullable|sometimes|string',
+            'bloodPressure' => 'nullable|sometimes|string',
+            'bloodSugar' => 'nullable|sometimes|string',
+            'isGoogle' => 'nullable|sometimes|boolean',
+            'isPremium' => 'nullable|sometimes|boolean',
         ];
     }
 }
