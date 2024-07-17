@@ -536,7 +536,8 @@
     "carbohydrate": "8",
     "protein": "1",
     "fat": "0",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Pumpkin.png"
   },
   {
     "name": "Okra(Bhindi)-100g",
@@ -545,7 +546,8 @@
     "carbohydrate": "7",
     "protein": "2",
     "fat": "0",
-    "sodium": "7"
+    "sodium": "7",
+    "photo": "Okra.png"
   },
   {
     "name": "Bottle Gound(116g)",
@@ -554,7 +556,8 @@
     "carbohydrate": "4",
     "protein": "1",
     "fat": "0",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Bottle_Gourd.png"
   },
   {
     "name": "Rayo ko Saag(56g)",
@@ -563,7 +566,8 @@
     "carbohydrate": "3",
     "protein": "1",
     "fat": "0",
-    "sodium": "18"
+    "sodium": "18",
+    "photo": "Rayo_ko_Saag.png"
   },
   {
     "name": "Karkalo Ko Gava(100g)",
@@ -572,7 +576,8 @@
     "carbohydrate": "9",
     "protein": "1",
     "fat": "0",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Karkalo_Ko_Gava.png"
   },
   {
     "name": "Cucumber(200g)",
@@ -581,7 +586,8 @@
     "carbohydrate": "6",
     "protein": "1",
     "fat": "0",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Cucumber.png"
   },
   {
     "name": "Bamboo Shoots(Tama)-100g",
@@ -590,7 +596,8 @@
     "carbohydrate": "8",
     "protein": "2",
     "fat": "0",
-    "sodium": "600"
+    "sodium": "600",
+    "photo": "Bamboo_Shoot.png"
   },
   {
     "name": "Sponge Gourd(Ghiraula)-100g",
@@ -599,7 +606,8 @@
     "carbohydrate": "4",
     "protein": "1",
     "fat": "0",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Sponge_Gourd.png"
   },
   {
     "name": "Samosa(1 piece)",
@@ -608,7 +616,8 @@
     "carbohydrate": "30",
     "protein": "5",
     "fat": "12",
-    "sodium": "300"
+    "sodium": "300",
+    "photo": "Samosa.png"
   },
   {
     "name": "Pani Puri(6 pieces)",
@@ -617,7 +626,8 @@
     "carbohydrate": "25",
     "protein": "3",
     "fat": "4",
-    "sodium": "300"
+    "sodium": "300",
+    "photo": "Panipuri.png"
   },
   {
     "name": "Aloo Chop(1 piece)",
@@ -626,7 +636,8 @@
     "carbohydrate": "25",
     "protein": "3",
     "fat": "10",
-    "sodium": "250"
+    "sodium": "250",
+    "photo": "Aloochop.png"
   },
   {
     "name": "Sekuwa(200g)",
@@ -635,7 +646,8 @@
     "carbohydrate": "10",
     "protein": "30",
     "fat": "20",
-    "sodium": "600"
+    "sodium": "600",
+    "photo": "Sekuwa.png"
   },
   {
     "name": "Chole Bhature(300g)",
@@ -644,7 +656,8 @@
     "carbohydrate": "60",
     "protein": "15",
     "fat": "15",
-    "sodium": "800"
+    "sodium": "800",
+    "photo": "Chole_Bhature.png"
   },
   {
     "name": "Jeri(1 piece)",
@@ -653,7 +666,8 @@
     "carbohydrate": "35",
     "protein": "1",
     "fat": "6",
-    "sodium": "25"
+    "sodium": "25",
+    "photo": ".png"
   },
   {
     "name": "Salmon Fish(100g)",
@@ -662,7 +676,8 @@
     "carbohydrate": "0",
     "protein": "20",
     "fat": "6",
-    "sodium": "47"
+    "sodium": "47",
+    "photo": ".png"
   },
   {
     "name": "Trout Fish(100g)",
