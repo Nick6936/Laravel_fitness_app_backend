@@ -585,5 +585,743 @@
     "protein": "5",
     "fat": "12",
     "sodium": "300"
+  },
+  {
+    "name": "Pani Puri(6 pieces)",
+    "description": "Crispy hollow puris filled with spiced water, tamarind chutney, and chickpeas.",
+    "calories": "150",
+    "carbohydrate": "25",
+    "protein": "3",
+    "fat": "4",
+    "sodium": "300"
+  },
+  {
+    "name": "Aloo Chop(1 piece)",
+    "description": "Deep-fried potato patties, often served as a snack or appetizer.",
+    "calories": "200",
+    "carbohydrate": "25",
+    "protein": "3",
+    "fat": "10",
+    "sodium": "250"
+  },
+  {
+    "name": "Sekuwa(200g)",
+    "description": "Marinated and grilled meat, typically served with a side of salad and chutney.",
+    "calories": "350",
+    "carbohydrate": "10",
+    "protein": "30",
+    "fat": "20",
+    "sodium": "600"
+  },
+  {
+    "name": "Chole Bhature(300g)",
+    "description": "Spicy chickpea curry served with deep-fried bread.",
+    "calories": "450",
+    "carbohydrate": "60",
+    "protein": "15",
+    "fat": "15",
+    "sodium": "800"
+  },
+  {
+    "name": "Jeri(1 piece)",
+    "description": "Deep-fried sweet pretzel-shaped snack soaked in sugar syrup.",
+    "calories": "200",
+    "carbohydrate": "35",
+    "protein": "1",
+    "fat": "6",
+    "sodium": "25"
+  },
+  {
+    "name": "Salmon Fish(100g)",
+    "description": "An oily fish rich in omega-3 fatty acids, typically grilled, baked, or smoked.",
+    "calories": "142",
+    "carbohydrate": "0",
+    "protein": "20",
+    "fat": "6",
+    "sodium": "47"
+  },
+  {
+    "name": "Trout Fish(100g)",
+    "description": "A cold-water fish with a delicate flavor, often grilled or baked whole.",
+    "calories": "119",
+    "carbohydrate": "0",
+    "protein": "20",
+    "fat": "4",
+    "sodium": "57"
+  },
+  {
+    "name": "Prawns(100g)",
+    "description": "Large shrimp-like crustaceans, commonly grilled, fried, or used in curries.",
+    "calories": "85",
+    "carbohydrate": "0",
+    "protein": "18",
+    "fat": "1.5",
+    "sodium": "119"
+  },
+  {
+    "name": "Crab(100g-edible portion)",
+    "description": "Crustaceans with tender meat, often steamed, boiled, or used in curries.",
+    "calories": "83",
+    "carbohydrate": "0",
+    "protein": "17",
+    "fat": "1.2",
+    "sodium": "387"
+  },
+  {
+    "name": "Oysters(100g-edible portion)",
+    "description": "Bivalve mollusks with a delicate, briny flavor, often eaten raw or cooked.",
+    "calories": "68",
+    "carbohydrate": "4",
+    "protein": "7",
+    "fat": "2",
+    "sodium": "225"
+  },
+  {
+    "name": "Octopus(100g)",
+    "description": "Cephalopods with tender meat, often grilled, boiled, or used in salads.",
+    "calories": "82",
+    "carbohydrate": "4",
+    "protein": "14",
+    "fat": "1",
+    "sodium": "314"
+  },
+  {
+    "name": "Lobster(100g (edible portion)",
+    "description": "Crustaceans with sweet, tender meat, often boiled or grilled.",
+    "calories": "89",
+    "carbohydrate": "1",
+    "protein": "18",
+    "fat": "1.2",
+    "sodium": "414"
+  },
+  {
+    "name": "Papaya(140g)",
+    "description": "Sweet and musky tropical fruit with orange flesh.",
+    "calories": "55",
+    "carbohydrate": "14",
+    "protein": "1.1",
+    "fat": "0.2",
+    "sodium": "8"
+  },
+  {
+    "name": "Guava(100g)",
+    "description": "Tropical fruit with a sweet and tangy flavor.",
+    "calories": "100",
+    "carbohydrate": "20",
+    "protein": "4.2",
+    "fat": "1.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Pineapple(150g)",
+    "description": "Sweet and tangy tropical fruit with yellow flesh.",
+    "calories": "82",
+    "carbohydrate": "22",
+    "protein": "0.9",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Orange(130g)",
+    "description": "Citrus fruit with a sweet and tangy flavor.",
+    "calories": "62",
+    "carbohydrate": "15",
+    "protein": "1.2",
+    "fat": "0.2",
+    "sodium": "0"
+  },
+  {
+    "name": "Watermelon(150g)",
+    "description": "Juicy and refreshing fruit with red flesh and black seeds.",
+    "calories": "46",
+    "carbohydrate": "11",
+    "protein": "0.9",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Pomegranate(250g)",
+    "description": "Sweet and tart fruit with juicy seeds.",
+    "calories": "234",
+    "carbohydrate": "53",
+    "protein": "4.7",
+    "fat": "3.3",
+    "sodium": "5"
+  },
+  {
+    "name": "Litchi(150g)",
+    "description": "Sweet and floral tropical fruit with a white, translucent flesh.",
+    "calories": "12",
+    "carbohydrate": "30",
+    "protein": "1.4",
+    "fat": "0.6",
+    "sodium": "1"
+  },
+  {
+    "name": "Kiwi(76g)",
+    "description": "Tangy and sweet fruit with green flesh and black seeds.",
+    "calories": "46",
+    "carbohydrate": "11",
+    "protein": "0.8",
+    "fat": "0.3",
+    "sodium": "3"
+  },
+  {
+    "name": "Grapes(150g)",
+    "description": "Small, sweet or tart berries typically eaten fresh or dried (raisins).",
+    "calories": "104",
+    "carbohydrate": "27",
+    "protein": "1.1",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Strawberries(150g)",
+    "description": "Sweet and juicy berries with red flesh and seeds on the outside.",
+    "calories": "49",
+    "carbohydrate": "11",
+    "protein": "1",
+    "fat": "0.5",
+    "sodium": "2"
+  },
+  {
+    "name": "Plum(66g)",
+    "description": "Sweet and juicy fruit with a smooth skin and stone pit inside.",
+    "calories": "30",
+    "carbohydrate": "8",
+    "protein": "0.5",
+    "fat": "0.2",
+    "sodium": "0"
+  },
+  {
+    "name": "Dragon Fruit(200g)",
+    "description": "Exotic fruit with vibrant pink or yellow skin and white or pink flesh speckled with tiny black seeds.",
+    "calories": "60",
+    "carbohydrate": "13",
+    "protein": "1",
+    "fat": "0.4",
+    "sodium": "0"
+  },
+  {
+    "name": "Turnip(130g)",
+    "description": "Root vegetable with a slightly sweet and peppery flavor, used in soups, stews, and roasted dishes.",
+    "calories": "36",
+    "carbohydrate": "8",
+    "protein": "1",
+    "fat": "0.1",
+    "sodium": "87"
+  },
+  {
+    "name": "Sisnu(Nettle)-60g",
+    "description": "Wild leafy green with a slightly bitter taste, used in soups and stews.",
+    "calories": "37",
+    "carbohydrate": "7",
+    "protein": "2.4",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Niguro (Fiddlehead Ferns)-35g",
+    "description": "Tender young fern fronds, used in curries and stir-fries.",
+    "calories": "34",
+    "carbohydrate": "6",
+    "protein": "4",
+    "fat": "0.2",
+    "sodium": "1"
+  },
+  {
+    "name": "Peach(30g)",
+    "description": "Leaves of the peach tree, used in traditional medicinal and culinary applications.",
+    "calories": "10",
+    "carbohydrate": "2",
+    "protein": "1",
+    "fat": "0.1",
+    "sodium": "5"
+  },
+  {
+    "name": "Lettuce(36g)",
+    "description": "Crisp, leafy green often used in salads and as a garnish.",
+    "calories": "5",
+    "carbohydrate": "1",
+    "protein": "0.5",
+    "fat": "0.1",
+    "sodium": "7"
+  },
+  {
+    "name": "Pointed Gourd (Parval)-116g",
+    "description": "Green vegetable with a mildly sweet taste, used in curries and stews.",
+    "calories": "24",
+    "carbohydrate": "4",
+    "protein": "1",
+    "fat": "0.1",
+    "sodium": "2"
+  },
+  {
+    "name": "Drumstick (Moringa)-Sajiwan(100g)",
+    "description": "Long, slender pods with a slightly bitter taste, used in soups and curries.",
+    "calories": "37",
+    "carbohydrate": "8",
+    "protein": "2",
+    "fat": "0.2",
+    "sodium": "42"
+  },
+  {
+    "name": "Hyacinth Bean (Hiunde Simi)-100g",
+    "description": "Flat green beans with a slightly sweet taste, used in curries and stir-fries.",
+    "calories": "37",
+    "carbohydrate": "8",
+    "protein": "3",
+    "fat": "0.4",
+    "sodium": "4"
+  },
+  {
+    "name": "Amaranth Leaves (Latte ko Saag)-30g",
+    "description": "Nutrient-rich leafy green with a slightly earthy taste, used in soups and stir-fries.",
+    "calories": "7",
+    "carbohydrate": "1",
+    "protein": "0.9",
+    "fat": "0.1",
+    "sodium": "2"
+  },
+  {
+    "name": "Spring Onion (100g)",
+    "description": "Young onions with a mild flavor, used in salads, soups, and stir-fries.",
+    "calories": "32",
+    "carbohydrate": "7",
+    "protein": "1.8",
+    "fat": "0.2",
+    "sodium": "16 "
+  },
+  {
+    "name": "Snake Gourd (Chichinda)-100g",
+    "description": "Long, slender vegetable with a slightly bitter taste, used in curries and stir-fries.",
+    "calories": "18",
+    "carbohydrate": "4.1",
+    "protein": "1",
+    "fat": "0.1",
+    "sodium": "3"
+  },
+  {
+    "name": "Jackfruit (165g)",
+    "description": "Young, tender jackfruit used as a vegetable in curries and stir-fries.",
+    "calories": "157",
+    "carbohydrate": "38",
+    "protein": "2.8",
+    "fat": "0.6",
+    "sodium": "3"
+  },
+  {
+    "name": "Chayote (Iscus) Leaves(30g)",
+    "description": "Tender leaves of the chayote plant, used in stir-fries and soups.",
+    "calories": "6",
+    "carbohydrate": "1.2",
+    "protein": "0.5",
+    "fat": "0.1",
+    "sodium": "2"
+  },
+  {
+    "name": "Yam (Rato Tarul)-136g",
+    "description": "Starchy root vegetable with a slightly sweet flavor, used in curries and stews.",
+    "calories": "158",
+    "carbohydrate": "37",
+    "protein": "2",
+    "fat": "0.2",
+    "sodium": "13"
+  },
+  {
+    "name": "Sweet Potato (133g)",
+    "description": "Starchy root vegetable with a sweet flavor, used in curries and as a side dish.",
+    "calories": "114",
+    "carbohydrate": "27",
+    "protein": "2.1",
+    "fat": "0.1",
+    "sodium": "73"
+  },
+  {
+    "name": "Roselle (Belchanda)-100g",
+    "description": "Red, tart fruit used in beverages, jams, and traditional medicines.",
+    "calories": "49",
+    "carbohydrate": "11",
+    "protein": "1",
+    "fat": "0.3",
+    "sodium": "6"
+  },
+  {
+    "name": "Soursop (Hanuman Faal)-225g",
+    "description": "Large, green fruit with a spiky skin and sweet, tangy pulp, used in beverages and desserts.",
+    "calories": "148",
+    "carbohydrate": "38",
+    "protein": "2.3",
+    "fat": "0.7",
+    "sodium": "31"
+  },
+  {
+    "name": "Bel (Wood Apple)-150g",
+    "description": "Hard-shelled fruit with a sweet and aromatic pulp, used in beverages and traditional medicine.",
+    "calories": "140",
+    "carbohydrate": "34",
+    "protein": "2",
+    "fat": "0.3",
+    "sodium": "6"
+  },
+  {
+    "name": "Lapsi(50g)",
+    "description": "Small, sour fruit used in pickles, candies, and traditional dishes.",
+    "calories": "30",
+    "carbohydrate": "7.3",
+    "protein": "0.3",
+    "fat": "0.1",
+    "sodium": "1.7"
+  },
+  {
+    "name": "Amla (50g)",
+    "description": "Small, green fruit with a sour taste, rich in vitamin C and used in traditional medicine.",
+    "calories": "22",
+    "carbohydrate": "5",
+    "protein": "0.3",
+    "fat": "0.2",
+    "sodium": "1.3"
+  },
+  {
+    "name": "Mango (150g)",
+    "description": "Sweet, juicy fruit with a tropical flavor, enjoyed fresh or in desserts.",
+    "calories": "99",
+    "carbohydrate": "25",
+    "protein": "1.4",
+    "fat": "0.6",
+    "sodium": "1"
+  },
+  {
+    "name": "Pear (Nashpati)-170g",
+    "description": "Juicy, bell-shaped fruit with a sweet and slightly grainy texture.",
+    "calories": "101",
+    "carbohydrate": "27",
+    "protein": "1",
+    "fat": "0.1",
+    "sodium": "1"
+  },
+  {
+    "name": "Persimmon (HaluwaBed)-100g",
+    "description": "Orange to reddish fruit with a sweet, honey-like flavor and creamy texture when ripe.",
+    "calories": "70",
+    "carbohydrate": "18.6",
+    "protein": "0.6",
+    "fat": "0.2",
+    "sodium": "1"
+  },
+  {
+    "name": "Cherry (100g)",
+    "description": "Small, round fruit with a sweet-tart flavor, often eaten fresh or used in desserts.",
+    "calories": "50",
+    "carbohydrate": "12.2",
+    "protein": "1",
+    "fat": "0.3",
+    "sodium": "3"
+  },
+  {
+    "name": "Avocado (1 fruit-130g)",
+    "description": "Creamy, green fruit with a buttery texture, rich in healthy fats and fiber.",
+    "calories": "227",
+    "carbohydrate": "12",
+    "protein": "2.7",
+    "fat": "21",
+    "sodium": "10"
+  },
+  {
+    "name": "Fig (Anjeer)-50g",
+    "description": "Small, pear-shaped fruit with a sweet, chewy texture and edible seeds.",
+    "calories": "37",
+    "carbohydrate": "9.6",
+    "protein": "0.5",
+    "fat": "0.2",
+    "sodium": "1"
+  },
+  {
+    "name": "Malta (Junar-1 fruit 109g)",
+    "description": "Citrus fruit similar to tangerines or mandarins, with a sweet and tangy flavor.",
+    "calories": "47",
+    "carbohydrate": "12",
+    "protein": "0.9",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Green Coconut-1 piece (300g)",
+    "description": "Young coconut with green outer shell, containing water and soft, gel-like meat.",
+    "calories": "140",
+    "carbohydrate": "10",
+    "protein": "2",
+    "fat": "12",
+    "sodium": "30"
+  },
+  {
+    "name": "Coconut(45g)",
+    "description": "Mature coconut with brown outer shell, containing white meat and coconut water.",
+    "calories": "187",
+    "carbohydrate": "6",
+    "protein": "2",
+    "fat": "18",
+    "sodium": "16"
+  },
+  {
+    "name": "Sugarcane(100g)",
+    "description": "Tall, fibrous stalks with sweet juice, commonly chewed or juiced for its sweetness.",
+    "calories": "270",
+    "carbohydrate": "70",
+    "protein": "0.5",
+    "fat": "0.2",
+    "sodium": "3"
+  },
+  {
+    "name": "Honeydew Melon(100g)",
+    "description": "Sweet melon with pale green flesh and smooth skin, known for its juicy and refreshing taste.",
+    "calories": "36",
+    "carbohydrate": "9",
+    "protein": "0.5",
+    "fat": "0.1",
+    "sodium": "18"
+  },
+  {
+    "name": "Beetroot(100g)",
+    "description": "Root vegetable with a deep purple-red color, known for its earthy flavor and nutritional benefits.",
+    "calories": "43",
+    "carbohydrate": "9.6",
+    "protein": "1.6",
+    "fat": "0.2",
+    "sodium": "78"
+  },
+  {
+    "name": "Carrot(100g)",
+    "description": "Orange root vegetable known for its sweet taste and crunchy texture, rich in beta-carotene.",
+    "calories": "41",
+    "carbohydrate": "9.6",
+    "protein": "0.9",
+    "fat": "0.2",
+    "sodium": "69"
+  },
+  {
+    "name": "Broccoli(100g)",
+    "description": "Green vegetable with a dense cluster of small, edible flower heads and a firm stalk.",
+    "calories": "34",
+    "carbohydrate": "6.6",
+    "protein": "2.8",
+    "fat": "0.4",
+    "sodium": "33"
+  },
+  {
+    "name": "Palung Saag (110g)",
+    "description": "Leafy green vegetable with a slightly bitter taste, rich in vitamins and minerals.",
+    "calories": "23",
+    "carbohydrate": "3.6",
+    "protein": "2.9",
+    "fat": "0.4",
+    "sodium": "79"
+  },
+  {
+    "name": "Celery(50g)",
+    "description": "Crunchy green stalks with a mild, herbal flavor, often used raw in salads or as a flavoring agent.",
+    "calories": "8",
+    "carbohydrate": "1.5",
+    "protein": "0.5",
+    "fat": "0.1",
+    "sodium": "35"
+  },
+  {
+    "name": "Asparagus(Kurilo-100g)",
+    "description": "Green vegetable with tender shoots and a mild, slightly nutty flavor.",
+    "calories": "20",
+    "carbohydrate": "3.9",
+    "protein": "2.2",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Tofu(50g)",
+    "description": "Soybean curd with a mild taste and versatile texture, used in various cuisines.",
+    "calories": "52",
+    "carbohydrate": "1.8",
+    "protein": "6.5",
+    "fat": "2.7",
+    "sodium": "6"
+  },
+  {
+    "name": "Coriander (50g)",
+    "description": "Leafy herb with a refreshing, citrusy flavor, commonly used as a garnish or in cooking.",
+    "calories": "11",
+    "carbohydrate": "2.1",
+    "protein": "1.5",
+    "fat": "0.5",
+    "sodium": "46"
+  },
+  {
+    "name": "Capsicum (100g)",
+    "description": "Sweet and crunchy vegetable with various colors (green, red, yellow, or orange), commonly used in cooking.",
+    "calories": "31",
+    "carbohydrate": "6",
+    "protein": "1",
+    "fat": "0.3",
+    "sodium": "4"
+  },
+  {
+    "name": "Lemon(1 fruit-58g)",
+    "description": "Citrus fruit known for its tart and tangy flavor, used in cooking and beverages.",
+    "calories": "17",
+    "carbohydrate": "5.4",
+    "protein": "0.6",
+    "fat": "0.2",
+    "sodium": "1"
+  },
+  {
+    "name": "Chamsur Saag(100g)",
+    "description": "Leafy green vegetable with a peppery flavor, rich in vitamins and minerals.",
+    "calories": "32",
+    "carbohydrate": "5.5",
+    "protein": "4.8",
+    "fat": "0.7",
+    "sodium": "39"
+  },
+  {
+    "name": "Green Soybeans (100g)",
+    "description": "Young soybeans in the pod, commonly steamed or boiled and served as a snack or in dishes.",
+    "calories": "122",
+    "carbohydrate": "11.1",
+    "protein": "11.9",
+    "fat": "4.9",
+    "sodium": "6"
+  },
+  {
+    "name": "Cocoyam (Pidali-100g)",
+    "description": "Starchy root vegetable with a mildly sweet flavor, often used in cooking and as a thickening agent.",
+    "calories": "112",
+    "carbohydrate": "26",
+    "protein": "1.5",
+    "fat": "0.2",
+    "sodium": "11"
+  },
+  {
+    "name": "Green Garlic Leaves(100g)",
+    "description": "Young shoots of garlic plants with a mild garlic flavor, used as a culinary herb.",
+    "calories": "149",
+    "carbohydrate": "33",
+    "protein": "6",
+    "fat": "0.5",
+    "sodium": "50"
+  },
+  {
+    "name": "Hatch Chilies(Machhey Kursani-100g)",
+    "description": "Green chili peppers with a medium to hot spiciness, often roasted and used in Southwestern cuisine.",
+    "calories": "18",
+    "carbohydrate": "3.7",
+    "protein": "1",
+    "fat": "0.2",
+    "sodium": "5"
+  },
+  {
+    "name": "Pistachios(100g)",
+    "description": "Nutty and slightly sweet tree nuts with a crunchy texture.",
+    "calories": "562",
+    "carbohydrate": "27",
+    "protein": "20",
+    "fat": "45",
+    "sodium": "1"
+  },
+  {
+    "name": "Green Maize (1 piece aprrox.90g)",
+    "description": "Fresh corn with kernels still on the cob, commonly boiled or grilled and enjoyed as a vegetable.",
+    "calories": "77",
+    "carbohydrate": "17",
+    "protein": "3",
+    "fat": "1",
+    "sodium": "15"
+  },
+  {
+    "name": "Dry Coconut (50g)",
+    "description": "Dried coconut kernel with a firm and fibrous texture, used in cooking and baking.",
+    "calories": "351",
+    "carbohydrate": "24",
+    "protein": "3",
+    "fat": "33",
+    "sodium": "20"
+  },
+  {
+    "name": "Almonds(50g)",
+    "description": "Nutty-flavored tree nuts with a crunchy texture.",
+    "calories": "292",
+    "carbohydrate": "11",
+    "protein": "10",
+    "fat": "25",
+    "sodium": "1"
+  },
+  {
+    "name": "Dates(Khajur-50g",
+    "description": "Sweet, chewy fruits with a rich flavor, commonly used as a natural sweetener.",
+    "calories": "147",
+    "carbohydrate": "39",
+    "protein": "1",
+    "fat": "0.2",
+    "sodium": "2"
+  },
+  {
+    "name": "Peanuts(50g)",
+    "description": "Nutty-flavored legumes with a crunchy texture.",
+    "calories": "292",
+    "carbohydrate": "10.5",
+    "protein": "13.5",
+    "fat": "24",
+    "sodium": "5"
+  },
+  {
+    "name": "Cashew Nuts(Kaju-50g)",
+    "description": "Creamy and nutty-flavored tree nuts with a soft texture.",
+    "calories": "313",
+    "carbohydrate": "20",
+    "protein": "8",
+    "fat": "24",
+    "sodium": "3"
+  },
+  {
+    "name": "Walnuts(Okhar-50g)",
+    "description": "Nutty-flavored tree nuts with a crunchy texture.",
+    "calories": "327",
+    "carbohydrate": "7",
+    "protein": "8",
+    "fat": "32",
+    "sodium": "1"
+  },
+  {
+    "name": "Horse Gram (Gahat Dal-100g)",
+    "description": "Small, oval-shaped legume with a slightly nutty and earthy flavor.",
+    "calories": "321",
+    "carbohydrate": "57",
+    "protein": "22",
+    "fat": "0.8",
+    "sodium": "5"
+  },
+  {
+    "name": "Brown Rice(100g-cooked)",
+    "description": "Whole grain rice with the hull removed but the bran layer intact, resulting in a nutty flavor and chewy texture.",
+    "calories": "111",
+    "carbohydrate": "23",
+    "protein": "2.6",
+    "fat": "0.9",
+    "sodium": "1"
+  },
+  {
+    "name": "Fox Nuts (Makhana-50g)",
+    "description": "Light and crunchy popped seeds of the lotus flower, commonly used in snacks and desserts.",
+    "calories": "180",
+    "carbohydrate": "37",
+    "protein": "5",
+    "fat": "1",
+    "sodium": "5"
+  },
+  {
+    "name": "Yellow Raisins(50g)",
+    "description": "Dried grapes with a sweet and tangy flavor, used as a snack or in cooking and baking.",
+    "calories": "150",
+    "carbohydrate": "39",
+    "protein": "1.5",
+    "fat": "0.3",
+    "sodium": "5.5"
   }
 ]
