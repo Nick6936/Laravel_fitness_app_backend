@@ -12,15 +12,25 @@ class MealController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        $meals = Meal::get();
+    public function index(Request $request)
+{
+    $searchKey = $request->query('searchKey');
 
-        return response()->json([
-            'message'=>'List of Meals',
-            'meals'=> $meals
-        ], 200);
+    if ($searchKey) {
+        // Perform search logic based on name
+        $meals = Meal::where('name', 'LIKE', "{$searchKey}%")
+                     ->orderBy('name')
+                     ->get();
+    } else {
+        // Return all meals if no search key is provided
+        $meals = Meal::all();
     }
+
+    return response()->json([
+        'message' => 'List of Meals',
+        'meals' => $meals
+    ], 200);
+}
 
     /**
      * Store a newly created resource in storage.

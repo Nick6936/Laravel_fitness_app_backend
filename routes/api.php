@@ -40,14 +40,14 @@ Route::apiResource('/users', UserController::class);
 // Route::get('/users',[UserController::class,'index']);
 
 Route::apiResource('/meals', MealController::class);
-// Route::get('/meals',[MealController::class,'index']);
+ Route::get('/meals/{search_key}',[MealController::class,'index']);
 // Route::post('/meals',[MealController::class,'store']);
 // Route::get('/meals/{meal}',[MealController::class,'show']);
 // Route::put('/meals/{meal}',[MealController::class,'update']);
 Route::apiResource('/customs', CustomController::class);
 // Route::get('/customs',[CustomController::class,'index']);
 // Route::post('/customs',[CustomController::class,'store']);
-// Route::get('/customs/{u }',[CustomController::class,'show']);
+// Route::get('/customs/{user_id }',[CustomController::class,'show']);
 // Route::put('/customs/{custom}',[CustomController::class,'update']);
 // Route::delete('/customs/{custom}',[CustomController::class,'destroy']);
 
