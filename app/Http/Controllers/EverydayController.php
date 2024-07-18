@@ -7,6 +7,8 @@ use App\Models\User;
 use App\Models\Analytic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 
 class EverydayController extends Controller
@@ -29,21 +31,50 @@ class EverydayController extends Controller
      */
     public function store(Request $request)
     {
-        $everyday = new Everyday;
-        $everyday->user_id = $request->user_id ?? 0;
-        $everyday->name = $request->name;
-        $everyday->calories = $request->calories;
-        $everyday->carbohydrate = $request->carbohydrate;
-        $everyday->protein = $request->protein;
-        $everyday->fat = $request->fat;
-        $everyday->sodium = $request->sodium;
-        $everyday->volume = $request->volume ?? 0;
-        $everyday->save();
+        try{
+            $validatedData = $request->validate([
+               'user_id' => 'nullable|integer',
+                'name' => 'required|string|max:255',
+                'calories' => 'required|numeric',
+                'carbohydrate' => 'required|numeric',
+                'protein' => 'required|numeric',
+                'fat' => 'required|numeric',
+                'sodium' => 'required|numeric',
+                'volume' => 'nullable|numeric',
+                'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
+            ]);
 
-        return response()->json([
-            'message' => 'New Daily Meal Added',
-            'Meal' => $everyday
-        ], 200);
+            $photoName = null;
+            if ($request->hasFile('photo')) {
+                $photoPath = $request->file('photo')->store('public/everyday-photos');
+                $photoName = basename($photoPath);
+            }
+
+            $everyday = Everyday::create([
+                'user_id' => $validatedData['user_id'] ?? 0,
+                'name' => $validatedData['name'],
+                'calories' => $validatedData['calories'],
+                'carbohydrate' => $validatedData['carbohydrate'],
+                'protein' => $validatedData['protein'],
+                'fat' => $validatedData['fat'],
+                'sodium' => $validatedData['sodium'],
+                'volume' => $validatedData['volume'] ?? 0,
+                'photo_name' => $photoName
+            ]);
+
+            return response()->json([
+                'message' => 'New Meal Added',
+                'meal' => $everyday
+            ], 201);
+
+        } catch (\Exception $e) {
+            Log::error('Error adding meal: ' . $e->getMessage());
+
+            return response()->json([
+                'error' => 'Failed to add new meal',
+                'message' => $e->getMessage()
+            ], 500);
+        }
     }
 
     /**
@@ -73,6 +104,9 @@ class EverydayController extends Controller
 
     public function destroy(Everyday $everyday)
     {
+        if ($everyday->photo_name) {
+            Storage::delete('public/everyday-photos/' . $everyday->photo_name);
+        }
         return response()->json([
             'message' => 'Meal Deleted',
             'Delete Success?' => $everyday->delete(),
