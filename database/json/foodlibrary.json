@@ -312,10 +312,10 @@
         "description": "Nutritious dairy beverage with a balanced mix of protein, fats, and carbohydrates.",
         "quantity": "100",
         "calories": "61",
-        "carbohydrate": "4.9g",
-        "protein": "3.3g",
-        "fat": "3.3g",
-        "sodium": "44.7mg",
+        "carbohydrate": "4.9",
+        "protein": "3.3",
+        "fat": "3.3",
+        "sodium": "44.7",
         "photo": "Cow_Milk.png"
     },
     {
@@ -323,10 +323,10 @@
         "description": "Rich and creamy milk from buffalo, higher in fat content compared to cow milk.",
         "quantity": "100",
         "calories": "95",
-        "carbohydrate": "4.8g",
-        "protein": "3.6g",
-        "fat": "6.8g",
-        "sodium": "48mg",
+        "carbohydrate": "4.8",
+        "protein": "3.6",
+        "fat": "6.8",
+        "sodium": "48",
         "photo": "Buffalo_Milk.png"
     },
     {
@@ -334,10 +334,10 @@
         "description": "Sweet and tropical fruit juice made from ripe mangoes.",
         "quantity": "100",
         "calories": "65",
-        "carbohydrate": "16g",
-        "protein": "0.1g",
-        "fat": "0g",
-        "sodium": "28mg",
+        "carbohydrate": "",
+        "protein": "0.1",
+        "fat": "0",
+        "sodium": "28",
         "photo": "Mango_Juice.png"
     },
     {
@@ -345,10 +345,10 @@
         "description": "Citrus fruit juice with a tangy and refreshing taste, rich in vitamin C.",
         "quantity": "100",
         "calories": "56",
-        "carbohydrate": "13g",
-        "protein": "0.8g",
-        "fat": "0.3g",
-        "sodium": "1.3mg",
+        "carbohydrate": "13",
+        "protein": "0.8",
+        "fat": "0.3",
+        "sodium": "1.3",
         "photo": "Orange_Juice.png"
     },
     {
