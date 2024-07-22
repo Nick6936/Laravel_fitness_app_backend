@@ -55,11 +55,13 @@ class EverydaySeeder extends Seeder
             // Create the everyday record
             everyday::create([
                 'name' => $everydayData->name,
+                'quantity' => $everydayData->quantity ?? 0,
                 'calories' => $everydayData->calories,
                 'carbohydrate' => $everydayData->carbohydrate,
                 'protein' => $everydayData->protein,
                 'fat' => $everydayData->fat,
                 'sodium' => $everydayData->sodium,
+                'volume' => $everydayData->volume ?? 0,
                 'photo_name' => $photoName // Ensure this matches your database column name
             ]);
         }

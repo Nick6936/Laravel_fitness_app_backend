@@ -2,6 +2,7 @@
   {
     "name": "Rice(1 Bowl)",
     "description": " In Nepali Society Rice is referred as 'bhat'and holds a central place i n daily life and cultural practices.It is the food for most Nepalese and is consumed at almost every meal.",
+    "quantity": 0,
     "calories": "411",
     "carbohydrate": "89",
     "protein": "8.5",
@@ -12,6 +13,7 @@
   {
     "name": "Dal(1 Bowl)",
     "description": " Dal is a vital component of the daily diet,typically paired with rice to form the classic dish 'dal bhat'.",
+    "quantity": 0,
     "calories": "222",
     "carbohydrate": "34",
     "protein": "14",
@@ -22,6 +24,7 @@
   {
     "name": "Cauliflower(287.5gm)",
     "description": "Cauliflower referred ta as 'kauli'in Nepali is poppular and versitle commonly used vegetable.",
+    "quantity": 287.5,
     "calories": "66",
     "carbohydrate": "12",
     "protein": "5.5",

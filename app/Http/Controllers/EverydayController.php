@@ -35,6 +35,7 @@ class EverydayController extends Controller
             $validatedData = $request->validate([
                'user_id' => 'nullable|integer',
                 'name' => 'required|string|max:255',
+                'quantity' => 'nullable|numeric',
                 'calories' => 'required|numeric',
                 'carbohydrate' => 'required|numeric',
                 'protein' => 'required|numeric',
@@ -53,6 +54,7 @@ class EverydayController extends Controller
             $everyday = Everyday::create([
                 'user_id' => $validatedData['user_id'] ?? 0,
                 'name' => $validatedData['name'],
+                'quantity' => $validatedData['quantity'] ?? 0,
                 'calories' => $validatedData['calories'],
                 'carbohydrate' => $validatedData['carbohydrate'],
                 'protein' => $validatedData['protein'],

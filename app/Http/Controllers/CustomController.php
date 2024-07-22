@@ -31,6 +31,7 @@ class CustomController extends Controller
             $validatedData = $request->validate([
                'user_id' => 'nullable|integer',
                 'name' => 'required|string|max:255',
+                'quantity' => 'nullable|numeric',
                 'description' => 'nullable|string',
                 'calories' => 'required|numeric',
                 'carbohydrate' => 'required|numeric',
@@ -50,6 +51,7 @@ class CustomController extends Controller
             $custom = Custom::create([
                 'user_id' => $validatedData['user_id'] ?? 0,
                 'name' => $validatedData['name'],
+                'quantity' => $validatedData['quantity'] ?? 0,
                 'description' => $validatedData['description'] ?? null,
                 'calories' => $validatedData['calories'],
                 'carbohydrate' => $validatedData['carbohydrate'],
@@ -109,6 +111,7 @@ class CustomController extends Controller
             $validatedData = $request->validate([
                 'user_id' => 'nullable|integer',
                 'name' => 'nullable|string|max:255',
+                'quantity' => 'nullable|numeric',
                 'description' => 'nullable|string',
                 'calories' => 'nullable|numeric',
                 'carbohydrate' => 'nullable|numeric',

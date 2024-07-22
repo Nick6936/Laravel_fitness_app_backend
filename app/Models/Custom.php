@@ -12,6 +12,7 @@ class Custom extends Model
     protected $fillable = [
         'user_id',
         'name',
+        'quantity',
         'description',
         'calories',
         'carbohydrate',
