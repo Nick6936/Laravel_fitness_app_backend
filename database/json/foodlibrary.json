@@ -657,7 +657,7 @@
     "protein": "1",
     "fat": "6",
     "sodium": "25",
-    "photo": ".png"
+    "photo": "Jeri.png"
   },
   {
     "name": "Salmon Fish(100g)",
@@ -667,7 +667,7 @@
     "protein": "20",
     "fat": "6",
     "sodium": "47",
-    "photo": ".png"
+    "photo": "Salmon_Fish.png"
   },
   {
     "name": "Trout Fish(100g)",
@@ -676,7 +676,8 @@
     "carbohydrate": "0",
     "protein": "20",
     "fat": "4",
-    "sodium": "57"
+    "sodium": "57",
+    "photo": "Trout_Fish.png"
   },
   {
     "name": "Prawns(100g)",
@@ -685,7 +686,8 @@
     "carbohydrate": "0",
     "protein": "18",
     "fat": "1.5",
-    "sodium": "119"
+    "sodium": "119",
+    "photo": "Prawns.png"
   },
   {
     "name": "Crab(100g-edible portion)",
@@ -694,7 +696,8 @@
     "carbohydrate": "0",
     "protein": "17",
     "fat": "1.2",
-    "sodium": "387"
+    "sodium": "387",
+    "photo": "Crab.png"
   },
   {
     "name": "Oysters(100g-edible portion)",
@@ -703,7 +706,8 @@
     "carbohydrate": "4",
     "protein": "7",
     "fat": "2",
-    "sodium": "225"
+    "sodium": "225",
+    "photo": "Oysters.png"
   },
   {
     "name": "Octopus(100g)",
@@ -712,7 +716,8 @@
     "carbohydrate": "4",
     "protein": "14",
     "fat": "1",
-    "sodium": "314"
+    "sodium": "314",
+    "photo": "Octopus.png"
   },
   {
     "name": "Lobster(100g (edible portion)",
@@ -721,7 +726,8 @@
     "carbohydrate": "1",
     "protein": "18",
     "fat": "1.2",
-    "sodium": "414"
+    "sodium": "414",
+    "photo": "Lobster.png"
   },
   {
     "name": "Papaya(140g)",
@@ -730,7 +736,8 @@
     "carbohydrate": "14",
     "protein": "1.1",
     "fat": "0.2",
-    "sodium": "8"
+    "sodium": "8",
+    "photo": "Papaya.png"
   },
   {
     "name": "Guava(100g)",
@@ -739,7 +746,8 @@
     "carbohydrate": "20",
     "protein": "4.2",
     "fat": "1.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Guava.png"
   },
   {
     "name": "Pineapple(150g)",
@@ -748,7 +756,8 @@
     "carbohydrate": "22",
     "protein": "0.9",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Pineapple.png"
   },
   {
     "name": "Orange(130g)",
@@ -757,7 +766,8 @@
     "carbohydrate": "15",
     "protein": "1.2",
     "fat": "0.2",
-    "sodium": "0"
+    "sodium": "0",
+    "photo": "Orange.png"
   },
   {
     "name": "Watermelon(150g)",
@@ -766,7 +776,8 @@
     "carbohydrate": "11",
     "protein": "0.9",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Watermelon.png"
   },
   {
     "name": "Pomegranate(250g)",
@@ -775,7 +786,8 @@
     "carbohydrate": "53",
     "protein": "4.7",
     "fat": "3.3",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Pomogranate.png"
   },
   {
     "name": "Litchi(150g)",
@@ -784,7 +796,8 @@
     "carbohydrate": "30",
     "protein": "1.4",
     "fat": "0.6",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Litchi.png"
   },
   {
     "name": "Kiwi(76g)",
@@ -793,7 +806,8 @@
     "carbohydrate": "11",
     "protein": "0.8",
     "fat": "0.3",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Kiwi.png"
   },
   {
     "name": "Grapes(150g)",
@@ -802,7 +816,8 @@
     "carbohydrate": "27",
     "protein": "1.1",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Grapes.png"
   },
   {
     "name": "Strawberries(150g)",
@@ -811,7 +826,8 @@
     "carbohydrate": "11",
     "protein": "1",
     "fat": "0.5",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Strawberries.png"
   },
   {
     "name": "Plum(66g)",
@@ -820,7 +836,8 @@
     "carbohydrate": "8",
     "protein": "0.5",
     "fat": "0.2",
-    "sodium": "0"
+    "sodium": "0",
+    "photo": "Plum.png"
   },
   {
     "name": "Dragon Fruit(200g)",
@@ -829,7 +846,8 @@
     "carbohydrate": "13",
     "protein": "1",
     "fat": "0.4",
-    "sodium": "0"
+    "sodium": "0",
+    "photo": "Dragon_Fruit.png"
   },
   {
     "name": "Turnip(130g)",
@@ -838,7 +856,8 @@
     "carbohydrate": "8",
     "protein": "1",
     "fat": "0.1",
-    "sodium": "87"
+    "sodium": "87",
+    "photo": "Turnip.png"
   },
   {
     "name": "Sisnu(Nettle)-60g",
@@ -847,7 +866,8 @@
     "carbohydrate": "7",
     "protein": "2.4",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Sisnu.png"
   },
   {
     "name": "Niguro (Fiddlehead Ferns)-35g",
@@ -856,7 +876,8 @@
     "carbohydrate": "6",
     "protein": "4",
     "fat": "0.2",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Niguro.png"
   },
   {
     "name": "Peach(30g)",
@@ -865,7 +886,8 @@
     "carbohydrate": "2",
     "protein": "1",
     "fat": "0.1",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Peach.png"
   },
   {
     "name": "Lettuce(36g)",
@@ -874,7 +896,8 @@
     "carbohydrate": "1",
     "protein": "0.5",
     "fat": "0.1",
-    "sodium": "7"
+    "sodium": "7",
+    "photo": "Lettuce.png"
   },
   {
     "name": "Pointed Gourd (Parval)-116g",
@@ -883,7 +906,8 @@
     "carbohydrate": "4",
     "protein": "1",
     "fat": "0.1",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Pointed_Gourd.png"
   },
   {
     "name": "Drumstick (Moringa)-Sajiwan(100g)",
@@ -892,7 +916,8 @@
     "carbohydrate": "8",
     "protein": "2",
     "fat": "0.2",
-    "sodium": "42"
+    "sodium": "42",
+    "photo": "Drumstick_Moringa.png"
   },
   {
     "name": "Hyacinth Bean (Hiunde Simi)-100g",
@@ -901,7 +926,8 @@
     "carbohydrate": "8",
     "protein": "3",
     "fat": "0.4",
-    "sodium": "4"
+    "sodium": "4",
+    "photo": "Hyacinth_Beans.png"
   },
   {
     "name": "Amaranth Leaves (Latte ko Saag)-30g",
@@ -910,7 +936,8 @@
     "carbohydrate": "1",
     "protein": "0.9",
     "fat": "0.1",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Amaranath_Leaves.png"
   },
   {
     "name": "Spring Onion (100g)",
@@ -919,7 +946,8 @@
     "carbohydrate": "7",
     "protein": "1.8",
     "fat": "0.2",
-    "sodium": "16 "
+    "sodium": "16 ",
+    "photo": "Spring_Onion.png"
   },
   {
     "name": "Snake Gourd (Chichinda)-100g",
@@ -928,7 +956,8 @@
     "carbohydrate": "4.1",
     "protein": "1",
     "fat": "0.1",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Snake_Gourd.png"
   },
   {
     "name": "Jackfruit (165g)",
@@ -937,7 +966,8 @@
     "carbohydrate": "38",
     "protein": "2.8",
     "fat": "0.6",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Jackfruit.png"
   },
   {
     "name": "Chayote (Iscus) Leaves(30g)",
@@ -946,7 +976,8 @@
     "carbohydrate": "1.2",
     "protein": "0.5",
     "fat": "0.1",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Chayota_Leaves.png"
   },
   {
     "name": "Yam (Rato Tarul)-136g",
@@ -955,7 +986,8 @@
     "carbohydrate": "37",
     "protein": "2",
     "fat": "0.2",
-    "sodium": "13"
+    "sodium": "13",
+    "photo": "Yam.png"
   },
   {
     "name": "Sweet Potato (133g)",
@@ -964,7 +996,8 @@
     "carbohydrate": "27",
     "protein": "2.1",
     "fat": "0.1",
-    "sodium": "73"
+    "sodium": "73",
+    "photo": "Sweet_Potato.png"
   },
   {
     "name": "Roselle (Belchanda)-100g",
@@ -973,7 +1006,8 @@
     "carbohydrate": "11",
     "protein": "1",
     "fat": "0.3",
-    "sodium": "6"
+    "sodium": "6",
+    "photo": "Roselle.png"
   },
   {
     "name": "Soursop (Hanuman Faal)-225g",
@@ -982,7 +1016,8 @@
     "carbohydrate": "38",
     "protein": "2.3",
     "fat": "0.7",
-    "sodium": "31"
+    "sodium": "31",
+    "photo": "Soursop.png"
   },
   {
     "name": "Bel (Wood Apple)-150g",
@@ -991,7 +1026,8 @@
     "carbohydrate": "34",
     "protein": "2",
     "fat": "0.3",
-    "sodium": "6"
+    "sodium": "6",
+    "photo": "Bel.png"
   },
   {
     "name": "Lapsi(50g)",
@@ -1000,7 +1036,8 @@
     "carbohydrate": "7.3",
     "protein": "0.3",
     "fat": "0.1",
-    "sodium": "1.7"
+    "sodium": "1.7",
+    "photo": "Lapsi.png"
   },
   {
     "name": "Amla (50g)",
@@ -1009,7 +1046,8 @@
     "carbohydrate": "5",
     "protein": "0.3",
     "fat": "0.2",
-    "sodium": "1.3"
+    "sodium": "1.3",
+    "photo": "Amla.png"
   },
   {
     "name": "Mango (150g)",
@@ -1018,7 +1056,8 @@
     "carbohydrate": "25",
     "protein": "1.4",
     "fat": "0.6",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Mango.png"
   },
   {
     "name": "Pear (Nashpati)-170g",
@@ -1027,7 +1066,8 @@
     "carbohydrate": "27",
     "protein": "1",
     "fat": "0.1",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Pear.png"
   },
   {
     "name": "Persimmon (HaluwaBed)-100g",
@@ -1036,7 +1076,8 @@
     "carbohydrate": "18.6",
     "protein": "0.6",
     "fat": "0.2",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Persimmon.png"
   },
   {
     "name": "Cherry (100g)",
@@ -1045,7 +1086,8 @@
     "carbohydrate": "12.2",
     "protein": "1",
     "fat": "0.3",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Cherry.png"
   },
   {
     "name": "Avocado (1 fruit-130g)",
@@ -1054,7 +1096,8 @@
     "carbohydrate": "12",
     "protein": "2.7",
     "fat": "21",
-    "sodium": "10"
+    "sodium": "10",
+    "photo": "Avocado.png"
   },
   {
     "name": "Fig (Anjeer)-50g",
@@ -1063,7 +1106,8 @@
     "carbohydrate": "9.6",
     "protein": "0.5",
     "fat": "0.2",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Fig.png"
   },
   {
     "name": "Malta (Junar-1 fruit 109g)",
@@ -1072,7 +1116,8 @@
     "carbohydrate": "12",
     "protein": "0.9",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Malta.png"
   },
   {
     "name": "Green Coconut-1 piece (300g)",
@@ -1081,7 +1126,8 @@
     "carbohydrate": "10",
     "protein": "2",
     "fat": "12",
-    "sodium": "30"
+    "sodium": "30",
+    "photo": "Green_Coconut.png"
   },
   {
     "name": "Coconut(45g)",
@@ -1090,7 +1136,8 @@
     "carbohydrate": "6",
     "protein": "2",
     "fat": "18",
-    "sodium": "16"
+    "sodium": "16",
+    "photo": "Coconut.png"
   },
   {
     "name": "Sugarcane(100g)",
@@ -1099,7 +1146,8 @@
     "carbohydrate": "70",
     "protein": "0.5",
     "fat": "0.2",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Sugarcane.png"
   },
   {
     "name": "Honeydew Melon(100g)",
@@ -1108,7 +1156,8 @@
     "carbohydrate": "9",
     "protein": "0.5",
     "fat": "0.1",
-    "sodium": "18"
+    "sodium": "18",
+    "photo": "Honeydew_Melon.png"
   },
   {
     "name": "Beetroot(100g)",
@@ -1117,7 +1166,8 @@
     "carbohydrate": "9.6",
     "protein": "1.6",
     "fat": "0.2",
-    "sodium": "78"
+    "sodium": "78",
+    "photo": "Beetroot.png"
   },
   {
     "name": "Carrot(100g)",
@@ -1126,7 +1176,8 @@
     "carbohydrate": "9.6",
     "protein": "0.9",
     "fat": "0.2",
-    "sodium": "69"
+    "sodium": "69",
+    "photo": "Carrot.png"
   },
   {
     "name": "Broccoli(100g)",
@@ -1135,7 +1186,8 @@
     "carbohydrate": "6.6",
     "protein": "2.8",
     "fat": "0.4",
-    "sodium": "33"
+    "sodium": "33",
+    "photo": "Broccoli.png"
   },
   {
     "name": "Palung Saag (110g)",
@@ -1144,7 +1196,8 @@
     "carbohydrate": "3.6",
     "protein": "2.9",
     "fat": "0.4",
-    "sodium": "79"
+    "sodium": "79",
+    "photo": "Palung_Saag.png"
   },
   {
     "name": "Celery(50g)",
@@ -1153,7 +1206,8 @@
     "carbohydrate": "1.5",
     "protein": "0.5",
     "fat": "0.1",
-    "sodium": "35"
+    "sodium": "35",
+    "photo": "Celery.png"
   },
   {
     "name": "Asparagus(Kurilo-100g)",
@@ -1162,7 +1216,8 @@
     "carbohydrate": "3.9",
     "protein": "2.2",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Asparagus.png"
   },
   {
     "name": "Tofu(50g)",
@@ -1171,7 +1226,8 @@
     "carbohydrate": "1.8",
     "protein": "6.5",
     "fat": "2.7",
-    "sodium": "6"
+    "sodium": "6",
+    "photo": "Tofu.png"
   },
   {
     "name": "Coriander (50g)",
@@ -1180,7 +1236,8 @@
     "carbohydrate": "2.1",
     "protein": "1.5",
     "fat": "0.5",
-    "sodium": "46"
+    "sodium": "46",
+    "photo": "Coriander.png"
   },
   {
     "name": "Capsicum (100g)",
@@ -1189,7 +1246,8 @@
     "carbohydrate": "6",
     "protein": "1",
     "fat": "0.3",
-    "sodium": "4"
+    "sodium": "4",
+    "photo": "Capsicum.png"
   },
   {
     "name": "Lemon(1 fruit-58g)",
@@ -1198,7 +1256,8 @@
     "carbohydrate": "5.4",
     "protein": "0.6",
     "fat": "0.2",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Lemon.png"
   },
   {
     "name": "Chamsur Saag(100g)",
@@ -1207,7 +1266,8 @@
     "carbohydrate": "5.5",
     "protein": "4.8",
     "fat": "0.7",
-    "sodium": "39"
+    "sodium": "39",
+    "photo": "Chamsur_Saag.png"
   },
   {
     "name": "Green Soybeans (100g)",
@@ -1216,7 +1276,8 @@
     "carbohydrate": "11.1",
     "protein": "11.9",
     "fat": "4.9",
-    "sodium": "6"
+    "sodium": "6",
+    "photo": "Green_Soybeans.png"
   },
   {
     "name": "Cocoyam (Pidali-100g)",
@@ -1225,7 +1286,8 @@
     "carbohydrate": "26",
     "protein": "1.5",
     "fat": "0.2",
-    "sodium": "11"
+    "sodium": "11",
+    "photo": "Cocoyam.png"
   },
   {
     "name": "Green Garlic Leaves(100g)",
@@ -1234,7 +1296,8 @@
     "carbohydrate": "33",
     "protein": "6",
     "fat": "0.5",
-    "sodium": "50"
+    "sodium": "50",
+    "photo": "Green_Garlic_Leaves.png"
   },
   {
     "name": "Hatch Chilies(Machhey Kursani-100g)",
@@ -1243,7 +1306,8 @@
     "carbohydrate": "3.7",
     "protein": "1",
     "fat": "0.2",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Hatch_Chilies.png"
   },
   {
     "name": "Pistachios(100g)",
@@ -1252,7 +1316,8 @@
     "carbohydrate": "27",
     "protein": "20",
     "fat": "45",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Pistachios.png"
   },
   {
     "name": "Green Maize (1 piece aprrox.90g)",
@@ -1261,7 +1326,8 @@
     "carbohydrate": "17",
     "protein": "3",
     "fat": "1",
-    "sodium": "15"
+    "sodium": "15",
+    "photo": "Green_Maize.png"
   },
   {
     "name": "Dry Coconut (50g)",
@@ -1270,7 +1336,8 @@
     "carbohydrate": "24",
     "protein": "3",
     "fat": "33",
-    "sodium": "20"
+    "sodium": "20",
+    "photo": "Dry_Coconut.png"
   },
   {
     "name": "Almonds(50g)",
@@ -1279,7 +1346,8 @@
     "carbohydrate": "11",
     "protein": "10",
     "fat": "25",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Almonds.png"
   },
   {
     "name": "Dates(Khajur-50g",
@@ -1288,7 +1356,8 @@
     "carbohydrate": "39",
     "protein": "1",
     "fat": "0.2",
-    "sodium": "2"
+    "sodium": "2",
+    "photo": "Dates.png"
   },
   {
     "name": "Peanuts(50g)",
@@ -1297,7 +1366,8 @@
     "carbohydrate": "10.5",
     "protein": "13.5",
     "fat": "24",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Peanuts.png"
   },
   {
     "name": "Cashew Nuts(Kaju-50g)",
@@ -1306,7 +1376,8 @@
     "carbohydrate": "20",
     "protein": "8",
     "fat": "24",
-    "sodium": "3"
+    "sodium": "3",
+    "photo": "Cashew_Nuts.png"
   },
   {
     "name": "Walnuts(Okhar-50g)",
@@ -1315,7 +1386,8 @@
     "carbohydrate": "7",
     "protein": "8",
     "fat": "32",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Walnuts.png"
   },
   {
     "name": "Horse Gram (Gahat Dal-100g)",
@@ -1324,7 +1396,8 @@
     "carbohydrate": "57",
     "protein": "22",
     "fat": "0.8",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Horse_Gram.png"
   },
   {
     "name": "Brown Rice(100g-cooked)",
@@ -1333,7 +1406,8 @@
     "carbohydrate": "23",
     "protein": "2.6",
     "fat": "0.9",
-    "sodium": "1"
+    "sodium": "1",
+    "photo": "Brown_Rice.png"
   },
   {
     "name": "Fox Nuts (Makhana-50g)",
@@ -1342,7 +1416,8 @@
     "carbohydrate": "37",
     "protein": "5",
     "fat": "1",
-    "sodium": "5"
+    "sodium": "5",
+    "photo": "Fox_Nuts.png"
   },
   {
     "name": "Yellow Raisins(50g)",
@@ -1351,6 +1426,7 @@
     "carbohydrate": "39",
     "protein": "1.5",
     "fat": "0.3",
-    "sodium": "5.5"
+    "sodium": "5.5",
+    "photo": "Yellow_Raisins.png"
   }
 ]
