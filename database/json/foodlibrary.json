@@ -2,7 +2,7 @@
     {
         "name": "Rice",
         "description": "In Nepali society, rice is referred to as 'bhat' and holds a central place in daily life and cultural practices. It is the food for most Nepalese and is consumed at almost every meal.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "130",
         "carbohydrate": "28.5",
         "protein": "2.7",
@@ -13,7 +13,7 @@
     {
         "name": "Dal",
         "description": "Dal is a vital component of the daily diet, typically paired with rice to form the classic dish 'dal bhat'.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "71",
         "carbohydrate": "11",
         "protein": "4.5",
@@ -24,7 +24,7 @@
     {
         "name": "Cauliflower",
         "description": "Cauliflower, referred to as 'kauli' in Nepali, is a popular and versatile commonly used vegetable.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "23",
         "carbohydrate": "4.2",
         "protein": "1.9",
@@ -35,7 +35,7 @@
     {
         "name": "Potato",
         "description": "Potato, referred to as 'alu' in Nepali, is a highly valued and widely consumed vegetable.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "94",
         "carbohydrate": "21.5",
         "protein": "2.5",
@@ -46,7 +46,7 @@
     {
         "name": "Cabbage",
         "description": "Cabbage is appreciated for its nutritional benefits, providing vitamins, minerals, and fiber.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "22.7",
         "carbohydrate": "5.5",
         "protein": "1.3",
@@ -57,7 +57,7 @@
     {
         "name": "Peas",
         "description": "Peas, referred to as 'kerau' in Nepali, are a popular and nutritious vegetable.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "84",
         "carbohydrate": "15.6",
         "protein": "5.4",
@@ -68,7 +68,7 @@
     {
         "name": "Green Bean",
         "description": "Green beans, referred to as 'simi' in Nepali, are a widely consumed and cherished vegetable.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "35",
         "carbohydrate": "7.9",
         "protein": "1.9",
@@ -79,7 +79,7 @@
     {
         "name": "Brinjal",
         "description": "Brinjal is appreciated for its nutritional benefits, providing vitamins, minerals, and antioxidants.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "35",
         "carbohydrate": "8.6",
         "protein": "0.8",
@@ -90,7 +90,7 @@
     {
         "name": "Bitter Gourd",
         "description": "Bitter Gourd, referred to as 'tite karela' in Nepali, is a valued vegetable known for its distinct bitter flavor and numerous health benefits.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "19",
         "carbohydrate": "4.4",
         "protein": "0.8",
@@ -101,7 +101,7 @@
     {
         "name": "Chickpea",
         "description": "Chickpeas, referred to as 'chana' in Nepali, are valued for their high nutritional content, including protein, fiber, vitamins, and minerals.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "164",
         "carbohydrate": "27.4",
         "protein": "9.1",
@@ -112,7 +112,7 @@
     {
         "name": "Tomato",
         "description": "Tomatoes are an essential ingredient in various dishes, including curries, chutneys, salads, and soups.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "18",
         "carbohydrate": "3.9",
         "protein": "0.9",
@@ -123,7 +123,7 @@
     {
         "name": "Boiled Egg",
         "description": "Eggs play a crucial role in the diet of many Nepalese, providing a vital source of nutrition.",
-        "quantity": "1 piece",
+        "quantity": "1",
         "calories": "78",
         "carbohydrate": "0.6",
         "protein": "6",
@@ -134,7 +134,7 @@
     {
         "name": "Chicken",
         "description": "Chicken is valued for its lean protein content and versatility in cooking, allowing for a wide range of flavors and textures.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "220",
         "carbohydrate": "0.1",
         "protein": "23.6",
@@ -145,7 +145,7 @@
     {
         "name": "Mutton",
         "description": "Mutton is valued for its nutritional content, including protein and essential vitamins.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "294",
         "carbohydrate": "0",
         "protein": "24.8",
@@ -156,7 +156,7 @@
     {
         "name": "Pork",
         "description": "Pork is appreciated for its rich flavor and versatility in cooking.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "238",
         "carbohydrate": "0",
         "protein": "25.7",
@@ -167,7 +167,7 @@
     {
         "name": "Apple",
         "description": "Apples are known for their crisp texture, sweet-tart flavor, and nutritional benefits, including being a good source of fiber, vitamins, and antioxidants.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "52",
         "carbohydrate": "14",
         "protein": "0.3",
@@ -178,7 +178,7 @@
     {
         "name": "Banana",
         "description": "Bananas are a rich source of potassium, vitamins, and fiber, making them a healthy snack choice.",
-        "quantity": "1 piece",
+        "quantity": "1",
         "calories": "52.5",
         "carbohydrate": "13.5",
         "protein": "0.7",
@@ -189,7 +189,7 @@
     {
         "name": "Fried Egg",
         "description": "Fried eggs are appreciated for their protein content and are a satisfying and nutritious addition to any meal.",
-        "quantity": "1 piece",
+        "quantity": "1",
         "calories": "90",
         "carbohydrate": "0.4",
         "protein": "6.3",
@@ -200,7 +200,7 @@
     {
         "name": "Veg ChowMein",
         "description": "Chow Mein is a popular dish in Nepali society, known for its flavorful combination of stir-fried noodles and mixed vegetables.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "132",
         "carbohydrate": "8",
         "protein": "15",
@@ -211,7 +211,7 @@
     {
         "name": "Chicken ChowMein",
         "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "152",
         "carbohydrate": "11.2",
         "protein": "9.2",
@@ -222,7 +222,7 @@
     {
         "name": "Pork ChowMein",
         "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "162",
         "carbohydrate": "11",
         "protein": "9",
@@ -233,7 +233,7 @@
     {
         "name": "Buffalo Meat",
         "description": "Buffalo meat is also valued for its nutritional benefits, providing essential vitamins, minerals, and protein.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "238",
         "carbohydrate": "0",
         "protein": "24",
@@ -244,7 +244,7 @@
     {
         "name": "Buff ChowMein",
         "description": "Chow Mein is a beloved dish in Nepali cuisine, featuring stir-fried noodles combined with a flavorful mix of vegetables, meats, and sometimes seafood.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "112",
         "carbohydrate": "12.9",
         "protein": "4.5",
@@ -255,7 +255,7 @@
     {
         "name": "Chicken Momo",
         "description": "Momo is a cherished and iconic dish consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "155",
         "carbohydrate": "18.3",
         "protein": "9",
@@ -266,7 +266,7 @@
     {
         "name": "Veg Momo",
         "description": "Momo is a cherished and iconic dish consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "142",
         "carbohydrate": "16.6",
         "protein": "7.6",
@@ -277,7 +277,7 @@
     {
         "name": "Buff Momo",
         "description": "Momo is a cherished and iconic dish consisting of dumplings filled with a savory mixture of minced meat, vegetables, and spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "142",
         "carbohydrate": "15.3",
         "protein": "6.8",
@@ -288,7 +288,7 @@
     {
         "name": "Chicken Pizza",
         "description": "Pizza typically features a round, flatbread base topped with tomato sauce, cheese, and a variety of toppings, which can include vegetables, meats, and herbs.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "218",
         "carbohydrate": "25.6",
         "protein": "12.1",
@@ -299,7 +299,7 @@
     {
         "name": "Mushroom Pizza",
         "description": "Pizza typically features a round, flatbread base topped with tomato sauce, cheese, and a variety of toppings, which can include vegetables, meats, and herbs.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "212",
         "carbohydrate": "26.3",
         "protein": "9.1",
@@ -310,7 +310,7 @@
     {
         "name": "Cow Milk",
         "description": "Nutritious dairy beverage with a balanced mix of protein, fats, and carbohydrates.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "61",
         "carbohydrate": "4.9g",
         "protein": "3.3g",
@@ -321,7 +321,7 @@
     {
         "name": "Buffalo Milk",
         "description": "Rich and creamy milk from buffalo, higher in fat content compared to cow milk.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "95",
         "carbohydrate": "4.8g",
         "protein": "3.6g",
@@ -332,7 +332,7 @@
     {
         "name": "Mango Juice",
         "description": "Sweet and tropical fruit juice made from ripe mangoes.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "65",
         "carbohydrate": "16g",
         "protein": "0.1g",
@@ -343,7 +343,7 @@
     {
         "name": "Orange Juice",
         "description": "Citrus fruit juice with a tangy and refreshing taste, rich in vitamin C.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "56",
         "carbohydrate": "13g",
         "protein": "0.8g",
@@ -354,7 +354,7 @@
     {
         "name": "Apple Juice",
         "description": "Sweet and crisp fruit juice made from fresh apples.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "57",
         "carbohydrate": "14",
         "protein": "0.15",
@@ -365,7 +365,7 @@
     {
         "name": "Pineapple Juice",
         "description": "Tropical fruit juice with a sweet and tangy flavor, made from fresh pineapples.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "66",
         "carbohydrate": "15",
         "protein": "0.35",
@@ -376,7 +376,7 @@
     {
         "name": "Sel Roti",
         "description": "A traditional homemade, sweet, ring-shaped rice bread/doughnut prepared during the festivals of Dashain and Tihar.",
-        "quantity": "1 piece",
+        "quantity": "1",
         "calories": "150",
         "carbohydrate": "28",
         "protein": "3",
@@ -387,7 +387,7 @@
     {
         "name": "Thukpa",
         "description": "A noodle soup that originated in Tibet and is popular in Nepal, often made with meat, vegetables, and a flavorful broth.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "150",
         "carbohydrate": "25",
         "protein": "7.5",
@@ -398,7 +398,7 @@
     {
         "name": "Gundruk",
         "description": "Fermented leafy green vegetable, often used as a side dish or in soups and curries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "50",
         "carbohydrate": "8",
         "protein": "3",
@@ -409,7 +409,7 @@
     {
         "name": "Sukuti",
         "description": "Dried meat, typically buffalo, which is marinated with spices and then sun-dried, often served as a snack or with beaten rice.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "300",
         "carbohydrate": "10",
         "protein": "50",
@@ -420,7 +420,7 @@
     {
         "name": "Yomari",
         "description": "A traditional Newari dessert made from rice flour dough shaped like a fish, filled with sweetened sesame seeds or molasses.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "180",
         "carbohydrate": "35",
         "protein": "3",
@@ -431,7 +431,7 @@
     {
         "name": "Kwati",
         "description": "A mixed bean soup, traditionally consumed during the festival of Janai Purnima, made with a variety of beans and flavored with spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "125",
         "carbohydrate": "20",
         "protein": "6",
@@ -442,7 +442,7 @@
     {
         "name": "Bara",
         "description": "A traditional Newari snack made from lentil batter, often fried and served with chutney or curry.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "150",
         "carbohydrate": "25",
         "protein": "7",
@@ -453,7 +453,7 @@
     {
         "name": "Chatamari",
         "description": "Often referred to as Nepali pizza, this is a traditional Newari dish made from rice flour batter and topped with meat, vegetables, and spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "250",
         "carbohydrate": "40",
         "protein": "10",
@@ -464,7 +464,7 @@
     {
         "name": "Juju Dhau",
         "description": "Known as the 'king of curds,' this is a rich and creamy yogurt made in the town of Bhaktapur.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "200",
         "carbohydrate": "20",
         "protein": "8",
@@ -475,7 +475,7 @@
     {
         "name": "Kheer",
         "description": "A rice pudding made with milk, sugar, and cardamom, often garnished with nuts and raisins.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "125",
         "carbohydrate": "22.5",
         "protein": "3.5",
@@ -486,7 +486,7 @@
     {
         "name": "Bhatmas Sandeko",
         "description": "A spicy and tangy salad made from roasted soybeans mixed with onions, tomatoes, and spices.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "133",
         "carbohydrate": "10",
         "protein": "10",
@@ -497,7 +497,7 @@
     {
         "name": "Chutney",
         "description": "A spicy and tangy condiment made from a variety of ingredients such as tomatoes, cilantro, and spices.",
-        "quantity": "1spoon(20gm)",
+        "quantity": "1spoon(20)",
         "calories": "20",
         "carbohydrate": "4",
         "protein": "0",
@@ -508,7 +508,7 @@
     {
         "name": "Dahi Chiura",
         "description": "A simple and traditional dish made of beaten rice mixed with yogurt, often eaten during festivals.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "120",
         "carbohydrate": "22",
         "protein": "4",
@@ -519,7 +519,7 @@
     {
         "name": "Buff Chhoila",
         "description": "A traditional Newari dish made of spiced grilled buffalo meat, often served with beaten rice.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "167",
         "carbohydrate": "6.7",
         "protein": "20",
@@ -530,7 +530,7 @@
     {
         "name": "Tongba",
         "description": "A traditional alcoholic beverage made from fermented millet, typically consumed hot.",
-        "quantity": "100ml",
+        "quantity": "100",
         "calories": "75",
         "carbohydrate": "10",
         "protein": "1",
@@ -541,7 +541,7 @@
     {
         "name": "Dhido",
         "description": "A traditional Nepali porridge made from buckwheat or millet flour, usually served with gundruk, achar, and curd.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "80",
         "carbohydrate": "16",
         "protein": "2",
@@ -552,7 +552,7 @@
     {
         "name": "Chiura",
         "description": "Beaten rice, often eaten as a snack or with curd and curry.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "360",
         "carbohydrate": "80",
         "protein": "8",
@@ -563,7 +563,7 @@
     {
         "name": "Radish",
         "description": "Used in salads, pickles, and curries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "16",
         "carbohydrate": "3",
         "protein": "1",
@@ -574,7 +574,7 @@
     {
         "name": "Pumpkin",
         "description": "Used in various dishes including curries and soups.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "26",
         "carbohydrate": "6.9",
         "protein": "0.9",
@@ -585,7 +585,7 @@
     {
         "name": "Okra(Bhindi)",
         "description": "A mucilaginous vegetable used in soups, stews, and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "33",
         "carbohydrate": "7",
         "protein": "2",
@@ -596,7 +596,7 @@
     {
         "name": "Bottle Gourd",
         "description": "A versatile vegetable used in curries and stews.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "14",
         "carbohydrate": "3.4",
         "protein": "0.9",
@@ -607,7 +607,7 @@
     {
         "name": "Rayo ko Saag",
         "description": "A leafy green vegetable commonly used in Nepali cuisine.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "27",
         "carbohydrate": "5.4",
         "protein": "1.8",
@@ -618,7 +618,7 @@
     {
         "name": "Karkalo Ko Gava",
         "description": "The stems of the taro plant, used in various traditional dishes.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "40",
         "carbohydrate": "9",
         "protein": "1",
@@ -629,7 +629,7 @@
     {
         "name": "Cucumber",
         "description": "A refreshing vegetable often used in salads and pickles.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "15",
         "carbohydrate": "3",
         "protein": "0.5",
@@ -640,7 +640,7 @@
     {
         "name": "Bamboo Shoots(Tama)",
         "description": "Fermented bamboo shoots used in curries and pickles.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "40",
         "carbohydrate": "8",
         "protein": "2",
@@ -651,7 +651,7 @@
     {
         "name": "Sponge Gourd(Ghiraula)",
         "description": "A soft, sponge-like vegetable used in curries and soups.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "20",
         "carbohydrate": "4",
         "protein": "1",
@@ -662,7 +662,7 @@
     {
         "name": "Samosa",
         "description": "Deep-fried pastry filled with spiced potatoes, peas, and sometimes meat.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "250",
         "carbohydrate": "30",
         "protein": "5",
@@ -673,7 +673,7 @@
     {
         "name": "Pani Puri",
         "description": "Crispy hollow puris filled with spiced water, tamarind chutney, and chickpeas.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "150",
         "carbohydrate": "25",
         "protein": "3",
@@ -684,7 +684,7 @@
     {
         "name": "Aloo Chop",
         "description": "Deep-fried potato patties, often served as a snack or appetizer.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "200",
         "carbohydrate": "25",
         "protein": "3",
@@ -695,7 +695,7 @@
     {
         "name": "Sekuwa",
         "description": "Marinated and grilled meat, typically served with a side of salad and chutney.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "175",
         "carbohydrate": "5",
         "protein": "15",
@@ -706,7 +706,7 @@
     {
         "name": "Chole Bhature",
         "description": "Spicy chickpea curry served with deep-fried bread.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "150",
         "carbohydrate": "20",
         "protein": "5",
@@ -717,7 +717,7 @@
     {
         "name": "Jeri",
         "description": "Deep-fried sweet pretzel-shaped snack soaked in sugar syrup.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "400",
         "carbohydrate": "70",
         "protein": "2",
@@ -728,7 +728,7 @@
     {
         "name": "Salmon Fish",
         "description": "An oily fish rich in omega-3 fatty acids, typically grilled, baked, or smoked.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "142",
         "carbohydrate": "0",
         "protein": "20",
@@ -739,7 +739,7 @@
     {
         "name": "Trout Fish",
         "description": "A cold-water fish with a delicate flavor, often grilled or baked whole.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "119",
         "carbohydrate": "0",
         "protein": "20",
@@ -750,7 +750,7 @@
     {
         "name": "Prawns",
         "description": "Large shrimp-like crustaceans, commonly grilled, fried, or used in curries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "85",
         "carbohydrate": "0",
         "protein": "18",
@@ -761,7 +761,7 @@
     {
         "name": "Crab",
         "description": "Crustaceans with tender meat, often steamed, boiled, or used in curries.",
-        "quantity": "100gm(edible portion)",
+        "quantity": "100(edible portion)",
         "calories": "83",
         "carbohydrate": "0",
         "protein": "17",
@@ -772,7 +772,7 @@
     {
         "name": "Oysters",
         "description": "Bivalve mollusks with a delicate, briny flavor, often eaten raw or cooked.",
-        "quantity": "100gm(edible portion)",
+        "quantity": "100(edible portion)",
         "calories": "68",
         "carbohydrate": "4",
         "protein": "7",
@@ -783,7 +783,7 @@
     {
         "name": "Octopus",
         "description": "Cephalopods with tender meat, often grilled, boiled, or used in salads.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "82",
         "carbohydrate": "4",
         "protein": "14",
@@ -794,7 +794,7 @@
     {
         "name": "Lobster",
         "description": "Crustaceans with sweet, tender meat, often boiled or grilled.",
-        "quantity": "100gm(edible portion)",
+        "quantity": "100(edible portion)",
         "calories": "89",
         "carbohydrate": "1",
         "protein": "18",
@@ -805,7 +805,7 @@
     {
         "name": "Papaya",
         "description": "Sweet and musky tropical fruit with orange flesh.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "39",
         "carbohydrate": "10",
         "protein": "0.8",
@@ -816,7 +816,7 @@
     {
         "name": "Guava",
         "description": "Tropical fruit with a sweet and tangy flavor.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "68",
         "carbohydrate": "13",
         "protein": "2.7",
@@ -827,7 +827,7 @@
     {
         "name": "Pineapple",
         "description": "Sweet and tangy tropical fruit with yellow flesh.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "55",
         "carbohydrate": "15",
         "protein": "0.6",
@@ -838,7 +838,7 @@
     {
         "name": "Orange",
         "description": "Citrus fruit with a sweet and tangy flavor.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "48",
         "carbohydrate": "12",
         "protein": "0.9",
@@ -849,7 +849,7 @@
     {
         "name": "Watermelon",
         "description": "Juicy and refreshing fruit with red flesh and black seeds.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "30",
         "carbohydrate": "7.3",
         "protein": "0.6",
@@ -860,7 +860,7 @@
     {
         "name": "Pomegranate",
         "description": "Sweet and tart fruit with juicy seeds.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "94",
         "carbohydrate": "21",
         "protein": "1.9",
@@ -871,7 +871,7 @@
     {
         "name": "Litchi",
         "description": "Sweet and floral tropical fruit with a white, translucent flesh.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "8",
         "carbohydrate": "20",
         "protein": "0.9",
@@ -882,7 +882,7 @@
     {
         "name": "Kiwi",
         "description": "Tangy and sweet fruit with green flesh and black seeds.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "61",
         "carbohydrate": "15",
         "protein": "1.1",
@@ -893,7 +893,7 @@
     {
         "name": "Grapes",
         "description": "Small, sweet or tart berries typically eaten fresh or dried (raisins).",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "69",
         "carbohydrate": "18",
         "protein": "0.7",
@@ -904,7 +904,7 @@
     {
         "name": "Strawberries",
         "description": "Sweet and juicy berries with red flesh and seeds on the outside.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "33",
         "carbohydrate": "7.3",
         "protein": "0.7",
@@ -915,7 +915,7 @@
     {
         "name": "Plum",
         "description": "Sweet and juicy fruit with a smooth skin and stone pit inside.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "45",
         "carbohydrate": "12",
         "protein": "0.7",
@@ -926,7 +926,7 @@
     {
         "name": "Dragon Fruit",
         "description": "Exotic fruit with vibrant pink or yellow skin and white or pink flesh speckled with tiny black seeds.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "30",
         "carbohydrate": "6.5",
         "protein": "0.5",
@@ -937,7 +937,7 @@
     {
         "name": "Turnip",
         "description": "Root vegetable with a slightly sweet and peppery flavor, used in soups, stews, and roasted dishes.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "28",
         "carbohydrate": "6",
         "protein": "0.8",
@@ -948,7 +948,7 @@
     {
         "name": "Sisnu (Nettle)",
         "description": "Wild leafy green with a slightly bitter taste, used in soups and stews.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "62",
         "carbohydrate": "11.7",
         "protein": "4",
@@ -959,7 +959,7 @@
     {
         "name": "Niguro (Fiddlehead Ferns)",
         "description": "Tender young fern fronds, used in curries and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "97",
         "carbohydrate": "17.1",
         "protein": "11.4",
@@ -970,7 +970,7 @@
     {
         "name": "Peach",
         "description": "Leaves of the peach tree, used in traditional medicinal and culinary applications.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "33",
         "carbohydrate": "6.7",
         "protein": "3.3",
@@ -981,7 +981,7 @@
     {
         "name": "Lettuce",
         "description": "Crisp, leafy green often used in salads and as a garnish.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "14",
         "carbohydrate": "2.8",
         "protein": "1.4",
@@ -992,7 +992,7 @@
     {
         "name": "Pointed Gourd (Parval)",
         "description": "Green vegetable with a mildly sweet taste, used in curries and stews.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "21",
         "carbohydrate": "3.4",
         "protein": "0.9",
@@ -1003,7 +1003,7 @@
     {
         "name": "Drumstick (Moringa) - Sajiwan",
         "description": "Long, slender pods with a slightly bitter taste, used in soups and curries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "37",
         "carbohydrate": "8",
         "protein": "2",
@@ -1014,7 +1014,7 @@
     {
         "name": "Hyacinth Bean (Hiunde Simi)",
         "description": "Flat green beans with a slightly sweet taste, used in curries and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "37",
         "carbohydrate": "8",
         "protein": "3",
@@ -1025,7 +1025,7 @@
     {
         "name": "Amaranth Leaves (Latte ko Saag)",
         "description": "Nutrient-rich leafy green with a slightly earthy taste, used in soups and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "23",
         "carbohydrate": "3",
         "protein": "2.9",
@@ -1036,7 +1036,7 @@
     {
         "name": "Spring Onion",
         "description": "Young onions with a mild flavor, used in salads, soups, and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "32",
         "carbohydrate": "7",
         "protein": "1.8",
@@ -1047,7 +1047,7 @@
     {
         "name": "Snake Gourd (Chichinda)",
         "description": "Long, slender vegetable with a slightly bitter taste, used in curries and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "18",
         "carbohydrate": "4.1",
         "protein": "1",
@@ -1058,7 +1058,7 @@
     {
         "name": "Jackfruit",
         "description": "Young, tender jackfruit used as a vegetable in curries and stir-fries.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "95.5",
         "carbohydrate": "23.0",
         "protein": "1.7",
@@ -1069,7 +1069,7 @@
     {
         "name": "Chayote (Iscus) Leaves",
         "description": "Tender leaves of the chayote plant, used in stir-fries and soups.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "20",
         "carbohydrate": "4.0",
         "protein": "1.7",
@@ -1080,7 +1080,7 @@
     {
         "name": "Yam (Rato Tarul)",
         "description": "Starchy root vegetable with a slightly sweet flavor, used in curries and stews.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "116.4",
         "carbohydrate": "27.2",
         "protein": "1.5",
@@ -1091,7 +1091,7 @@
     {
         "name": "Sweet Potato",
         "description": "Starchy root vegetable with a sweet flavor, used in curries and as a side dish.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "85.6",
         "carbohydrate": "20.3",
         "protein": "1.6",
@@ -1102,7 +1102,7 @@
     {
         "name": "Roselle (Belchanda)",
         "description": "Red, tart fruit used in beverages, jams, and traditional medicines.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "49",
         "carbohydrate": "11",
         "protein": "1",
@@ -1113,7 +1113,7 @@
     {
         "name": "Soursop (Hanuman Faal)",
         "description": "Large, green fruit with a spiky skin and sweet, tangy pulp, used in beverages and desserts.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "65.8",
         "carbohydrate": "16.9",
         "protein": "",
@@ -1124,7 +1124,7 @@
     {
         "name": "Bel (Wood Apple)",
         "description": "Hard-shelled fruit with a sweet and aromatic pulp, used in beverages and traditional medicine.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "93.3",
         "carbohydrate": "22.7",
         "protein": "1.3",
@@ -1135,7 +1135,7 @@
     {
         "name": "Lapsi",
         "description": "Small, sour fruit used in pickles, candies, and traditional dishes.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "60",
         "carbohydrate": "14.6",
         "protein": "0.6",
@@ -1146,7 +1146,7 @@
     {
         "name": "Amla",
         "description": "Small, green fruit with a sour taste, rich in vitamin C and used in traditional medicine.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "44",
         "carbohydrate": "10",
         "protein": "0.6",
@@ -1157,7 +1157,7 @@
     {
         "name": "Mango",
         "description": "Sweet, juicy fruit with a tropical flavor, enjoyed fresh or in desserts.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "66",
         "carbohydrate": "17",
         "protein": "0.9",
@@ -1168,7 +1168,7 @@
     {
         "name": "Pear (Nashpati)",
         "description": "Juicy, bell-shaped fruit with a sweet and slightly grainy texture.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "59.5",
         "carbohydrate": "15.9",
         "protein": "0.6",
@@ -1179,7 +1179,7 @@
     {
         "name": "Persimmon (HaluwaBed)",
         "description": "Orange to reddish fruit with a sweet, honey-like flavor and creamy texture when ripe.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "70",
         "carbohydrate": "18.6",
         "protein": "0.6",
@@ -1190,7 +1190,7 @@
     {
         "name": "Cherry",
         "description": "Small, round fruit with a sweet-tart flavor, often eaten fresh or used in desserts.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "50",
         "carbohydrate": "12.2",
         "protein": "1",
@@ -1201,7 +1201,7 @@
     {
         "name": "Avocado",
         "description": "Creamy, green fruit with a buttery texture, rich in healthy fats and fiber.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "174.6",
         "carbohydrate": "9.2",
         "protein": "2.1",
@@ -1212,7 +1212,7 @@
     {
         "name": "Fig (Anjeer)",
         "description": "Small, pear-shaped fruit with a sweet, chewy texture and edible seeds.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "74",
         "carbohydrate": "19.2",
         "protein": "1",
@@ -1223,7 +1223,7 @@
     {
         "name": "Malta (Junar)",
         "description": "Citrus fruit similar to tangerines or mandarins, with a sweet and tangy flavor.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "43",
         "carbohydrate": "11",
         "protein": "0.8",
@@ -1234,7 +1234,7 @@
     {
         "name": "Green Coconut",
         "description": "Young coconut with green outer shell, containing water and soft, gel-like meat.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "46.7",
         "carbohydrate": "3.3",
         "protein": "0.7",
@@ -1245,7 +1245,7 @@
     {
         "name": "Coconut",
         "description": "Mature coconut with brown outer shell, containing white meat and coconut water.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "415",
         "carbohydrate": "30",
         "protein": "4.4",
@@ -1256,7 +1256,7 @@
     {
         "name": "Sugarcane",
         "description": "Tall, fibrous stalks with sweet juice, commonly chewed or juiced for its sweetness.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "270",
         "carbohydrate": "70",
         "protein": "0.5",
@@ -1267,7 +1267,7 @@
     {
         "name": "Honeydew Melon",
         "description": "Sweet melon with pale green flesh and smooth skin, known for its juicy and refreshing taste.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "36",
         "carbohydrate": "9",
         "protein": "0.5",
@@ -1278,7 +1278,7 @@
     {
         "name": "Beetroot",
         "description": "Root vegetable with a deep purple-red color, known for its earthy flavor and nutritional benefits.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "43",
         "carbohydrate": "9.6",
         "protein": "1.6",
@@ -1289,7 +1289,7 @@
     {
         "name": "Carrot",
         "description": "Orange root vegetable known for its sweet taste and crunchy texture, rich in beta-carotene.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "41",
         "carbohydrate": "9.6",
         "protein": "0.9",
@@ -1300,7 +1300,7 @@
     {
         "name": "Broccoli",
         "description": "Green vegetable with a dense cluster of small, edible flower heads and a firm stalk.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "34",
         "carbohydrate": "6.6",
         "protein": "2.8",
@@ -1311,7 +1311,7 @@
     {
         "name": "Palung Saag",
         "description": "Leafy green vegetable with a slightly bitter taste, rich in vitamins and minerals.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "23",
         "carbohydrate": "3.6",
         "protein": "2.9",
@@ -1322,7 +1322,7 @@
     {
         "name": "Celery",
         "description": "Crunchy green stalks with a mild, herbal flavor, often used raw in salads or as a flavoring agent.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "16",
         "carbohydrate": "3",
         "protein": "1",
@@ -1333,7 +1333,7 @@
     {
         "name": "Asparagus (Kurilo)",
         "description": "Green vegetable with tender shoots and a mild, slightly nutty flavor.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "20",
         "carbohydrate": "3.9",
         "protein": "2.2",
@@ -1344,7 +1344,7 @@
     {
         "name": "Tofu",
         "description": "Soybean curd with a mild taste and versatile texture, used in various cuisines.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "104",
         "carbohydrate": "3.6",
         "protein": "13",
@@ -1355,7 +1355,7 @@
     {
         "name": "Coriander",
         "description": "Leafy herb with a refreshing, citrusy flavor, commonly used as a garnish or in cooking.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "22",
         "carbohydrate": "4.2",
         "protein": "3",
@@ -1366,7 +1366,7 @@
     {
         "name": "Capsicum",
         "description": "Sweet and crunchy vegetable with various colors (green, red, yellow, or orange), commonly used in cooking.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "31",
         "carbohydrate": "6",
         "protein": "1",
@@ -1377,7 +1377,7 @@
     {
         "name": "Lemon",
         "description": "Citrus fruit known for its tart and tangy flavor, used in cooking and beverages.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "17",
         "carbohydrate": "5.4",
         "protein": "0.6",
@@ -1388,7 +1388,7 @@
     {
         "name": "Ginger",
         "description": "Spicy, aromatic root used as a flavoring in cooking and for its medicinal properties.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "80",
         "carbohydrate": "17.8",
         "protein": "1.8",
@@ -1399,7 +1399,7 @@
     {
         "name": "Chamsur Saag",
         "description": "Leafy green vegetable with a peppery flavor, rich in vitamins and minerals.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "32",
         "carbohydrate": "5.5",
         "protein": "4.8",
@@ -1410,7 +1410,7 @@
     {
         "name": "Green Soybeans",
         "description": "Young soybeans in the pod, commonly steamed or boiled and served as a snack or in dishes.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "122",
         "carbohydrate": "11.1",
         "protein": "11.9",
@@ -1421,7 +1421,7 @@
     {
         "name": "Cocoyam (Pidali)",
         "description": "Starchy root vegetable with a mildly sweet flavor, often used in cooking and as a thickening agent.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "112",
         "carbohydrate": "26",
         "protein": "1.5",
@@ -1432,7 +1432,7 @@
     {
         "name": "Green Garlic Leaves",
         "description": "Young shoots of garlic plants with a mild garlic flavor, used as a culinary herb.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "149",
         "carbohydrate": "33",
         "protein": "6",
@@ -1443,7 +1443,7 @@
     {
         "name": "Hatch Chilies (Machhey Kursani)",
         "description": "Green chili peppers with a medium to hot spiciness, often roasted and used in Southwestern cuisine.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "18",
         "carbohydrate": "3.7",
         "protein": "1",
@@ -1454,7 +1454,7 @@
     {
         "name": "Pistachios",
         "description": "Nutty and slightly sweet tree nuts with a crunchy texture.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "562",
         "carbohydrate": "27",
         "protein": "20",
@@ -1465,7 +1465,7 @@
     {
         "name": "Green Maize",
         "description": "Fresh corn with kernels still on the cob, commonly boiled or grilled and enjoyed as a vegetable.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "86",
         "carbohydrate": "19",
         "protein": "3.7",
@@ -1476,7 +1476,7 @@
     {
         "name": "Dry Coconut",
         "description": "Dried coconut kernel with a firm and fibrous texture, used in cooking and baking.",
-        "quantity": "100 gm",
+        "quantity": "100 ",
         "calories": "702",
         "carbohydrate": "48",
         "protein": "6",
@@ -1498,7 +1498,7 @@
     {
         "name": "Dates (Khajur)",
         "description": "Sweet, chewy fruits with a rich flavor, commonly used as a natural sweetener.",
-        "quantity": "100 gm",
+        "quantity": "100 ",
         "calories": "294",
         "carbohydrate": "78",
         "protein": "2",
@@ -1509,7 +1509,7 @@
     {
         "name": "Peanuts",
         "description": "Nutty-flavored legumes with a crunchy texture.",
-        "quantity": "100 gm",
+        "quantity": "100 ",
         "calories": "584",
         "carbohydrate": "21",
         "protein": "27",
@@ -1520,7 +1520,7 @@
     {
         "name": "Cashew Nuts (Kaju)",
         "description": "Creamy and nutty-flavored tree nuts with a soft texture.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "313",
         "carbohydrate": "20",
         "protein": "8",
@@ -1531,7 +1531,7 @@
     {
         "name": "Walnuts (Okhar)",
         "description": "Nutty-flavored tree nuts with a crunchy texture.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "327",
         "carbohydrate": "7",
         "protein": "8",
@@ -1542,7 +1542,7 @@
     {
         "name": "Horse Gram (Gahat Dal)",
         "description": "Small, oval-shaped legume with a slightly nutty and earthy flavor.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "321",
         "carbohydrate": "57",
         "protein": "22",
@@ -1553,7 +1553,7 @@
     {
         "name": "Brown Rice (cooked)",
         "description": "Whole grain rice with the hull removed but the bran layer intact, resulting in a nutty flavor and chewy texture.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "111",
         "carbohydrate": "23",
         "protein": "2.6",
@@ -1564,7 +1564,7 @@
     {
         "name": "Fox Nuts (Makhana)",
         "description": "Light and crunchy popped seeds of the lotus flower, commonly used in snacks and desserts.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "360",
         "carbohydrate": "74",
         "protein": "10",
@@ -1575,7 +1575,7 @@
     {
         "name": "Yellow Raisins",
         "description": "Dried grapes with a sweet and tangy flavor, used as a snack or in cooking and baking.",
-        "quantity": "100gm",
+        "quantity": "100",
         "calories": "300",
         "carbohydrate": "78",
         "protein": "3",
