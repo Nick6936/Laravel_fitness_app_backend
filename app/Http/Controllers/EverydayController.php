@@ -30,54 +30,68 @@ class EverydayController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        try{
-            $validatedData = $request->validate([
-               'user_id' => 'nullable|integer',
-                'name' => 'required|string|max:255',
-                'quantity' => 'nullable|numeric',
-                'calories' => 'required|numeric',
-                'carbohydrate' => 'required|numeric',
-                'protein' => 'required|numeric',
-                'fat' => 'required|numeric',
-                'sodium' => 'required|numeric',
-                'volume' => 'nullable|numeric',
-                'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
-            ]);
+{
+    try {
+        $validatedData = $request->validate([
+            'user_id' => 'nullable|integer',
+            'name' => 'required|string|max:255',
+            'quantity' => 'nullable|numeric',
+            'calories' => 'required|numeric',
+            'carbohydrate' => 'required|numeric',
+            'protein' => 'required|numeric',
+            'fat' => 'required|numeric',
+            'sodium' => 'required|numeric',
+            'volume' => 'nullable|numeric',
+            'food' => 'nullable|boolean',
+            'drink' => 'nullable|boolean',
+            'photo_name' => 'nullable|string'
+        ]);
 
-            $photoName = null;
-            if ($request->hasFile('photo')) {
-                $photoPath = $request->file('photo')->store('public/everyday-photos');
-                $photoName = basename($photoPath);
+        $photoName = $validatedData['photo_name'] ?? null;
+
+        if ($photoName) {
+            $mealPhotosPath = storage_path('app/public/meal-photos/' . $photoName);
+            $everydayPhotosPath = storage_path('app/public/everyday-photos/' . $photoName);
+
+            if (file_exists($mealPhotosPath)) {
+                Storage::copy('public/meal-photos/' . $photoName, 'public/everyday-photos/' . $photoName);
+            } elseif (!file_exists($everydayPhotosPath)) {
+                return response()->json([
+                    'error' => 'Photo not found in meal-photos or everyday-photos directories'
+                ], 404);
             }
-
-            $everyday = Everyday::create([
-                'user_id' => $validatedData['user_id'] ?? 0,
-                'name' => $validatedData['name'],
-                'quantity' => $validatedData['quantity'] ?? 0,
-                'calories' => $validatedData['calories'],
-                'carbohydrate' => $validatedData['carbohydrate'],
-                'protein' => $validatedData['protein'],
-                'fat' => $validatedData['fat'],
-                'sodium' => $validatedData['sodium'],
-                'volume' => $validatedData['volume'] ?? 0,
-                'photo_name' => $photoName
-            ]);
-
-            return response()->json([
-                'message' => 'New Meal Added',
-                'meal' => $everyday
-            ], 201);
-
-        } catch (\Exception $e) {
-            Log::error('Error adding meal: ' . $e->getMessage());
-
-            return response()->json([
-                'error' => 'Failed to add new meal',
-                'message' => $e->getMessage()
-            ], 500);
         }
+
+        $everyday = Everyday::create([
+            'user_id' => $validatedData['user_id'] ?? 0,
+            'name' => $validatedData['name'],
+            'quantity' => $validatedData['quantity'] ?? 0,
+            'calories' => $validatedData['calories'],
+            'carbohydrate' => $validatedData['carbohydrate'],
+            'protein' => $validatedData['protein'],
+            'fat' => $validatedData['fat'],
+            'sodium' => $validatedData['sodium'],
+            'volume' => $validatedData['volume'] ?? 0,
+            'food' => $validatedData['food'] ?? 0, 
+            'drink' => $validatedData['drink'] ?? 0,
+            'photo_name' => $photoName
+        ]);
+
+        return response()->json([
+            'message' => 'New Meal Added',
+            'meal' => $everyday
+        ], 201);
+
+    } catch (\Exception $e) {
+        Log::error('Error adding meal: ' . $e->getMessage());
+
+        return response()->json([
+            'error' => 'Failed to add new meal',
+            'message' => $e->getMessage()
+        ], 500);
     }
+}
+
 
     /**
      * Display the specified resource.
