@@ -8,7 +8,7 @@
         "protein": 4,
         "fat": 0.5,
         "sodium": 0,
-        "photo": "white_truffles.png"
+        "photo_name": "white_truffles.png"
     },
     {
         "user_id": 1,
@@ -19,7 +19,7 @@
         "protein": 1.9,
         "fat": 0.5,
         "sodium": 5,
-        "photo": "matsutake_mushrooms.png"
+        "photo_name": "matsutake_mushrooms.png"
     },
     {
         "user_id": 1,
@@ -31,7 +31,7 @@
         "fat": 0.4,
         "sodium": 2,
         "volume":92,
-        "photo": "densuke_watermelon.png"
+        "photo_name": "densuke_watermelon.png"
     },
     {
         "user_id": 1,
@@ -42,7 +42,7 @@
         "protein": 23,
         "fat": 5,
         "sodium": 39,
-        "photo": "bluefin_tuna.png"
+        "photo_name": "bluefin_tuna.png"
     },
     {
         "user_id": 1,
@@ -53,7 +53,7 @@
         "protein": 25,
         "fat": 18,
         "sodium": 15.00,
-        "photo": "caviar.png"
+        "photo_name": "caviar.png"
     }
     
 ]
