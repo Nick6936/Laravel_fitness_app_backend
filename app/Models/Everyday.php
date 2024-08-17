@@ -12,6 +12,7 @@ class Everyday extends Model
     protected $fillable = [
         'user_id',
         'name',
+        'quantity',
         'description',
         'calories',
         'carbohydrate',
@@ -19,6 +20,8 @@ class Everyday extends Model
         'fat',
         'sodium',
         'volume',
+        'food',
+        'drink',
         'photo_name'
     ];
 }

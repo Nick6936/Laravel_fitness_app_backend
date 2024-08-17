@@ -41,6 +41,7 @@ class MealController extends Controller
             $validatedData = $request->validate([
                 'user_id' => 'nullable|integer',
                 'name' => 'required|string|max:255',
+                'quantity' => 'nullable|numeric',
                 'description' => 'nullable|string',
                 'calories' => 'required|numeric',
                 'carbohydrate' => 'required|numeric',
@@ -48,6 +49,8 @@ class MealController extends Controller
                 'fat' => 'required|numeric',
                 'sodium' => 'required|numeric',
                 'volume' => 'nullable|numeric',
+                'food' => 'nullable|boolean',
+                'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);
 
@@ -60,6 +63,7 @@ class MealController extends Controller
             $meal = Meal::create([
                 'user_id' => $validatedData['user_id'] ?? 0,
                 'name' => $validatedData['name'],
+                'quantity' => $validatedData['quantity'] ?? 0,
                 'description' => $validatedData['description'] ?? null,
                 'calories' => $validatedData['calories'],
                 'carbohydrate' => $validatedData['carbohydrate'],
@@ -67,6 +71,8 @@ class MealController extends Controller
                 'fat' => $validatedData['fat'],
                 'sodium' => $validatedData['sodium'],
                 'volume' => $validatedData['volume'] ?? 0,
+                'food' => $validatedData['food'] ?? 0,
+                'drink' => $validatedData['drink'] ?? 0,
                 'photo_name' => $photoName
             ]);
 
@@ -105,6 +111,7 @@ class MealController extends Controller
             $validatedData = $request->validate([
                 'user_id' => 'nullable|integer',
                 'name' => 'nullable|string|max:255',
+                'quantity' => 'nullable|numeric',
                 'description' => 'nullable|string',
                 'calories' => 'nullable|numeric',
                 'carbohydrate' => 'nullable|numeric',
@@ -112,6 +119,9 @@ class MealController extends Controller
                 'fat' => 'nullable|numeric',
                 'sodium' => 'nullable|numeric',
                 'volume' => 'nullable|numeric',
+                'volume' => 'nullable|numeric',
+                'food' => 'nullable|boolean',
+                'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);
 

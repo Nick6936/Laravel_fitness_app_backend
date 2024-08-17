@@ -56,11 +56,13 @@ class CustomSeeder extends Seeder
             custom::create([
                 'name' => $customData->name,
                 'description' => $customData->description ?? null,
+                'quantity' => $customData->quantity ?? 0,
                 'calories' => $customData->calories,
                 'carbohydrate' => $customData->carbohydrate,
                 'protein' => $customData->protein,
                 'fat' => $customData->fat,
                 'sodium' => $customData->sodium,
+                'volume' => $customData->volume ?? 0,
                 'photo_name' => $photoName // Ensure this matches your database column name
             ]);
         }

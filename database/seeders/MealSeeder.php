@@ -56,11 +56,13 @@ class MealSeeder extends Seeder
             Meal::create([
                 'name' => $mealData->name,
                 'description' => $mealData->description ?? null,
+                'quantity' => $mealData->quantity ?? 0,
                 'calories' => $mealData->calories,
                 'carbohydrate' => $mealData->carbohydrate,
                 'protein' => $mealData->protein,
                 'fat' => $mealData->fat,
                 'sodium' => $mealData->sodium,
+                'volume' => $mealData->volume ?? 0,
                 'photo_name' => $photoName // Ensure this matches your database column name
             ]);
         }

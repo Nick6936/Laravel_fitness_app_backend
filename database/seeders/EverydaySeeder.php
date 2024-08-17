@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\everyday;
+use App\Models\Everyday;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
@@ -37,10 +36,10 @@ class EverydaySeeder extends Seeder
         foreach ($everydays as $everydayData) {
             $photoName = null;
 
-            // Check if photo attribute is set and not empty
-            if (isset($everydayData->photo) && !empty($everydayData->photo)) {
+            // Check if photo_name attribute is set and not empty
+            if (isset($everydayData->photo_name) && !empty($everydayData->photo_name)) {
                 // Define the path to the seeder_photos folder
-                $photoPath = base_path('storage/app/seeder_photos/' . $everydayData->photo);
+                $photoPath = base_path('storage/app/seeder_photos/' . $everydayData->photo_name);
 
                 // Check if the photo file exists
                 if (File::exists($photoPath)) {
@@ -53,28 +52,18 @@ class EverydaySeeder extends Seeder
             }
 
             // Create the everyday record
-            everyday::create([
+            Everyday::create([
+                'user_id' => $everydayData->user_id,
                 'name' => $everydayData->name,
+                'quantity' => $everydayData->quantity ?? 0,
                 'calories' => $everydayData->calories,
                 'carbohydrate' => $everydayData->carbohydrate,
                 'protein' => $everydayData->protein,
                 'fat' => $everydayData->fat,
                 'sodium' => $everydayData->sodium,
-                'photo_name' => $photoName // Ensure this matches your database column name
+                'volume' => $everydayData->volume ?? 0,
+                'photo_name' => $photoName
             ]);
         }
-        // $json = File::get(path: 'database/json/everyday.json');
-        // $everydays = collect(json_decode($json));
-        // $everydays->each(function ($everyday) {
-        //     everyday::create([
-        //         'user_id' => $everyday->user_id,
-        //         'name' => $everyday->name,
-        //         'calories' => $everyday->calories,
-        //         'carbohydrate' => $everyday->carbohydrate,
-        //         'protein' => $everyday->protein,
-        //         'fat' => $everyday->fat,
-        //         'sodium' => $everyday->sodium,
-        //     ]);
-        // });
     }
 }
