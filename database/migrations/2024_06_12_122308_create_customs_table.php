@@ -23,8 +23,7 @@ return new class extends Migration
             $table->decimal('fat', 5, 2);
             $table->decimal('sodium', 5, 2);
             $table->decimal('volume', 7, 2)->default(0);
-            $table->boolean('food')->default(0);
-            $table->boolean('drink')->default(0);
+           $table->boolean('drink')->default(0);
             $table->string('photo_name')->nullable();
             
         });

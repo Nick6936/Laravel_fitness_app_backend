@@ -20,7 +20,6 @@ class Meal extends Model
         'fat',
         'sodium',
         'volume',
-        'food',
         'drink',
         'photo_name'
     ];

@@ -20,7 +20,6 @@ class Everyday extends Model
         'fat',
         'sodium',
         'volume',
-        'food',
         'drink',
         'photo_name'
     ];

@@ -39,7 +39,6 @@ class CustomController extends Controller
                 'fat' => 'required|numeric',
                 'sodium' => 'required|numeric',
                 'volume' => 'nullable|numeric',
-                'food' => 'nullable|boolean',
                 'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);
@@ -61,7 +60,6 @@ class CustomController extends Controller
                 'fat' => $validatedData['fat'],
                 'sodium' => $validatedData['sodium'],
                 'volume' => $validatedData['volume'] ?? 0,
-                'food' => $validatedData['food'] ?? 0,
                 'drink' => $validatedData['drink'] ?? 0,
                 'photo_name' => $photoName
             ]);
@@ -123,7 +121,6 @@ class CustomController extends Controller
                 'fat' => 'nullable|numeric',
                 'sodium' => 'nullable|numeric',
                 'volume' => 'nullable|numeric',
-                'food' => 'nullable|boolean',
                 'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);

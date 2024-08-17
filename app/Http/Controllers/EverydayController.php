@@ -42,7 +42,6 @@ class EverydayController extends Controller
             'fat' => 'required|numeric',
             'sodium' => 'required|numeric',
             'volume' => 'nullable|numeric',
-            'food' => 'nullable|boolean',
             'drink' => 'nullable|boolean',
             'photo_name' => 'nullable|string'
         ]);
@@ -72,7 +71,6 @@ class EverydayController extends Controller
             'fat' => $validatedData['fat'],
             'sodium' => $validatedData['sodium'],
             'volume' => $validatedData['volume'] ?? 0,
-            'food' => $validatedData['food'] ?? 0, 
             'drink' => $validatedData['drink'] ?? 0,
             'photo_name' => $photoName
         ]);
