@@ -47,6 +47,9 @@ class CustomController extends Controller
             if ($request->hasFile('photo')) {
                 $photoPath = $request->file('photo')->store('public/custom-photos');
                 $photoName = basename($photoPath);
+
+                // Copy the photo to the meal-photos directory
+            Storage::copy('public/custom-photos/' . $photoName, 'public/meal-photos/' . $photoName);
             }
 
             $custom = Custom::create([

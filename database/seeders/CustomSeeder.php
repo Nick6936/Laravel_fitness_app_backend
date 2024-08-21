@@ -49,6 +49,9 @@ class CustomSeeder extends Seeder
 
                     // Store photo in public storage under 'custom-photos' directory
                     Storage::disk('public')->putFileAs('custom-photos', new \Illuminate\Http\File($photoPath), $photoName);
+
+                    // Copy the photo to the 'meal-photos' directory
+                    Storage::disk('public')->putFileAs('meal-photos', new \Illuminate\Http\File($photoPath), $photoName);
                 }
             }
 
