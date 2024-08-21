@@ -117,7 +117,6 @@ class MealController extends Controller
                 'fat' => 'nullable|numeric',
                 'sodium' => 'nullable|numeric',
                 'volume' => 'nullable|numeric',
-                'volume' => 'nullable|numeric',
                'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);

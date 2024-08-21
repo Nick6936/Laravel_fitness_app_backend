@@ -63,6 +63,7 @@ class CustomSeeder extends Seeder
                 'fat' => $customData->fat,
                 'sodium' => $customData->sodium,
                 'volume' => $customData->volume ?? 0,
+                'drink' => $customData->drink ?? 0,
                 'photo_name' => $photoName // Ensure this matches your database column name
             ]);
         }

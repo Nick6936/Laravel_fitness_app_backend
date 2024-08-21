@@ -54,5 +54,18 @@
         "fat": 18,
         "sodium": 15.00,
         "photo": "caviar.png"
+    },
+    {
+        "name": "Strawberry Matcha Smoothie (250ml)",
+        "description": "A refreshing 250ml Strawberry Matcha Smoothie rich in antioxidants, combining the sweetness of strawberries with the earthy flavor of matcha for a nutrient-packed drink.",
+        "quantity": 250,
+        "calories": 150,
+        "carbohydrate": 28,
+        "protein": 5,
+        "fat": 3,
+        "sodium": 40.00,
+        "volume": 250,
+        "drink": 1,
+        "photo": "strawberry_matcha_latte.png"
     }
 ]

@@ -63,6 +63,7 @@ class MealSeeder extends Seeder
                 'fat' => $mealData->fat,
                 'sodium' => $mealData->sodium,
                 'volume' => $mealData->volume ?? 0,
+                'drink' => $mealData->drink ?? 0,
                 'photo_name' => $photoName // Ensure this matches your database column name
             ]);
         }
