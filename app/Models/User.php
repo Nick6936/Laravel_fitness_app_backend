@@ -34,7 +34,7 @@ class User extends Authenticatable implements JWTSubject
         'bloodPressure',
         'bloodSugar',
         'isPremium',
-        'isGoogle',
+        'google_id',
         'photo_name'
         
         

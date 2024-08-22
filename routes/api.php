@@ -8,7 +8,7 @@ use App\Http\Controllers\CustomController;
 use App\Http\Controllers\EverydayController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnalyticController;
-
+use App\Http\Controllers\GoogleAuthController;
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
@@ -20,6 +20,10 @@ Route::group(['prefix' => 'auth'], function ($router) {
     Route::post('register', [AuthController::class,'register']);
     
 });
+
+//http://127.0.0.1:8000/api/auth/google (use this link to go to OAuth page i.e google sign in)
+Route::get('auth/google', [GoogleAuthController::class,'redirect']);
+Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
 
 
 Route::middleware(['auth:api'])->group(function(){

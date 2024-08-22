@@ -37,7 +37,7 @@ class AuthController extends Controller
             'bodyGoal' => $validatedData['bodyGoal'] ?? null,
             'bloodPressure' => $validatedData['bloodPressure'] ?? null,
             'bloodSugar' => $validatedData['bloodSugar'] ?? null,
-            'isGoogle' => $validatedData['isGoogle'] ?? 0,
+            'google_id' => $validatedData['google_id'] ?? null,
             'isPremium' => $validatedData['isPremium'] ?? 0,
             'photo_name' => $photoName,
         ]);
@@ -124,13 +124,13 @@ class AuthController extends Controller
             'bodyGoal' => 'nullable|string',
             'bloodPressure' => 'nullable|string',
             'bloodSugar' => 'nullable|string',
-            'isGoogle' => 'nullable|boolean',
+            'google_id' => 'nullable|string',
             'isPremium' => 'nullable|boolean',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
         ]);
 
         $user->update(array_merge($user->only([
-            'name', 'age', 'email', 'phone', 'sex', 'weight', 'ethnicity', 'bodyType', 'bodyGoal', 'bloodPressure', 'bloodSugar', 'isGoogle','isPremium'
+            'name', 'age', 'email', 'phone', 'sex', 'weight', 'ethnicity', 'bodyType', 'bodyGoal', 'bloodPressure', 'bloodSugar', 'google_id','isPremium'
         ]), $validatedData, [
             'password' => isset($validatedData['password']) ? bcrypt($validatedData['password']) : $user->password,
         ]));

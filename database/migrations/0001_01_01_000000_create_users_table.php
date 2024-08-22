@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('bodyGoal')->nullable();
             $table->string('bloodPressure')->nullable();
             $table->string('bloodSugar')->nullable();
-            $table->boolean('isGoogle')->default(0);
+            $table->string('google_id')->nullable();
             $table->boolean('isPremium')->default(0);
             $table->string('photo_name')->nullable();
             $table->rememberToken();
