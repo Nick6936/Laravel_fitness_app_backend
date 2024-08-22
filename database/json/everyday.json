@@ -54,6 +54,19 @@
         "fat": 18,
         "sodium": 15.00,
         "photo_name": "caviar.png"
+    },
+    {
+        "user_id": 1,
+        "name": "Strawberry Matcha Smoothie (250ml)",
+        "quantity": 250,
+        "calories": 150,
+        "carbohydrate": 28,
+        "protein": 5,
+        "fat": 3,
+        "sodium": 40.00,
+        "volume": 250,
+        "drink": 1,
+        "photo_name": "strawberry_matcha_latte.png"
     }
     
 ]

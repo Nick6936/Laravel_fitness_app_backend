@@ -39,7 +39,6 @@ class CustomController extends Controller
                 'fat' => 'required|numeric',
                 'sodium' => 'required|numeric',
                 'volume' => 'nullable|numeric',
-                'food' => 'nullable|boolean',
                 'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);
@@ -48,6 +47,9 @@ class CustomController extends Controller
             if ($request->hasFile('photo')) {
                 $photoPath = $request->file('photo')->store('public/custom-photos');
                 $photoName = basename($photoPath);
+
+                // Copy the photo to the meal-photos directory
+            Storage::copy('public/custom-photos/' . $photoName, 'public/meal-photos/' . $photoName);
             }
 
             $custom = Custom::create([
@@ -61,7 +63,6 @@ class CustomController extends Controller
                 'fat' => $validatedData['fat'],
                 'sodium' => $validatedData['sodium'],
                 'volume' => $validatedData['volume'] ?? 0,
-                'food' => $validatedData['food'] ?? 0,
                 'drink' => $validatedData['drink'] ?? 0,
                 'photo_name' => $photoName
             ]);
@@ -123,7 +124,6 @@ class CustomController extends Controller
                 'fat' => 'nullable|numeric',
                 'sodium' => 'nullable|numeric',
                 'volume' => 'nullable|numeric',
-                'food' => 'nullable|boolean',
                 'drink' => 'nullable|boolean',
                 'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096'
             ]);

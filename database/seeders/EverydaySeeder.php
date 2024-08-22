@@ -62,6 +62,7 @@ class EverydaySeeder extends Seeder
                 'fat' => $everydayData->fat,
                 'sodium' => $everydayData->sodium,
                 'volume' => $everydayData->volume ?? 0,
+                'drink' => $everydayData->drink ?? 0,
                 'photo_name' => $photoName
             ]);
         }

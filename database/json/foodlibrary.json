@@ -290,6 +290,8 @@
     "protein": "8",
     "fat": "8",
     "sodium": "107",
+    "volume": "150",
+    "drink": 1,
     "photo": "Cow_Milk.png"
   },
   {
