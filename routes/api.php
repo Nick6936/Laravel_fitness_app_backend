@@ -9,6 +9,7 @@ use App\Http\Controllers\EverydayController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnalyticController;
 use App\Http\Controllers\GoogleAuthController;
+use App\Http\Controllers\PaymentController;
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
@@ -74,3 +75,8 @@ Route::apiResource('/analytics', AnalyticController::class);
 // Route::post('/analytics',[AnalyticController::class,'store']);
 // Route::get('/analytics/{user_id}',[AnalyticController::class,'show']);
 // Route::delete('/analytics/{user_id}',[AnalyticController::class,'destroy']);
+
+Route::apiResource('/payments', PaymentController::class);
+//Route::get('/payments', [PaymentController::class, 'index']);
+// Route::post('/payments',[PaymentController::class,'store']);
+// Route::get('/payments/{user_id}',[PaymentController::class,'show']);
