@@ -48,6 +48,10 @@ class PaymentController extends Controller
                 'item' => $validatedData['item'] ?? "Fitness App Premium",
             ]);
 
+            //update the user to premium user
+            $user->isPremium = 1;
+            $user->save();
+
             return response()->json([
                 'message' => 'New Payment Added',
                 'Payment' => $payment
