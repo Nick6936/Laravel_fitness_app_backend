@@ -56,7 +56,7 @@ class MealSeeder extends Seeder
             Meal::create([
                 'name' => $mealData->name,
                 'description' => $mealData->description ?? null,
-                'quantity' => $mealData->quantity ?? 0,
+                'quantity' => $mealData->quantity ?? 100,
                 'calories' => $mealData->calories,
                 'carbohydrate' => $mealData->carbohydrate,
                 'protein' => $mealData->protein,

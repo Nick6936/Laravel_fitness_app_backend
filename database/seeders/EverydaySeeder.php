@@ -55,7 +55,7 @@ class EverydaySeeder extends Seeder
             Everyday::create([
                 'user_id' => $everydayData->user_id,
                 'name' => $everydayData->name,
-                'quantity' => $everydayData->quantity ?? 0,
+                'quantity' => $everydayData->quantity ?? 100,
                 'calories' => $everydayData->calories,
                 'carbohydrate' => $everydayData->carbohydrate,
                 'protein' => $everydayData->protein,

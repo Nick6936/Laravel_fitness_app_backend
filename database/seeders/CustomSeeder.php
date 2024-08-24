@@ -59,7 +59,7 @@ class CustomSeeder extends Seeder
             custom::create([
                 'name' => $customData->name,
                 'description' => $customData->description ?? null,
-                'quantity' => $customData->quantity ?? 0,
+                'quantity' => $customData->quantity ?? 100,
                 'calories' => $customData->calories,
                 'carbohydrate' => $customData->carbohydrate,
                 'protein' => $customData->protein,

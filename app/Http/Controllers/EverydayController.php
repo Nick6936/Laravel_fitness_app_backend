@@ -64,7 +64,7 @@ class EverydayController extends Controller
         $everyday = Everyday::create([
             'user_id' => $validatedData['user_id'] ?? 0,
             'name' => $validatedData['name'],
-            'quantity' => $validatedData['quantity'] ?? 0,
+            'quantity' => $validatedData['quantity'] ?? 100,
             'calories' => $validatedData['calories'],
             'carbohydrate' => $validatedData['carbohydrate'],
             'protein' => $validatedData['protein'],

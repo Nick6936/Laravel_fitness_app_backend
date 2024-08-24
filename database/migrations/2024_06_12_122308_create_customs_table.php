@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id')->default(0);
             $table->string('name');
-            $table->decimal('quantity', 5, 2)->default(0);
+            $table->decimal('quantity', 6, 2)->default(100);
             $table->text('description')->nullable();
             $table->decimal('calories', 6, 2);
             $table->decimal('carbohydrate', 5, 2);
