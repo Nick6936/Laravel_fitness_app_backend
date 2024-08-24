@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->decimal('amount', 6, 2)->default(1000);
             $table->string('medium')->default("esewa");
+            $table->string('ref_id')->nullable();
             $table->string('item')->default("Fitness App Premium");
             $table->timestamps();
 

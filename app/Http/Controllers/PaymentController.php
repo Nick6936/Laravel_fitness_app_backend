@@ -33,6 +33,7 @@ class PaymentController extends Controller
         try{
             $validatedData = $request->validate([
                 'user_id' => 'required|integer',
+                'ref_id' => 'nullable|string',
                 'payment' => 'sometimes|decimal',
                 'medium' => 'sometimes|string',
                 'item' => 'sometimes|string',
@@ -43,6 +44,7 @@ class PaymentController extends Controller
             $payment = Payment::create([
                 'user_id' => $validatedData['user_id'],
                 'name' => $user->name,
+                'ref_id' => $validatedData['ref_id'] ?? null,
                 'amount' => $validatedData['amount'] ?? 1000,
                 'medium' => $validatedData['medium'] ?? "esewa",
                 'item' => $validatedData['item'] ?? "Fitness App Premium",
